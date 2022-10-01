@@ -1,12 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline mix-blend-color-burn text-color-[pink]">
-        Hello world!
-      </h1>
+      <Navbar />
+      <Footer />
     </div>
   );
 }
