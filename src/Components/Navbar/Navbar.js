@@ -4,8 +4,7 @@ import cnlogo from './assets/cnlogo.png'
 function Navbar() {
     return (
         <div>
-            
-<nav className="bg-white px-2 sm:px-4 py-2.5 dark:bg-neutral-900 fixed w-full z-20 top-0 left-0 border-b border-stone-900 dark:border-neutral-900 backdrop-blur-md">
+  <nav className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter px-2 sm:px-4 py-2.5 dark:bg-neutral-900 fixed w-full z-20 top-0 left-0 border-b border-neutral-900 dark:border-neutral-900  ">
   <div className="container flex flex-wrap justify-between items-center mx-auto">
   <a href="/" className="flex items-center">
       <img src={cnlogo} className="mr-3 h-5 sm:h-9" alt="CN Logo"/>
@@ -13,8 +12,8 @@ function Navbar() {
   <div className="flex md:order-2">
       <button type="button" className="text-white bg-gradient-to-r from-orange-600 to-amber-500 font-medium rounded-3xl text-sm px-5 py-2.5 text-center mr-3 md:mr-0 dark:bg-orange-600">Join Us</button>
   </div>
-  <div className="hidden justify-between items-center w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-    <ul className="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-12 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-neutral-900 md:dark:bg-neutral-900 dark:border-neutral-900">
+  <div className="hidden justify-between items-center w-full md:flex ml-10 md:w-auto md:order-1" id="navbar-sticky">
+    <ul className="flex flex-col p-4 mt-4 border  md:flex-row md:space-x-12 md:mt-0 md:text-sm md:font-medium md:border-0">
       <li>
         <a href="#" className="block py-2 pr-4 pl-3 text-white rounded md:bg-transparent md:text-white-700 md:p-0 dark:text-white" aria-current="page">About</a>
       </li>
