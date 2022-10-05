@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-box-custom{
+    height: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.about-left{
+    width: 50%;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+}
+.stylin{
+    background-image: -webkit-linear-gradient(360deg,#EE4623, #000);
+  -webkit-background-clip: text;
+  color: transparent;
+  align-items: flex-end;
+  display: flex;
+}
+.content{
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+}
