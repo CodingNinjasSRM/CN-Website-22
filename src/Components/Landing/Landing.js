@@ -8,6 +8,7 @@ import num1 from './assets/01.svg'
 import num2 from './assets/02.svg'
 import num3 from './assets/03.svg'
 import img from './assets/Img1.svg'
+import line from './assets/Line 1.svg'
 import codekaze from './assets/CodeKaze 1.svg'
 import ninja2 from './assets/Ninja img.svg'
 import {motion} from 'framer-motion'
@@ -136,6 +137,9 @@ function Landing() {
         {/* Events */}
         <div>
             <div className='md:text-7xl text-5xl text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-black text-center font-extrabold md:mb-10 mb-5 pb-2 md:pt-20 pt-10 mt-10'>EVENTS</div>
+        </div>
+        <div className='justify-center pb-10'>
+            <img src={line} className='w-22 h-22 mx-auto'/>
         </div>
         <div className='pb-10'>
             <div className='text-white text-center md:text-xl'>Know more about the upcoming <a href='/'><span className='text-orange-700'>Events</span></a></div>
