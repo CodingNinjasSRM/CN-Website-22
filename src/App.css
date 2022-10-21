@@ -1,6 +1,7 @@
-body{
+body {
   background-color: black;
 }
+
 .App {
   text-align: center;
 }
@@ -14,6 +15,10 @@ body{
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .App-header {
@@ -35,6 +40,7 @@ body{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
