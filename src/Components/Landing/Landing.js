@@ -137,7 +137,6 @@ function Landing() {
         <div>
             <div className='md:text-7xl text-5xl text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-black text-center font-extrabold md:mb-10 mb-5 pb-2 md:pt-20 pt-10 mt-10'>EVENTS</div>
         </div>
-    
         <div className='pb-10'>
             <div className='text-white text-center md:text-xl'>Know more about the upcoming <a href='/'><span className='text-orange-700'>Events</span></a></div>
         </div>
