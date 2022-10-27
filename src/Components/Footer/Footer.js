@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './Footer.module.css'
-import line from './assets/line.svg'
 function Footer() {
     return (
         

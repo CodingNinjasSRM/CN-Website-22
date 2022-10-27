@@ -42,7 +42,7 @@ function Team() {
       right: 50,
       bottom: 50,
     }}
-    src={spray} className='w-1/6 h-1/'
+    src={spray} className='w-1/6 h-1/6'
   />
        </>
 

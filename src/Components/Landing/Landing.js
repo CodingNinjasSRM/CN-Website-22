@@ -9,10 +9,13 @@ import num2 from './assets/02.svg'
 import num3 from './assets/03.svg'
 import img from './assets/Img1.svg'
 import codekaze from './assets/CodeKaze 1.svg'
+import appdev from './assets/intro to appdev 1.svg'
+import shuriken from './assets/shuriken wars 1.svg'
 import ninja2 from './assets/Ninja img.svg'
 import {motion} from 'framer-motion'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { Link } from 'react-router-dom'
 
 
 function Landing() {
@@ -75,10 +78,10 @@ function Landing() {
                     </div>
                 </div>
                 <p className='text-white text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementumconsectetur adipiscing elit. Morbi elementum</p>
-                <a href='/' className='flex pb-20'>
+                <div className='flex pb-20'>
                     <div className='flex-none text-orange-700 text-left ml-12 mr-0 font-bold'>VIEW DETAILS</div>
-                    <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow}/>
-                </a>
+                   <Link to='/technical'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow}/></Link>
+                </div>
                 
             </div>
             {/* image */}
@@ -101,17 +104,17 @@ function Landing() {
                     </div>
                 </div>
                 <p className='text-white text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementumconsectetur adipiscing elit. Morbi elementum</p>
-                <a href='/' className='flex pb-20'>
+                <div href='/' className='flex pb-20'>
                     <div className='flex-none text-orange-700 text-left ml-12 mr-0 font-bold'>VIEW DETAILS</div>
-                    <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow}/>
-                </a>
+                   <Link to='/corporate'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow}/></Link>
+                </div>
                 
             </div>
             
             
         </div>
         <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 mt-20 mb-20'>
-             {/* Creatives */}
+             {/* Creatives*/}
              <div>
                 
                 <div className='relative'>
@@ -121,10 +124,10 @@ function Landing() {
                     </div>
                 </div>
                 <p className='text-white text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementumconsectetur adipiscing elit. Morbi elementum</p>
-                <a href='/' className='flex pb-20'>
+                <div href='/' className='flex pb-20'>
                     <div className='flex-none text-orange-700 text-left ml-12 mr-0 font-bold'>VIEW DETAILS</div>
-                    <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow}/>
-                </a>
+                   <Link to='/creative'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow}/></Link>
+                </div>
                 
             </div>
             {/* image */}
@@ -138,14 +141,14 @@ function Landing() {
             <div className='md:text-7xl text-5xl text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-black text-center font-extrabold md:mb-10 mb-5 pb-2 md:pt-20 pt-10 mt-10'>EVENTS</div>
         </div>
         <div className='pb-10'>
-            <div className='text-white text-center md:text-xl'>Know more about the upcoming <a href='/'><span className='text-orange-700'>Events</span></a></div>
+            <div className='text-white text-center md:text-xl'>Know more about the upcoming <Link to='/'><span className='text-orange-700'>Events</span></Link></div>
         </div>
         <Carousel responsive={responsive} 
         className='md:flex bg-neutral-800 bg-opacity-40 pt-20 justify-center pb-20'
         additionalTransfrom={0}
         arrows={false}
         autoPlay
-        autoPlaySpeed={1}
+        autoPlaySpeed={10}
         centerMode={false}
         customTransition="all 10s linear"
         dotListClass=""
@@ -162,7 +165,7 @@ function Landing() {
         sliderClass=""
         slidesToSlide={2}
         swipeable
-        transitionDuration={4000}>
+        transitionDuration={5000}>
             <motion.img 
             transition={{loop: Infinity}}
             animate={{
@@ -172,13 +175,29 @@ function Landing() {
             <motion.img 
             transition={{loop: Infinity}}
             animate={{
-                rotate: [0, 0, 5,5, 0],
-            }}src={codekaze} className='md:w-50 md:h-50 ' />
+                rotate: [0, 0, 10,10, 0],
+            }}src={appdev} className='md:w-50 md:h-50 ' />
             <motion.img 
             transition={{loop: Infinity}}
             animate={{
-                rotate: [0, 0, 5,5, 0],
-            }}src={codekaze} className='md:w-50 md:h-50 '/>
+                rotate: [0, 0, 7,7, 0],
+            }}src={shuriken} className='md:w-50 md:h-50 '/>
+             <motion.img 
+            transition={{loop: Infinity}}
+            animate={{
+                rotate: [0, 0, 7,7, 0],
+            }}
+            src={codekaze} className='md:w-50 md:h-50 '/>
+            <motion.img 
+            transition={{loop: Infinity}}
+            animate={{
+                rotate: [0, 0, 7,7, 0],
+            }}src={appdev} className='md:w-50 md:h-50 ' />
+            <motion.img 
+            transition={{loop: Infinity}}
+            animate={{
+                rotate: [0, 0, 7,7, 0],
+            }} src={shuriken} className='md:w-50 md:h-50 '/>
        
         </Carousel>
         
