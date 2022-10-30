@@ -1,6 +1,7 @@
 import React from 'react'
 import style from './Footer.module.css'
-import line from './assets/line.svg'
+import { Link } from 'react-router-dom'
+
 function Footer() {
     return (
         
@@ -11,13 +12,13 @@ function Footer() {
             <h2 className="mb-6 text-sm font-bold text-orange-700  dark:text-orange-700">Useful Links</h2>
             <ul className="text-white dark:text-white">
                 <li className="mb-4">
-                    <a href="#" className="">Events</a>
+                    <Link to="/" className="">Events</Link>
                 </li>
                 <li className="mb-4">
-                    <a href="#" className="">Domains</a>
+                    <Link to="/" className="">Domains</Link>
                 </li>
                 <li className="mb-4">
-                    <a href="#" className="">Team</a>
+                    <Link to="/team" className="">Team</Link>
                 </li>
                 
             </ul>
@@ -53,13 +54,13 @@ function Footer() {
             <h2 className="mb-6 text-sm font-bold text-gray-500  dark:text-orange-700">Services</h2>
             <ul className="text-white dark:text-white">
                 <li className="mb-4">
-                    <a href="#" className="">AI/ML</a>
+                    <Link to="/" className="">AI/ML</Link>
                 </li>
                 <li className="mb-4">
-                    <a href="#" className="">App Dev</a>
+                    <Link to="/" className="">App Dev</Link>
                 </li>
                 <li className="mb-4">
-                    <a href="#" className="">Sponsors</a>
+                    <Link to="/" className="">Sponsors</Link>
                 </li>
             </ul>
         </div>

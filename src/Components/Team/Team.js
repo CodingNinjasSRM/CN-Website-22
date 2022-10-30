@@ -9,9 +9,9 @@ import spray from './assets/spray.png'
 function Team() {
 
     return (
-        <>
-        <div className='md:text-8xl text-5xl text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-black text-center font-extrabold md:mb-10 md:pt-20 pt-10 mt-20'>TEAM</div>
-        <div className='text-center mt-20'>
+        <section>
+        <div className='md:text-8xl text-5xl text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-black text-center font-extrabold md:mb-10 md:pt-20 mt-12'>TEAM</div>
+        <div className='p-10 text-center mt-20'>
             <img src={rect} className='mx-auto'/>
             <img src={element} className='mx-auto'/>
         </div>
@@ -42,9 +42,9 @@ function Team() {
       right: 50,
       bottom: 50,
     }}
-    src={spray} className='w-1/6 h-1/'
+    src={spray} className='w-1/6 h-1/6'
   />
-       </>
+       </section>
 
 
     )

@@ -1,0 +1,20 @@
+main {
+    background: url(./assets/colorful-abstract-nebula-space-background.jpg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+    z-index: -3;
+}
+head{
+    background: url(./assets/maxresdefault.jpeg) no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -3;
+}

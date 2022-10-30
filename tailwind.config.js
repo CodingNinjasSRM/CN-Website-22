@@ -25,7 +25,7 @@ module.exports = {
       backdropFilter: ['responsive'], // defaults to ['responsive']
     },
   },
-  plugins: [
+  plugins:[
     require('tailwindcss-filters'),
   ],
 }
