@@ -60,12 +60,15 @@ function Landing() {
 
             {/* About */}
             <div className='bg-zinc-900 bg-opacity-40'>
-                <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:ml-14 ml-5 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 w-[29.8vw]  ${style.aboutheading}`}>ABOUT US</div>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 pb-20'>
-                    <div className='text-white md:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10'>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus. Cras facilisis ullamcorper magna .
-                        Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus. Cras facilisis ullamcorper magna .
-                        Lorem ipsum dolor sit amet.
+                    <div className=''>
+                        <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 w-[29.8vw]  ${style.aboutheading}`}>ABOUT US</div>
+                        <p className='text-white md:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10'>
+
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus. Cras facilisis ullamcorper magna .
+                            Lorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus. Cras facilisis ullamcorper magna .
+                            Lorem ipsum dolor sit amet.
+                        </p>
                     </div>
                     <div className='hidden md:block pl-20 pr-0'>
                         <img src={filler} className="md:w-2/3 ml-10 pb-5" />
@@ -83,7 +86,7 @@ function Landing() {
                     <div data-aos="fade-up">
 
                         <div className='relative'>
-                            <h3 className='text-orange-700 text-4xl font-light text-left ml-11 pt-20 pb-5'>Technical</h3>
+                            <h3 className='text-orange-700 text-4xl font-[400] text-left ml-11 pt-20 pb-5'>Technical</h3>
                             <div className='absolute inset-0 justify-center '>
                                 <img className="md:w-25 pl-5 md:h-25 md:pl-10" src={num1} />
                             </div>
@@ -109,7 +112,7 @@ function Landing() {
                     <div>
 
                         <div className='relative'>
-                            <h3 className='text-orange-700 text-4xl font-light text-left ml-11 pt-20 pb-5'>Corporates</h3>
+                            <h3 className='text-orange-700 text-4xl font-[400] text-left ml-11 pt-20 pb-5'>Corporates</h3>
                             <div className='absolute inset-0 justify-center '>
                                 <img className="md:w-25 pl-5 md:h-25 md:pl-10" src={num2} />
                             </div>
@@ -129,7 +132,7 @@ function Landing() {
                     <div data-aos="fade-up">
 
                         <div className='relative'>
-                            <h3 className='text-orange-700 text-4xl font-light text-left ml-11 pt-20 pb-5'>Creatives</h3>
+                            <h3 className='text-orange-700 text-4xl font-[400] text-left ml-11 pt-20 pb-5'>Creatives</h3>
                             <div className='absolute inset-0 justify-center '>
                                 <img className="md:w-25 pl-5 md:h-25 md:pl-10" src={num3} />
                             </div>
