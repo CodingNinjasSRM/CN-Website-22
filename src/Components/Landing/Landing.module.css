@@ -3,12 +3,13 @@ main {
     background-size: cover;
     height: 100%;
     width: 100%;
-    
+
     top: 0;
     left: 0;
     z-index: -3;
 }
-head{
+
+head {
     background: url(./assets/maxresdefault.jpeg) no-repeat;
     background-size: cover;
     height: 100%;
@@ -17,4 +18,9 @@ head{
     top: 0;
     left: 0;
     z-index: -3;
+}
+
+.aboutheading {
+    background: linear-gradient(92.92deg, #EE4623 26.53%, #0D0D0D 104.11%);
+    background-clip: text;
 }
