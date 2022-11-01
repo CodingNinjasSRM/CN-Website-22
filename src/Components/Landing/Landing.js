@@ -79,7 +79,7 @@ function Landing() {
             {/* Domains */}
             <main className="bg">
                 <div>
-                    <div data-aos="fade-up" className='md:text-7xl text-5xl text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-black md:text-left text-center md:ml-14 ml-5 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 mt-10'>DOMAINS</div>
+                    <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 w-[29.8vw]  ${style.domainsheading}`}>DOMAINS</div>
                 </div>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 mt-20 mb-20'>
                     {/* Technical */}
