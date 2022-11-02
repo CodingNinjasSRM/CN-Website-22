@@ -19,8 +19,6 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from 'react-router-dom'
 
-
-
 function Landing() {
 
     useEffect(() => {
@@ -48,12 +46,12 @@ function Landing() {
     };
 
     return (
-        <>
+        <>  
             <main className="bg">
                 <div className='mt-10 md:pb-10 pb-20'>
                     <div className="mx-auto  left-6 max-w-screen-lg overflow-hidden justify-center container pb-20 ">
-                        <img src={ninja} className="inset-0 object-cover mx-auto mt-8" alt="Ninja" />
-                        <img src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-20 top-20 md:mt-20 md:bottom-2 md:top-22 " alt="Group" />
+                        <img src={ninja} className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0" alt="Ninja" />
+                        <img src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-20 top-20 md:bottom-2 md:top-22 " alt="Group" />
                     </div>
                 </div>
             </main>
@@ -62,7 +60,7 @@ function Landing() {
             <div className='bg-zinc-900 bg-opacity-40'>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 pb-20'>
                     <div className=''>
-                        <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 w-[29.8vw]  ${style.aboutheading}`}>ABOUT US</div>
+                        <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 lg:w-[29.8vw]  ${style.aboutheading}`}>ABOUT US</div>
                         <p className='text-white md:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10'>
 
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus. Cras facilisis ullamcorper magna .
@@ -71,7 +69,7 @@ function Landing() {
                         </p>
                     </div>
                     <div className='hidden md:block pl-20 pr-0'>
-                        <img src={filler} className="md:w-2/3 ml-10 pb-5" />
+                        <img src={filler} className="md:w-2/3 ml-10 pb-5 pt-20" />
                     </div>
                 </div>
             </div>
@@ -79,7 +77,7 @@ function Landing() {
             {/* Domains */}
             <main className="bg">
                 <div>
-                    <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 w-[29.8vw]  ${style.domainsheading}`}>DOMAINS</div>
+                    <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 lg:w-[29.8vw]  ${style.domainsheading}`}>DOMAINS</div>
                 </div>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 mt-20 mb-20'>
                     {/* Technical */}
@@ -187,33 +185,33 @@ function Landing() {
                     animate={{
                         rotate: [0, 0, 5, 5, 0],
                     }}
-                    src={codekaze} className='md:w-50 md:h-50 ' />
+                    src={codekaze} className='md:w-50 md:h-50 w-2/3' />
                 <motion.img
                     transition={{ loop: Infinity }}
                     animate={{
                         rotate: [0, 0, 10, 10, 0],
-                    }} src={appdev} className='md:w-50 md:h-50 ' />
+                    }} src={appdev} className='md:w-50 md:h-50 w-2/3' />
                 <motion.img
                     transition={{ loop: Infinity }}
                     animate={{
                         rotate: [0, 0, 7, 7, 0],
-                    }} src={shuriken} className='md:w-50 md:h-50 ' />
+                    }} src={shuriken} className='md:w-50 md:h-50 w-2/3' />
                 <motion.img
                     transition={{ loop: Infinity }}
                     animate={{
                         rotate: [0, 0, 7, 7, 0],
                     }}
-                    src={codekaze} className='md:w-50 md:h-50 ' />
+                    src={codekaze} className='md:w-50 md:h-50 w-2/3' />
                 <motion.img
                     transition={{ loop: Infinity }}
                     animate={{
                         rotate: [0, 0, 7, 7, 0],
-                    }} src={appdev} className='md:w-50 md:h-50 ' />
+                    }} src={appdev} className='md:w-50 md:h-50 w-2/3' />
                 <motion.img
                     transition={{ loop: Infinity }}
                     animate={{
                         rotate: [0, 0, 7, 7, 0],
-                    }} src={shuriken} className='md:w-50 md:h-50 ' />
+                    }} src={shuriken} className='md:w-50 md:h-50 w-2/3' />
 
             </Carousel>
 

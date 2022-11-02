@@ -1,5 +1,17 @@
-section{
+.creativebg{
     background-image: url(./assets/bg.svg);
     background-repeat: no-repeat;
     background-size: auto;
+}
+
+.creativeheading{
+    background: linear-gradient(270.88deg, #EE4623 34.98%, #000000 110.73%);
+    background-clip: text;
+    letter-spacing: 0.04em;
+}
+
+.domainsheading{
+    background: rgba(64, 64, 64, 0.3);
+    background-clip: text;
+    letter-spacing: 0.04em;
 }

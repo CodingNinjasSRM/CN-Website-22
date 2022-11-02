@@ -34,16 +34,6 @@ function Team() {
             <img src={rectblur2} className='mx-auto'/>
             <img src={rectblur2} className='mx-auto'/>
         </div>
-        <motion.img
-    drag
-    dragConstraints={{
-      top: -50,
-      left: -50,
-      right: 50,
-      bottom: 50,
-    }}
-    src={spray} className='w-1/6 h-1/6'
-  />
        </section>
 
 
