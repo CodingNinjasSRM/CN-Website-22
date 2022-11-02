@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom'
 function Creatives() {
     return (
         <div className={`${style.creativebg}`}>
-        <div className={`md:text-7xl text-5xl text-transparent bg-clip-text font-extrabold md:pt-20 md:mt-12 mt-12 pt-10 ${style.creativeheading}`}>CORPORATE</div>
+        <div className={`md:text-7xl text-5xl text-transparent bg-clip-text font-extrabold md:pt-20 md:mt-12 mt-12 pt-10 ${style.creativeheading}`}>CREATIVES</div>
         <div className={`md:text-9xl  text-6xl text-transparent bg-clip-text font-extrabold md:mb-10 mb-5 pb-2 ${style.domainsheading}`}>DOMAIN</div>
         <div className='md:flex md:pb-10 justify-center'>
             <p className='text-left md:text-xl mx-auto font-light text-white px-16 pt-10 md:px-20 md:pt-10 md:mx-2 md:pb-0 pb-20'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus. Cras facilisis ullamcorper magna.
