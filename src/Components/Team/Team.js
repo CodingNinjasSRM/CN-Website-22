@@ -5,7 +5,7 @@ import element from './assets/Group 57.svg'
 import rectblur from './assets/Rectangle 68.svg'
 import rectblur2 from './assets/Rectangle 73.svg'
 import { motion } from "framer-motion"
-import spray from './assets/spray.png'
+
 function Team() {
 
     return (
