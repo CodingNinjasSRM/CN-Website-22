@@ -9,8 +9,8 @@ import { motion } from "framer-motion"
 function Team() {
 
     return (
-        <section>
-        <div className='md:text-8xl text-5xl text-transparent bg-clip-text bg-gradient-to-r from-orange-700 to-black text-center font-extrabold md:mb-10 md:pt-20 mt-12'>TEAM</div>
+        <div className={`${style.teambg}`}>
+        <div className={`md:text-8xl text-5xl text-transparent bg-clip-text text-center font-extrabold md:mb-10 md:pt-20 mt-12 `}>TEAM</div>
         <div className='p-10 text-center mt-20'>
             <img src={rect} className='mx-auto'/>
             <img src={element} className='mx-auto'/>
@@ -34,7 +34,7 @@ function Team() {
             <img src={rectblur2} className='mx-auto'/>
             <img src={rectblur2} className='mx-auto'/>
         </div>
-       </section>
+       </div>
 
 
     )

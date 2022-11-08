@@ -7,11 +7,11 @@
 .corporateheading{
     background: linear-gradient(270.88deg, #EE4623 34.98%, #000000 110.73%);
     background-clip: text;
-    letter-spacing: 0.04em;
+    font-family: 'Montserrat';
 }
 
 .domainsheading{
     background: rgba(64, 64, 64, 0.3);
     background-clip: text;
-    letter-spacing: 0.04em;
+    font-family: 'Montserrat';
 }
