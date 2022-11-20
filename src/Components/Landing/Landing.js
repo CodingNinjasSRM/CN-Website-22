@@ -97,7 +97,7 @@ function Landing() {
 
                     </div>
                     {/* image */}
-                    <div data-aos="zoom-in" className='hidden md:block xl:ml-20 xl:pl-20 ml-10'>
+                    <div data-aos="zoom-in" className=' xl:ml-20 xl:pl-14 ml-10 pr-10'>
                         <img className="lg:pl-10 pl-0" src={img} />
                     </div>
                 </div>
@@ -118,9 +118,12 @@ function Landing() {
                         <p className='text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementumconsectetur adipiscing elit. Morbi elementum</p>
                         <div className='flex md:pb-20 pb-10'>
                             <div className='flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold'>VIEW DETAILS</div>
-                            <Link to='/technical'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
+                            <Link to='/corporate'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
                         </div>
 
+                    </div>
+                    <div data-aos="zoom-in" className='md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10'>
+                        <img className="lg:pl-10 pl-0" src={img} />
                     </div>
                    
                 </div>
@@ -137,12 +140,12 @@ function Landing() {
                         <p className='text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementumconsectetur adipiscing elit. Morbi elementum</p>
                         <div className='flex pb-20'>
                             <div className='flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold'>VIEW DETAILS</div>
-                            <Link to='/technical'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
+                            <Link to='/creative'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
                         </div>
 
                     </div>
                     {/* image */}
-                    <div data-aos="zoom-in" className='hidden md:block xl:ml-20 xl:pl-14 ml-10 pr-5'>
+                    <div data-aos="zoom-in" className=' xl:ml-20 xl:pl-14 ml-10 pr-10'>
                         <img className="lg:pl-10 pl-0" src={img} />
                     </div>
                 </div>

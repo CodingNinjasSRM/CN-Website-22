@@ -1,7 +1,8 @@
 .creativebg{
     background-image: url(./assets/bg.svg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: 100vw;
+    background-size: cover;
 }
 
 .creativeheading{
