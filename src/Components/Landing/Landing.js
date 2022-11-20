@@ -9,7 +9,9 @@ import arrow from './assets/arrow.svg'
 import num1 from './assets/01.svg'
 import num2 from './assets/02.svg'
 import num3 from './assets/03.svg'
-import img from './assets/Img1.svg'
+import img1 from './assets/Img1.svg'
+import img2 from './assets/Img2.svg'
+import img3 from './assets/Img3.svg'
 import codekaze from './assets/CodeKaze 1.svg'
 import appdev from './assets/intro to appdev 1.svg'
 import shuriken from './assets/shuriken wars 1.svg'
@@ -98,13 +100,13 @@ function Landing() {
                     </div>
                     {/* image */}
                     <div data-aos="zoom-in" className=' xl:ml-20 xl:pl-14 ml-10 pr-10'>
-                        <img className="lg:pl-10 pl-0" src={img} />
+                        <img className="lg:pl-10 pl-0" src={img1} />
                     </div>
                 </div>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 '>
                      {/* image */}
                      <div data-aos="zoom-in" className='hidden md:block ml-0 pr-5'>
-                        <img className="lg:pl-10 pl-0" src={img} />
+                        <img className="lg:pl-10 pl-0" src={img2} />
                     </div>
                     {/* Corporate*/}
                     <div data-aos="fade-up">
@@ -123,7 +125,7 @@ function Landing() {
 
                     </div>
                     <div data-aos="zoom-in" className='md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10'>
-                        <img className="lg:pl-10 pl-0" src={img} />
+                        <img className="lg:pl-10 pl-0" src={img2} />
                     </div>
                    
                 </div>
@@ -146,7 +148,7 @@ function Landing() {
                     </div>
                     {/* image */}
                     <div data-aos="zoom-in" className=' xl:ml-20 xl:pl-14 ml-10 pr-10'>
-                        <img className="lg:pl-10 pl-0" src={img} />
+                        <img className="lg:pl-10 pl-0" src={img3} />
                     </div>
                 </div>
             </main>
