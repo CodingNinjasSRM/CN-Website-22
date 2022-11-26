@@ -9,7 +9,9 @@ import arrow from './assets/arrow.svg'
 import num1 from './assets/01.svg'
 import num2 from './assets/02.svg'
 import num3 from './assets/03.svg'
-import img from './assets/Img1.svg'
+import img1 from './assets/Img1.svg'
+import img2 from './assets/Img2.svg'
+import img3 from './assets/Img3.svg'
 import codekaze from './assets/CodeKaze 1.svg'
 import appdev from './assets/intro to appdev 1.svg'
 import shuriken from './assets/shuriken wars 1.svg'
@@ -97,20 +99,20 @@ function Landing() {
 
                     </div>
                     {/* image */}
-                    <div data-aos="zoom-in" className='hidden md:block xl:ml-20 xl:pl-20 ml-10'>
-                        <img className="lg:pl-10 pl-0" src={img} />
+                    <div data-aos="zoom-in" className=' xl:ml-20 xl:pl-14 ml-10 pr-10'>
+                        <img className="lg:pl-10 pl-0" src={img1} />
                     </div>
                 </div>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 '>
                      {/* image */}
                      <div data-aos="zoom-in" className='hidden md:block ml-0 pr-5'>
-                        <img className="lg:pl-10 pl-0" src={img} />
+                        <img className="lg:pl-10 pl-0" src={img2} />
                     </div>
                     {/* Corporate*/}
                     <div data-aos="fade-up">
 
                         <div className='relative'>
-                            <h3 className='text-[#EE4623] text-4xl font-[400] text-left ml-11 pt-20 pb-5'>Corporate</h3>
+                            <h3 className='text-[#EE4623] text-4xl font-[400] text-left ml-11 pt-20 pb-5'>Non Technical</h3>
                             <div className='absolute inset-0 justify-center '>
                                 <img className="md:w-1/2 pl-5 md:h-25 md:pl-10 w-2/3" src={num2} />
                             </div>
@@ -118,34 +120,16 @@ function Landing() {
                         <p className='text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementumconsectetur adipiscing elit. Morbi elementum</p>
                         <div className='flex md:pb-20 pb-10'>
                             <div className='flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold'>VIEW DETAILS</div>
-                            <Link to='/technical'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
+                            <Link to='/nontechnical'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
                         </div>
 
+                    </div>
+                    <div data-aos="zoom-in" className='md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10'>
+                        <img className="lg:pl-10 pl-0" src={img2} />
                     </div>
                    
                 </div>
-                <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2'>
-                    {/* Creatives */}
-                    <div data-aos="fade-up">
-
-                        <div className='relative'>
-                            <h3 className='text-[#EE4623] text-4xl font-[400] text-left ml-11 pt-20 pb-5'>Creatives</h3>
-                            <div className='absolute inset-0 justify-center '>
-                                <img className="md:w-1/2 pl-5 md:h-25 md:pl-10 w-2/3" src={num3} />
-                            </div>
-                        </div>
-                        <p className='text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementumconsectetur adipiscing elit. Morbi elementum</p>
-                        <div className='flex pb-20'>
-                            <div className='flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold'>VIEW DETAILS</div>
-                            <Link to='/technical'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
-                        </div>
-
-                    </div>
-                    {/* image */}
-                    <div data-aos="zoom-in" className='hidden md:block xl:ml-20 xl:pl-14 ml-10 pr-5'>
-                        <img className="lg:pl-10 pl-0" src={img} />
-                    </div>
-                </div>
+             
             </main>
             
             {/* Events */}
