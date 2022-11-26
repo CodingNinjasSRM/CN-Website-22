@@ -59,7 +59,7 @@ function Landing() {
             </main>
 
             {/* About */}
-            <div className='bg-zinc-900 bg-opacity-40'>
+            <div className='bg-zinc-900 bg-opacity-40' id='about'>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 pb-20'>
                     <div className=''>
                         <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 lg:w-[29.8vw]  ${style.aboutheading}`}>ABOUT US</div>
@@ -133,7 +133,7 @@ function Landing() {
             </main>
             
             {/* Events */}
-            <div>
+            <div id='events'>
                 <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text text-center font-extrabold md:mb-10 mb-5 pb-2 md:pt-20 pt-10 mt-10 ${style.eventheading}`}>EVENTS</div>
             </div>
             <div className='pb-10'>
