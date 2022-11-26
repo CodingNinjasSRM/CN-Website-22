@@ -112,7 +112,7 @@ function Landing() {
                     <div data-aos="fade-up">
 
                         <div className='relative'>
-                            <h3 className='text-[#EE4623] text-4xl font-[400] text-left ml-11 pt-20 pb-5'>Corporate</h3>
+                            <h3 className='text-[#EE4623] text-4xl font-[400] text-left ml-11 pt-20 pb-5'>Non Technical</h3>
                             <div className='absolute inset-0 justify-center '>
                                 <img className="md:w-1/2 pl-5 md:h-25 md:pl-10 w-2/3" src={num2} />
                             </div>
@@ -120,7 +120,7 @@ function Landing() {
                         <p className='text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementumconsectetur adipiscing elit. Morbi elementum</p>
                         <div className='flex md:pb-20 pb-10'>
                             <div className='flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold'>VIEW DETAILS</div>
-                            <Link to='/corporate'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
+                            <Link to='/nontechnical'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
                         </div>
 
                     </div>
@@ -129,28 +129,7 @@ function Landing() {
                     </div>
                    
                 </div>
-                <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2'>
-                    {/* Creatives */}
-                    <div data-aos="fade-up">
-
-                        <div className='relative'>
-                            <h3 className='text-[#EE4623] text-4xl font-[400] text-left ml-11 pt-20 pb-5'>Creatives</h3>
-                            <div className='absolute inset-0 justify-center '>
-                                <img className="md:w-1/2 pl-5 md:h-25 md:pl-10 w-2/3" src={num3} />
-                            </div>
-                        </div>
-                        <p className='text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 '>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementumconsectetur adipiscing elit. Morbi elementum</p>
-                        <div className='flex pb-20'>
-                            <div className='flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold'>VIEW DETAILS</div>
-                            <Link to='/creative'> <img className='flex-intial w-4 h-4 mt-1 ml-5' src={arrow} /></Link>
-                        </div>
-
-                    </div>
-                    {/* image */}
-                    <div data-aos="zoom-in" className=' xl:ml-20 xl:pl-14 ml-10 pr-10'>
-                        <img className="lg:pl-10 pl-0" src={img3} />
-                    </div>
-                </div>
+             
             </main>
             
             {/* Events */}
