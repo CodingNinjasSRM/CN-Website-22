@@ -9,8 +9,8 @@ const Domains = () => {
             <img src={ninja}/>
         </div>
         <div className={`${style.domainBoxes}`}>
-            <motion.div initial={{x:"0"}} whileInView={{ x: "-120%" }} className={`${style.technical}`}>Technical</motion.div>
-            <motion.div initial={{x:"0"}} whileInView={{ x: "120%" }} className={`${style.nonTechnical}`}>Non-Technical</motion.div>
+            <motion.div transition={{ duration: 0.6, ease: "easeOut" }} initial={{x:"0"}} whileInView={{ x: "-120%" }} className={`${style.technical}`}>Technical</motion.div>
+            <motion.div transition={{ duration: 0.6, ease: "easeOut" }} initial={{x:"0"}} whileInView={{ x: "120%" }} className={`${style.nonTechnical}`}>Non-Technical</motion.div>
         </div>
     </div>
   )
