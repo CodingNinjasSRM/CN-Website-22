@@ -8,6 +8,7 @@ import Team from "./Components/Team/Team";
 import Technical from "./Components/Technical/Technical";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
 import Events from './Components/Events/Events';
+import Domains from "./Components/Domains/Domains";
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
         <Route path="nontechnical" element={<Nontechnical/>} />
         <Route path="team" element={<Team />} />
         <Route path="events" element={<Events />} />
+        <Route path="domains" element={<Domains/>} />
       </Routes>
       <Footer />
     </div>
