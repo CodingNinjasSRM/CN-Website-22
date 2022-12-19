@@ -83,34 +83,31 @@ function Landing() {
                 <ambientLight intensity={2} />
                 <e.pointLight theatreKey="pLight" position={[40, 40, 40]} />
                 <Suspense fallback={null}>
-                  <e.group theatreKey="text">
-
+                    {/* <e.group theatreKey="text">
                     <Text position={[0, 4, -10]} fontSize={6}>
                       Coding Ninjas
                       <meshStandardMaterial color="#fff" toneMapped={false} />
                     </Text>
-
                   </e.group>
                   <e.group theatreKey="text2">
                     <Text position={[0, 4, -30]} fontSize={3}>
                       SRM
                       <meshStandardMaterial color="#fff" toneMapped={false} />
                     </Text>
-                  </e.group>
-
-
+                  </e.group> */}
                   <House theatreKey="House" />
-
                 </Suspense>
               </SheetProvider>
             </Canvas> : null
         }</div>
         {/* spinner */}
-            <main className="bg">
+            <main 
+            
+            className="absolute bg">
                 <div className='md:pb-10 pb-20'>
-                    <div className="mx-auto  left-6 max-w-screen-lg overflow-hidden justify-center container pb-20 ">
-                        <img src={ninja} className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0" alt="Ninja" />
-                        {/* <img src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-20 md:bottom-2 md:top-22 " alt="Group" /> */}
+                    <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
+                        <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 4 ,duration:2}} src={ninja} className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0" alt="Ninja" />
+                        {/* <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 5 ,duration:2}} src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 " alt="Group" /> */}
                     </div>
                 </div>
             </main>
