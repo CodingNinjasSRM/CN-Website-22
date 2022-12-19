@@ -106,7 +106,7 @@ function Landing() {
             className="absolute bg">
                 <div className='md:pb-10 pb-20'>
                     <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
-                        <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 5 ,duration:2}} src={ninja} className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0" alt="Ninja" />
+                        <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 4 ,duration:2}} src={ninja} className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0" alt="Ninja" />
                         {/* <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 5 ,duration:2}} src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 " alt="Group" /> */}
                     </div>
                 </div>
