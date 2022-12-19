@@ -9,21 +9,22 @@ import Technical from "./Components/Technical/Technical";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
 import Events from './Components/Events/Events';
 import Domains from "./Components/Domains/Domains";
-import { motion,AnimatePresence } from 'framer-motion'
+import { motion} from 'framer-motion'
 
-function App({ isVisible }) {
+function App() {
+  
   return (
     <div className="App">
      <motion.div 
-        initial={{ opacity: 1 }}
-        whileInView={{ opacity: 0 }}
+        initial={{ opacity: 0 }} whileInView={{opacity:1}}
+        transition={{ delay: 8 }}
         > 
         <Navbar/>
      </motion.div>
         
      <motion.div 
-        initial={{ opacity: 1 }}
-        whileInView={{ opacity: 0 }}
+        initial={{ opacity: 0 }} whileInView={{opacity:1}}
+        transition={{ delay: 8 }}
         > 
         <Chatbot/>
      </motion.div>
