@@ -9,11 +9,24 @@ import Technical from "./Components/Technical/Technical";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
 import Events from './Components/Events/Events';
 import Domains from "./Components/Domains/Domains";
-function App() {
+import { motion,AnimatePresence } from 'framer-motion'
+
+function App({ isVisible }) {
   return (
     <div className="App">
-      <Navbar />
-      <Chatbot />
+     <motion.div 
+        initial={{ opacity: 1 }}
+        whileInView={{ opacity: 0 }}
+        > 
+        <Navbar/>
+     </motion.div>
+        
+     <motion.div 
+        initial={{ opacity: 1 }}
+        whileInView={{ opacity: 0 }}
+        > 
+        <Chatbot/>
+     </motion.div>
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="technical" element={<Technical />} />
