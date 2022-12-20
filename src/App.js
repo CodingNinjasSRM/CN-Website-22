@@ -7,7 +7,8 @@ import Navbar from "./Components/Navbar/Navbar";
 import Team from "./Components/Team/Team";
 import Technical from "./Components/Technical/Technical";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
-import Events from './Components/Events/Events';
+import Events from "./Components/Events/Events";
+
 function App() {
   return (
     <div className="App">
@@ -16,7 +17,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="technical" element={<Technical />} />
-        <Route path="nontechnical" element={<Nontechnical/>} />
+        <Route path="nontechnical" element={<Nontechnical />} />
         <Route path="team" element={<Team />} />
         <Route path="events" element={<Events />} />
       </Routes>
