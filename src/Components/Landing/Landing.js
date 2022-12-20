@@ -2,6 +2,8 @@ import React, { useEffect } from 'react'
 import Aos from 'aos'
 import "aos/dist/aos.css";
 import style from './Landing.module.css'
+import rect from './assets/Rectangle 126.svg'
+import rect2 from './assets/Rectangle 127.svg'
 import ninja from './assets/ninja.svg'
 import group from './assets/Group.svg'
 import filler from './assets/filler.svg'
@@ -20,7 +22,6 @@ import { motion } from 'framer-motion'
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from 'react-router-dom'
-
 import { Suspense, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import ClipLoader from "react-spinners/ClipLoader";
@@ -39,7 +40,13 @@ import { LoopPingPong } from 'three';
 const demoSheet = getProject('Demo Project', { state: state }).sheet('Demo Sheet')
 
 function Landing() {
-
+    const goToTop = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+        });
+    };
+    
     useEffect(() => {
         Aos.init({ duration: 1500 });
     }, []);
@@ -70,7 +77,6 @@ function Landing() {
     demoSheet.project.ready.then(() => { demoSheet.sequence.play({ iterationCount: 1, range: [0, 10] }) })
 
     }, [])
-
     return (
         <>  
         {/* house3d */}
@@ -116,7 +122,7 @@ function Landing() {
             <div className='bg-zinc-900 bg-opacity-40' id='about'>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 pb-20'>
                     <div className=''>
-                        <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 lg:w-[29.8vw]  ${style.aboutheading}`}>ABOUT US</div>
+                        <div data-aos="fade" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 lg:w-[29.8vw] ${style.aboutheading}`}>ABOUT CN</div>
                         <p className='text-white md:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10'>
 
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla. Pellentesque et felis metus. Cras facilisis ullamcorper magna .
@@ -133,7 +139,7 @@ function Landing() {
             {/* Domains */}
             <main className="bg">
                 <div>
-                    <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-5 md:pt-20 pt-10 lg:w-[29.8vw]  ${style.domainsheading}`}>DOMAINS</div>
+                    <div data-aos="fade" className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-5 md:pt-20 pt-10 lg:w-[29.8vw]  ${style.domainsheading}`}>DOMAINS</div>
                 </div>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 mt-10'>
                     {/* Technical */}
@@ -153,13 +159,13 @@ function Landing() {
 
                     </div>
                     {/* image */}
-                    <div data-aos="zoom-in" className=' xl:ml-20 xl:pl-14 ml-10 pr-10'>
+                    <div data-aos="fade" className=' xl:ml-20 xl:pl-14 ml-10 pr-10'>
                         <img className="lg:pl-10 pl-0" src={img1} />
                     </div>
                 </div>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 '>
                      {/* image */}
-                     <div data-aos="zoom-in" className='hidden md:block ml-0 pr-5'>
+                     <div data-aos="fade" className='hidden md:block ml-0 pr-5'>
                         <img className="lg:pl-10 pl-0" src={img2} />
                     </div>
                     {/* Corporate*/}
@@ -178,7 +184,7 @@ function Landing() {
                         </div>
 
                     </div>
-                    <div data-aos="zoom-in" className='md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10'>
+                    <div data-aos="fade" className='md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10'>
                         <img className="lg:pl-10 pl-0" src={img2} />
                     </div>
                    
@@ -188,14 +194,17 @@ function Landing() {
             
             {/* Events */}
             <div id='events'>
-                <div data-aos="fade-up" className={`md:text-7xl text-5xl text-transparent bg-clip-text text-center font-extrabold md:mb-10 mb-5 pb-2 md:pt-20 pt-10 mt-10 ${style.eventheading}`}>EVENTS</div>
+                <div data-aos="fade" className={`md:text-7xl text-5xl text-transparent bg-clip-text text-center font-extrabold md:mb-10 mb-5 pb-2 md:pt-20 pt-10 mt-10 ${style.eventheading}`}>EVENTS</div>
             </div>
-            <div className='pb-10'>
-                <div className='text-white text-center md:text-xl'>Know more about the upcoming <Link to='/'><span className='text-orange-700'>Events</span></Link></div>
+            <div className='pb-5'>
+                <div className='text-white text-center md:text-xl pb-10'>Know more about the upcoming <Link to='/events' onClick={goToTop}><span className='text-orange-700'>Events</span></Link></div>
+                <div className='absolute right-0 bg-black'>
+                        <img src={rect}/>
+                </div>
             </div>
-
-            <Carousel responsive={responsive}
-                className='md:flex bg-zinc-900  bg-opacity-40 pt-20 justify-center pb-20'
+            
+            <Carousel responsive={responsive} 
+                className={`md:flex bg-zinc-900  bg-opacity-40 pt-20 justify-center pb-20`}
                 additionalTransfrom={0}
                 arrows={false}
                 autoPlay
@@ -251,7 +260,9 @@ function Landing() {
                     }} src={shuriken} className='md:w-50 md:h-50 w-2/3' />
 
             </Carousel>
-
+            <div className='absolute left-0 bg-black'>
+                <img src={rect2}/>
+            </div>
 
             <div className='justify-center md:mt-10 pt-20 pb-20 md:mb-10 px-20 '>
                 <img src={ninja2} className="mx-auto" />
