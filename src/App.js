@@ -31,7 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="technical" element={<Technical />} />
-        <Route path="nontechnical" element={<Nontechnical/>} />
+        <Route path="nontechnical" element={<Nontechnical />} />
         <Route path="team" element={<Team />} />
         <Route path="events" element={<Events />} />
         <Route path="domains" element={<Domains/>} />
