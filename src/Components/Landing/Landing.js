@@ -35,7 +35,7 @@ import { editable as e, SheetProvider } from '@theatre/r3f'
 import state from './House/ninjahouse.json'
 import { animate, useAnimation } from "framer-motion"
 import { LoopPingPong } from 'three';
-import Cloud from '../Smoke/Smoke'
+import { Cloud1 } from '../Smoke/Smoke'
 import Navbar from '../Navbar/Navbar';
 import Tiles from '../Tiles/Tiles';
 // studio.initialize()
@@ -49,7 +49,7 @@ function Landing() {
             behavior: "smooth",
         });
     };
-    
+
     useEffect(() => {
         Aos.init({ duration: 1500 });
     }, []);
@@ -75,33 +75,33 @@ function Landing() {
     };
     const [Loading, setLoading] = useState(false)
     useEffect(() => {
-    setLoading(true)
-    setTimeout(() => { { setLoading(false) } }, 5000)
-    demoSheet.project.ready.then(() => { demoSheet.sequence.play({ iterationCount: 1, range: [0, 10] }) })
+        setLoading(true)
+        setTimeout(() => { { setLoading(false) } }, 5000)
+        demoSheet.project.ready.then(() => { demoSheet.sequence.play({ iterationCount: 1, range: [0, 10] }) })
 
     }, [])
     return (
-        <> 
-        <Navbar/>
-         <div className='h-screen w-full'>{
-          House ?
-            <Canvas > 
-                <Cloud />
-              <SheetProvider sheet={demoSheet}>
-                <ambientLight intensity={2} />
-                <e.pointLight theatreKey="pLight" position={[40, 40, 40]} />
-                <Suspense fallback={null}>
-                  <House theatreKey="House" />
-                </Suspense>
-              </SheetProvider>
-            </Canvas> : null
-        }</div>
-            <main 
-            
-            className="absolute bg">
+        <>
+            <Navbar />
+            <div className='h-screen w-full'>{
+                House ?
+                    <Canvas >
+                        <Cloud1 />
+                        <SheetProvider sheet={demoSheet}>
+                            <ambientLight intensity={2} />
+                            <e.pointLight theatreKey="pLight" position={[40, 40, 40]} />
+                            <Suspense fallback={null}>
+                                <House theatreKey="House" />
+                            </Suspense>
+                        </SheetProvider>
+                    </Canvas> : null
+            }</div>
+            <main
+
+                className="absolute bg">
                 <div className='md:pb-10 pb-20'>
                     <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
-                        <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 4 ,duration:2}} src={ninja} className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0" alt="Ninja" />
+                        <motion.img initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} transition={{ delay: 4, duration: 2 }} src={ninja} className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0" alt="Ninja" />
                         {/* <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 5 ,duration:2}} src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 " alt="Group" /> */}
                     </div>
                 </div>
@@ -153,8 +153,8 @@ function Landing() {
                     </div>
                 </div>
                 <div className='grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 '>
-                     {/* image */}
-                     <div data-aos="fade" className='hidden md:block ml-0 pr-5'>
+                    {/* image */}
+                    <div data-aos="fade" className='hidden md:block ml-0 pr-5'>
                         <img className="lg:pl-10 pl-0" src={img2} />
                     </div>
                     {/* Corporate*/}
@@ -176,11 +176,11 @@ function Landing() {
                     <div data-aos="fade" className='md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10'>
                         <img className="lg:pl-10 pl-0" src={img2} />
                     </div>
-                   
+
                 </div>
-             
+
             </main>
-            
+
             {/* Events */}
             <div id='events'>
                 <div data-aos="fade" className={`md:text-7xl text-5xl text-transparent bg-clip-text text-center font-extrabold md:mb-10 mb-5 pb-2 md:pt-20 pt-10 mt-10 ${style.eventheading}`}>EVENTS</div>
@@ -188,10 +188,10 @@ function Landing() {
             <div className='pb-5'>
                 <div className='text-white text-center md:text-xl pb-10'>Know more about the upcoming <Link to='/events' onClick={goToTop}><span className='text-orange-700'>Events</span></Link></div>
                 <div className='absolute right-0 bg-black'>
-                        <img src={rect}/>
+                    <img src={rect} />
                 </div>
             </div>
-            <Tiles/>
+            <Tiles />
             {/* <Carousel responsive={responsive} 
                 className={`md:flex bg-zinc-900  bg-opacity-40 pt-20 justify-center pb-20`}
                 additionalTransfrom={0}
@@ -250,7 +250,7 @@ function Landing() {
 
             </Carousel> */}
             <div className='absolute left-0 bg-black'>
-                <img src={rect2}/>
+                <img src={rect2} />
             </div>
 
             <div className='justify-center md:mt-10 pt-20 pb-20 md:mb-10 px-20 '>

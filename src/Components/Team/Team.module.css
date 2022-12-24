@@ -1,5 +1,9 @@
-.teamheading{
+.teamheading {
     background: linear-gradient(270.88deg, #EE4623 34.98%, #000000 110.73%);
     background-clip: text;
     font-family: 'Montserrat';
+}
+
+canvas {
+    height: 100vh;
 }
