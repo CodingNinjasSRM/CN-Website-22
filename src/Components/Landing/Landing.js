@@ -83,7 +83,7 @@ function Landing() {
     return (
         <> 
         <Navbar/>
-         {/* <div className='h-screen w-full'>{
+         <div className='h-screen w-full'>{
           House ?
             <Canvas > 
                 <Cloud />
@@ -95,7 +95,7 @@ function Landing() {
                 </Suspense>
               </SheetProvider>
             </Canvas> : null
-        }</div> */}
+        }</div>
             <main 
             
             className="absolute bg">
