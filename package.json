@@ -55,6 +55,12 @@
       "last 1 safari version"
     ]
   },
+  "keywords": [
+    "expand",
+    "scrollcontrols",
+    "tiles",
+    "horizontal"
+  ],
   "devDependencies": {
     "@types/three": "^0.146.0",
     "autoprefixer": "^10.4.12",

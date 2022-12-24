@@ -32,7 +32,7 @@ function Items({ w = 0.7, gap = 0.15 }) {
   const { width } = useThree((state) => state.viewport)
   const xW = w + gap
   return (
-    <ScrollControls horizontal damping={10} pages={(width - xW + urls.length * xW) / width}>
+    <ScrollControls horizontal infinite damping={10} pages={(width - xW + urls.length * xW) / width}>
       <Minimap />
       <Scroll>
         {urls.map((url, i) => <Item key={i} index={i} position={[i * xW, 0, 0]} scale={[w, 4, 1]} url={url} />) /* prettier-ignore */}
@@ -41,8 +41,11 @@ function Items({ w = 0.7, gap = 0.15 }) {
   )
 }
 
-export const Tiles = () => (
+export default function Tiles(){
+return (
+  <div className='h-screen w-full'>
   <Canvas gl={{ antialias: false }} dpr={[1, 1.5]} onPointerMissed={() => (state.clicked = null)}>
     <Items />
-  </Canvas>
+  </Canvas></div>
 )
+}

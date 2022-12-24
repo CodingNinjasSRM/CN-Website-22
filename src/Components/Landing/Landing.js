@@ -37,7 +37,7 @@ import { animate, useAnimation } from "framer-motion"
 import { LoopPingPong } from 'three';
 import Cloud from '../Smoke/Smoke'
 import Navbar from '../Navbar/Navbar';
-
+import Tiles from '../Tiles/Tiles';
 // studio.initialize()
 // studio.extend(extension)
 const demoSheet = getProject('Demo Project', { state: state }).sheet('Demo Sheet')
@@ -81,10 +81,9 @@ function Landing() {
 
     }, [])
     return (
-        <>  
-        {/* house3d */}
+        <> 
         <Navbar/>
-         <div className='h-screen w-full'>{
+         {/* <div className='h-screen w-full'>{
           House ?
             <Canvas > 
                 <Cloud />
@@ -96,8 +95,7 @@ function Landing() {
                 </Suspense>
               </SheetProvider>
             </Canvas> : null
-        }</div>
-        {/* spinner */}
+        }</div> */}
             <main 
             
             className="absolute bg">
@@ -193,8 +191,8 @@ function Landing() {
                         <img src={rect}/>
                 </div>
             </div>
-            
-            <Carousel responsive={responsive} 
+            <Tiles/>
+            {/* <Carousel responsive={responsive} 
                 className={`md:flex bg-zinc-900  bg-opacity-40 pt-20 justify-center pb-20`}
                 additionalTransfrom={0}
                 arrows={false}
@@ -250,7 +248,7 @@ function Landing() {
                         rotate: [0, 0, 7, 7, 0],
                     }} src={shuriken} className='md:w-50 md:h-50 w-2/3' />
 
-            </Carousel>
+            </Carousel> */}
             <div className='absolute left-0 bg-black'>
                 <img src={rect2}/>
             </div>

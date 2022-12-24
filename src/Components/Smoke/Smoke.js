@@ -43,7 +43,7 @@ function Cloud() {
       <planeBufferGeometry attach="geometry" args={[500, 500]} />
       <meshLambertMaterial
         attach="material"
-        color="#E33B22"
+        color="#E65C00"
         position={[0,0,-10]} 
         map={texture}
         depthWrite={false}
