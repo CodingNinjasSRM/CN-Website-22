@@ -35,6 +35,9 @@ import { editable as e, SheetProvider } from '@theatre/r3f'
 import state from './House/ninjahouse.json'
 import { animate, useAnimation } from "framer-motion"
 import { LoopPingPong } from 'three';
+import Cloud from '../Smoke/Smoke'
+import Navbar from '../Navbar/Navbar';
+import Tiles from '../Tiles/Tiles';
 // studio.initialize()
 // studio.extend(extension)
 const demoSheet = getProject('Demo Project', { state: state }).sheet('Demo Sheet')
@@ -78,35 +81,21 @@ function Landing() {
 
     }, [])
     return (
-        <>  
-        {/* house3d */}
-        <div className='h-screen w-full'>{
+        <> 
+        <Navbar/>
+         {/* <div className='h-screen w-full'>{
           House ?
-            <Canvas >
+            <Canvas > 
+                <Cloud />
               <SheetProvider sheet={demoSheet}>
-                {/* <e.fog theatreKey='fog' attach="fog" color="hotpink" near={1} far={10} /> */}
-                {/* <e.PerspectiveCamera theatreKey="Camera" makeDefault position={[5, 5, -5]} fov={75} /> */}
                 <ambientLight intensity={2} />
                 <e.pointLight theatreKey="pLight" position={[40, 40, 40]} />
                 <Suspense fallback={null}>
-                    {/* <e.group theatreKey="text">
-                    <Text position={[0, 4, -10]} fontSize={6}>
-                      Coding Ninjas
-                      <meshStandardMaterial color="#fff" toneMapped={false} />
-                    </Text>
-                  </e.group>
-                  <e.group theatreKey="text2">
-                    <Text position={[0, 4, -30]} fontSize={3}>
-                      SRM
-                      <meshStandardMaterial color="#fff" toneMapped={false} />
-                    </Text>
-                  </e.group> */}
                   <House theatreKey="House" />
                 </Suspense>
               </SheetProvider>
             </Canvas> : null
-        }</div>
-        {/* spinner */}
+        }</div> */}
             <main 
             
             className="absolute bg">
@@ -202,8 +191,8 @@ function Landing() {
                         <img src={rect}/>
                 </div>
             </div>
-            
-            <Carousel responsive={responsive} 
+            <Tiles/>
+            {/* <Carousel responsive={responsive} 
                 className={`md:flex bg-zinc-900  bg-opacity-40 pt-20 justify-center pb-20`}
                 additionalTransfrom={0}
                 arrows={false}
@@ -259,7 +248,7 @@ function Landing() {
                         rotate: [0, 0, 7, 7, 0],
                     }} src={shuriken} className='md:w-50 md:h-50 w-2/3' />
 
-            </Carousel>
+            </Carousel> */}
             <div className='absolute left-0 bg-black'>
                 <img src={rect2}/>
             </div>
