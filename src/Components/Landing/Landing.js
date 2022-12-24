@@ -35,6 +35,9 @@ import { editable as e, SheetProvider } from '@theatre/r3f'
 import state from './House/ninjahouse.json'
 import { animate, useAnimation } from "framer-motion"
 import { LoopPingPong } from 'three';
+import Cloud from '../Smoke/Smoke'
+import Navbar from '../Navbar/Navbar';
+
 // studio.initialize()
 // studio.extend(extension)
 const demoSheet = getProject('Demo Project', { state: state }).sheet('Demo Sheet')
@@ -80,27 +83,15 @@ function Landing() {
     return (
         <>  
         {/* house3d */}
-        <div className='h-screen w-full'>{
+        <Navbar/>
+         <div className='h-screen w-full'>{
           House ?
-            <Canvas >
+            <Canvas > 
+                <Cloud />
               <SheetProvider sheet={demoSheet}>
-                {/* <e.fog theatreKey='fog' attach="fog" color="hotpink" near={1} far={10} /> */}
-                {/* <e.PerspectiveCamera theatreKey="Camera" makeDefault position={[5, 5, -5]} fov={75} /> */}
                 <ambientLight intensity={2} />
                 <e.pointLight theatreKey="pLight" position={[40, 40, 40]} />
                 <Suspense fallback={null}>
-                    {/* <e.group theatreKey="text">
-                    <Text position={[0, 4, -10]} fontSize={6}>
-                      Coding Ninjas
-                      <meshStandardMaterial color="#fff" toneMapped={false} />
-                    </Text>
-                  </e.group>
-                  <e.group theatreKey="text2">
-                    <Text position={[0, 4, -30]} fontSize={3}>
-                      SRM
-                      <meshStandardMaterial color="#fff" toneMapped={false} />
-                    </Text>
-                  </e.group> */}
                   <House theatreKey="House" />
                 </Suspense>
               </SheetProvider>

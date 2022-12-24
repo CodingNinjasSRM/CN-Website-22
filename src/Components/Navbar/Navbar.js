@@ -23,16 +23,16 @@ function Navbar() {
   <div className="hidden justify-between items-center w-full md:flex ml-10 md:w-auto md:order-1" id="navbar-sticky">
     <ul className="flex flex-col p-4 mt-4 border  md:flex-row md:space-x-12 md:mt-0 md:text-sm md:font-medium md:border-0">
       <li>
-        <a href="/#about" onClick={goToTop} className="block py-2 pr-4 pl-3 md:dark:text-[#343333] focus:text-white rounded md:bg-transparent md:text-white-700 md:p-0 " aria-current="page">About</a>
+        <a href="/#about" onClick={goToTop} className="block py-2 pr-4 pl-3 md:dark:text-[#343333] focus:text-white dark:hover:text-white md:text-white-700 md:p-0 " aria-current="page">About</a>
       </li>
       <li>
         <Link to="/domains" onClick={goToTop} className="block py-2 pr-4 pl-3  md:dark:text-[#343333] focus:text-white md:p-0 dark:hover:text-white ">Domains</Link>
       </li>
       <li>
-        <Link to="/team" onClick={goToTop} className="block py-2 pr-4 pl-3  md:dark:text-[#343333] focus:text-white rounded md:p-0 dark:hover:text-white">Team</Link>
+        <Link to="/team" onClick={goToTop} className="block py-2 pr-4 pl-3  md:dark:text-[#343333] focus:text-white  md:p-0 dark:hover:text-white">Team</Link>
       </li>
       <li>
-        <Link to="/events" onClick={goToTop} className="block py-2 pr-4 pl-3  md:dark:text-[#343333] focus:text-white rounded  md:p-0   dark:hover:text-white ">Events</Link>
+        <Link to="/events" onClick={goToTop} className="block py-2 pr-4 pl-3  md:dark:text-[#343333] focus:text-white  md:p-0   dark:hover:text-white ">Events</Link>
       </li>
     </ul>
   </div>

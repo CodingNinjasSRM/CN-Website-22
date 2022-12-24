@@ -15,12 +15,12 @@ function App() {
   
   return (
     <div className="App">
-     <motion.div 
+     {/* <motion.div 
         initial={{ opacity: 0 }} whileInView={{opacity:1}}
         transition={{ delay: 8 }}
         > 
         <Navbar/>
-     </motion.div>
+     </motion.div> */}
         
      <motion.div 
         initial={{ opacity: 0 }} whileInView={{opacity:1}}
