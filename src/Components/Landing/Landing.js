@@ -139,12 +139,11 @@ function Landing() {
               <DecoderText text="ABOUT CN" start={inView} delay={500} />
             </div>
             <p className="text-white md:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              elementum et ante ac fringilla. Pellentesque et felis metus. Cras
-              facilisis ullamcorper magna . Lorem ipsum dolor sit amet.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum
-              et ante ac fringilla. Pellentesque et felis metus. Cras facilisis
-              ullamcorper magna . Lorem ipsum dolor sit amet.
+            CODING NINJAS CLUB SRM, our syndicate,is one of the institute’s fastest-growing and one of the most popular clubs.
+            Coding Ninjas does a great job of weaving the notion of “simplicity and creativity ” throughout its events and work. We work in collaboration with CODING NINJAS company.
+            We team up with bright minds to create exciting and meaningful experiences. Along the way , We have a footfall of over 50,000 young and creative minds from various concerts around the World. We are a diverse team of budding intellectuals, who are keen and highly driven to create. 
+            We want to be the best in our domain.
+
             </p>
           </div>
           <div className="hidden md:block pl-20 pr-0">
@@ -178,10 +177,7 @@ function Landing() {
               </div>
             </div>
             <p className="text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              elementum et ante ac fringilla. Pellentesque et felis metus.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              elementumconsectetur adipiscing elit. Morbi elementum
+            This domain is the backbone of the club that needs certain ideation, technical skills and innovation. Members of this domain are the pillars of the team who work tirelessly to make it what it is today! Starting from the journey of  'HELLO WORLD' to creating a full website, this domain completes it all. So, fasten your seat belts for the technical fight.
             </p>
             <div className="flex md:pb-20 pb-10">
               <div className="flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold">
@@ -217,10 +213,7 @@ function Landing() {
               </div>
             </div>
             <p className="text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              elementum et ante ac fringilla. Pellentesque et felis metus.Lorem
-              ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-              elementumconsectetur adipiscing elit. Morbi elementum
+            In CN, we not only work in technical fields, but also in non tech fields. In this domain, we work with creative minds to produce good content for stories and posts, we work with the strategic minds to get sponsorships and we have smart and active people working with the corporate team. A good outcome requires a lot of work at the backend which is done through these domains. We focus on overall involvement. We learn,work and inspire everyone to reach excellence.
             </p>
             <div className="flex md:pb-20 pb-10">
               <div className="flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold">
