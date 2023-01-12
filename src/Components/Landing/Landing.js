@@ -43,6 +43,7 @@ import shuriken from "./assets/shuriken wars 1.svg";
 import House from "./House/house";
 import state from "./House/ninjahouse.json";
 import style from "./Landing.module.css";
+import Footer from '../Footer/Footer'
 // studio.initialize()
 // studio.extend(extension)
 const demoSheet = getProject("Demo Project", { state: state }).sheet(
@@ -319,6 +320,7 @@ function Landing() {
       <div className="justify-center md:mt-10 pt-20 pb-20 md:mb-10 px-20 ">
         <img src={ninja2} className="mx-auto" />
       </div>
+      <Footer/>
     </>
   );
 }
