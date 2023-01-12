@@ -4,6 +4,7 @@ import { Suspense, useRef, useState } from 'react'
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Preload, ScrollControls, Scroll, useScroll, Image as ImageImpl, Text3D, Html, Center } from '@react-three/drei'
 import { Cloud1, Cloud2 } from '../Smoke/Smoke'
+import Navbar from "../Navbar/Navbar";
 import Footer from '../Footer/Footer'
 
 
@@ -39,7 +40,7 @@ function Texts() {
           font="Inter_bold.json"
           height={0.05}
           position={[-width * 0.055, -6.3, 0]}>
-          Precident
+          President
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
         </Text3D>
         <Text3D
@@ -51,7 +52,7 @@ function Texts() {
           size={width * 0.009}
           font="Inter_bold.json"
           position={[-width * 0.25, -11, 2]}>
-          Vice Precident
+          Vice President
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
         </Text3D>
         <Text3D
