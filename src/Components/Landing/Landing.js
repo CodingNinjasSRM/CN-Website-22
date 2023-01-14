@@ -20,6 +20,7 @@ import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
 import { LoopPingPong } from "three";
+import { ref } from "valtio";
 import { DecoderText } from "../DecoderText";
 import { Cloud1 } from "../Smoke/Smoke";
 import Tiles from "../Tiles/Tiles";
@@ -92,7 +93,11 @@ function Landing() {
     });
   }, []);
   const aboutRef = useRef(null);
-  const inView = useInView(aboutRef);
+  const aboutInView = useInView(aboutRef);
+  const domainsRef = useRef(null);
+  const domainsInView = useInView(domainsRef);
+  const eventsRef = useRef(null);
+  const eventsInView = useInView(eventsRef);
 
   return (
     <>
@@ -134,7 +139,7 @@ function Landing() {
               className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 lg:w-[29.8vw] ${style.aboutheading}`}
               ref={aboutRef}
             >
-              <DecoderText text="ABOUT CN" start={inView} delay={500} />
+              <DecoderText text="ABOUT CN" start={aboutInView} delay={500} />
             </div>
             <p className="text-white md:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10">
               CODING NINJAS CLUB SRM, our syndicate,is one of the institute’s
@@ -161,8 +166,9 @@ function Landing() {
           <div
             data-aos="fade"
             className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-5 md:pt-20 pt-10 lg:w-[29.8vw]  ${style.domainsheading}`}
+            ref={domainsRef}
           >
-            DOMAINS
+            <DecoderText text="DOMAINS" start={domainsInView} delay={500} />
           </div>
         </div>
         <div className="grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 mt-10">
@@ -254,8 +260,9 @@ function Landing() {
         <div
           data-aos="fade"
           className={`md:text-7xl text-5xl text-transparent bg-clip-text text-center font-extrabold md:mb-10 mb-5 pb-2 md:pt-20 pt-10 mt-10 ${style.eventheading}`}
+          ref={eventsRef}
         >
-          EVENTS
+          <DecoderText text="EVENTS" start={eventsInView} delay={500} />
         </div>
       </div>
       <div className="pb-5">
