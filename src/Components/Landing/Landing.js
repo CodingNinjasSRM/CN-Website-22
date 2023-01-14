@@ -21,8 +21,6 @@ import { Link } from "react-router-dom";
 import ClipLoader from "react-spinners/ClipLoader";
 import { LoopPingPong } from "three";
 import { DecoderText } from "../DecoderText";
-import Footer from "../Footer/Footer";
-import Navbar from "../Navbar/Navbar";
 import { Cloud1 } from "../Smoke/Smoke";
 import Tiles from "../Tiles/Tiles";
 import num1 from "./assets/01.svg";
@@ -98,7 +96,6 @@ function Landing() {
 
   return (
     <>
-      <Navbar />
       <div className="h-screen w-full">
         {House ? (
           <Canvas>

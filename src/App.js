@@ -28,6 +28,7 @@ function App() {
       >
         <Chatbot />
       </motion.div>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="technical" element={<Technical />} />
