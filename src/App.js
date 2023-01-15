@@ -1,6 +1,6 @@
 import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Chatbot from "./Components/Chatbot/Chatbot";
 import Domains from "./Components/Domains/Domains";
@@ -20,7 +20,6 @@ function App() {
         >
         <Navbar/>
      </motion.div> */}
-
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -28,16 +27,67 @@ function App() {
       >
         <Chatbot />
       </motion.div>
-      <Navbar />
       <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="technical" element={<Technical />} />
-        <Route path="nontechnical" element={<Nontechnical />} />
-        <Route path="team" element={<Team />} />
-        <Route path="events" element={<Events />} />
-        <Route path="domains" element={<Domains />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Navbar />
+              <Landing />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="technical"
+          element={
+            <>
+              <Navbar />
+              <Technical />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="nontechnical"
+          element={
+            <>
+              <Navbar />
+              <Nontechnical />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="team"
+          element={
+            <>
+              <Navbar />
+              <Team />
+            </>
+          }
+        />
+        <Route
+          path="events"
+          element={
+            <>
+              <Navbar />
+              <Events />
+              <Footer />
+            </>
+          }
+        />
+        <Route
+          path="domains"
+          element={
+            <>
+              <Navbar />
+              <Domains />
+              <Footer />
+            </>
+          }
+        />
       </Routes>
-      <Footer />
     </div>
   );
 }
