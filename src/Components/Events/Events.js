@@ -1,10 +1,10 @@
-import React from "react";
-import style from "./Events.module.css";
-import Carousel from "react-multi-carousel";
-import codekaze from "../Landing/assets/CodeKaze 1.svg";
-import appdev from "../Landing/assets/intro to appdev 1.svg";
-import shuriken from "../Landing/assets/shuriken wars 1.svg";
-import { motion } from "framer-motion";
+import React from 'react';
+import style from './Events.module.css';
+import Carousel from 'react-multi-carousel';
+import codekaze from '../Landing/assets/CodeKaze 1.svg';
+import appdev from '../Landing/assets/intro to appdev 1.svg';
+import shuriken from '../Landing/assets/shuriken wars 1.svg';
+import { motion } from 'framer-motion';
 
 export const Events = () => {
   const responsive = {
@@ -60,8 +60,7 @@ export const Events = () => {
           sliderClass=""
           slidesToSlide={2}
           swipeable
-          transitionDuration={5000}
-        >
+          transitionDuration={5000}>
           <motion.img
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.8 }}
