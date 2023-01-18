@@ -102,7 +102,7 @@ function Landing() {
   return (
     <>
       <div className="h-screen w-full">
-        {House ? (
+        {/* {House ? (
           <Canvas>
             <Cloud1 />
             <SheetProvider sheet={demoSheet}>
@@ -113,7 +113,7 @@ function Landing() {
               </Suspense>
             </SheetProvider>
           </Canvas>
-        ) : null}
+        ) : null} */}
       </div>
       <main className="absolute bg">
         <div className="md:pb-10 pb-20">
@@ -126,7 +126,7 @@ function Landing() {
               className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0"
               alt="Ninja"
             />
-            {/* <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 5 ,duration:2}} src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 " alt="Group" /> */}
+            <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 5 ,duration:2}} src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 " alt="Group" />
           </div>
         </div>
       </main>

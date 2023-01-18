@@ -12,7 +12,7 @@ function Footer() {
                     <h2 className="mb-6 text-sm font-bold text-orange-700  dark:text-orange-700">Useful Links</h2>
                     <ul className="text-white dark:text-white">
                         <li className="mb-4">
-                            <div to="/" className="">Events</div>
+                            <div to="/" className="">About</div>
                         </li>
                         <li className="mb-4">
                             <div to="/" className="">Domains</div>

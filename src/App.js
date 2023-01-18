@@ -67,7 +67,7 @@ function App() {
             </>
           }
         />
-        <Route
+        {/* <Route
           path="events"
           element={
             <>
@@ -76,7 +76,7 @@ function App() {
               <Footer />
             </>
           }
-        />
+        /> */}
         <Route
           path="domains"
           element={

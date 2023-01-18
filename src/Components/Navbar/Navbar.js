@@ -50,7 +50,7 @@ function Navbar() {
                   Team
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/events"
                   onClick={goToTop}
@@ -58,7 +58,7 @@ function Navbar() {
                 >
                   Events
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
