@@ -52,14 +52,14 @@ function Navbar() {
                   Team
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link
                   to="/events"
                   onClick={goToTop}
                   className="block py-2 pr-4 pl-3  md:dark:white focus:text-white  md:p-0   dark:hover:text-white ">
                   Events
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
