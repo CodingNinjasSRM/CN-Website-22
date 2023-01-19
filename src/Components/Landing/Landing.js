@@ -126,22 +126,29 @@ function Landing() {
               className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0"
               alt="Ninja"
             />
-            <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 5 ,duration:2}} src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 " alt="Group" />
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 5, duration: 2 }}
+              src={group}
+              className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 "
+              alt="Group"
+            />
           </div>
         </div>
       </main>
 
       {/* About */}
-      <div className="bg-zinc-900 bg-opacity-40" id="about">
-        <div className="grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 pb-20">
+      <div className="bg-zinc-900 bg-opacity-40" id="about" name="about">
+        <div className="grid grid-cols-1 gap-5 py-8 px-3 xl:grid-cols-2 pb-20">
           <div className="">
             <div
-              className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 lg:w-[29.8vw] ${style.aboutheading}`}
+              className={`xl:text-7xl md:text-6xl text-5xl text-transparent bg-clip-text xl:text-left text-center xl:pl-5 xl:ml-7 font-extrabold xl:mb-10 mb-5 xl:pb-12 pb-2 xl:pt-20 pt-10 ${style.aboutheading}`}
               ref={aboutRef}
             >
               <DecoderText text="ABOUT CN" start={aboutInView} delay={500} />
             </div>
-            <p className="text-white md:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10">
+            <p className="text-white xl:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10">
               CODING NINJAS CLUB SRM, our syndicate,is one of the institute’s
               fastest-growing and one of the most popular clubs. Coding Ninjas
               does a great job of weaving the notion of “simplicity and
@@ -154,14 +161,14 @@ function Landing() {
               We want to be the best in our domain.
             </p>
           </div>
-          <div className="hidden md:block pl-20 pr-0">
+          <div className="hidden xl:block pl-20 pr-0">
             <img src={filler} className="md:w-2/3 ml-10 pb-5 pt-20" />
           </div>
         </div>
       </div>
 
       {/* Domains */}
-      <main className="bg">
+      <main className="bg" id="domains">
         <div>
           <div
             data-aos="fade"
