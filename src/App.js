@@ -27,6 +27,7 @@ function App() {
       >
         <Chatbot />
       </motion.div>
+      {/* <Navbar /> */}
       <Routes>
         <Route
           path="/"
@@ -67,16 +68,6 @@ function App() {
             </>
           }
         />
-        {/* <Route
-          path="events"
-          element={
-            <>
-              <Navbar />
-              <Events />
-              <Footer />
-            </>
-          }
-        /> */}
         <Route
           path="domains"
           element={
