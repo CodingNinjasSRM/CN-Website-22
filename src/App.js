@@ -4,6 +4,7 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Chatbot from "./Components/Chatbot/Chatbot";
 import Domains from "./Components/Domains/Domains";
+import Domainspage  from "./Components/Domains/Components/Domainspage";
 import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
 import Landing from "./Components/Landing/Landing";
@@ -86,6 +87,16 @@ function App() {
               <Footer />
             </>
           }
+        />
+        <Route
+        path="domains/dom"
+        element={
+          <>
+          <Navbar />
+          <Domainspage />
+          
+          </>
+        }
         />
       </Routes>
     </div>
