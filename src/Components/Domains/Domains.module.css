@@ -1,21 +1,19 @@
 .domainsbg {
   background-image: url(./assets/bg.svg);
   background-repeat: no-repeat;
-  background-size: auto;
-  height: 100vh;
+  background-size: cover;
+  height: 110vh;
   width: 100vw;
 }
 .ninjacontainer {
-  display: flex;
   justify-content: center;
   align-items: center;
   height: 90vh;
   position: absolute;
-  margin-top: 10vh;
+  margin-top: 8vh;
   width: 100vw;
 }
 .domainBoxes {
-  display: flex;
   justify-content: center;
   align-items: center;
   /* z-index: 1; */

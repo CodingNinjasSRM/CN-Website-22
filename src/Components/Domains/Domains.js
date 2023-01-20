@@ -8,39 +8,111 @@ import { Link, Links } from 'react-router-dom';
 const Domains = () => {
   return (
     <div className={`${style.domainsbg} mt-16`}>
-      <div className={`${style.ninjacontainer}`}>
+      <div className={`${style.ninjacontainer} hidden lg:flex`}>
         <img src={ninja} />
       </div>
       <div
-        className={`${style.domainBoxes} text-[#8B5130] font-semibold font-mono`}>
+        className={`${style.domainBoxes} text-[#8B5130] font-semibold font-mono hidden lg:flex`}>
         <div>
-          <Link to="/technical">
-            <motion.div
-              transition={{ duration: 0.6, ease: 'easeOut' }}
-              initial={{ x: '0' }}
-              whileInView={{ x: '-80%', y: '40%' }}>
-              <img src={roll} />
-              <span className="absolute z-50 text-3xl top-1/2 right-1/2 translate-x-1/2">
-                Technical
-              </span>
-            </motion.div>
-          </Link>
+
+          <motion.div
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            initial={{ x: '0' }}
+            whileInView={{ x: '-62%', y: '30%' }}>
+            <Link to="/technical">
+              <img className='w-11/12 h-80' src={roll} />
+            <span className="absolute z-50 text-3xl top-1/2 right-1/2 translate-x-1/2">
+              Technical
+            </span>
+            </Link>
+          </motion.div>
+
         </div>
         <div>
-          <Link to="/nontechnical">
-            <motion.div
-              transition={{ duration: 0.6, ease: 'easeOut' }}
-              initial={{ x: '0' }}
-              whileInView={{ x: '80%', y: '-40%' }}
-              className="relative">
-              <img src={roll} />
-              <span className="absolute z-50 text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10">
-                Non Technical
-              </span>
-            </motion.div>
-          </Link>
+
+          <motion.div
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            initial={{ x: '0' }}
+            whileInView={{ x: '62%', y: '-50%' }}
+            className="relative">
+            <Link to="/nontechnical">
+              <img className='w-11/12 h-80' src={roll} />
+            <span className="absolute z-50 text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10">
+              Non Technical
+            </span>
+            </Link>
+          </motion.div>
         </div>
       </div>
+
+      <div
+        className={`${style.domainBoxes} text-[#8B5130] font-semibold font-mono hidden md:flex lg:hidden`}>
+        <div>
+
+          <motion.div
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            initial={{ x: '0' }}
+            whileInView={{ x: '-18%', y: '0%' }}>
+            <Link to="/technical">
+              <img src={roll} />
+            </Link>
+            <span className="absolute z-50 text-3xl top-1/2 right-1/2 translate-x-1/2">
+              Technical
+            </span>
+          </motion.div>
+
+        </div>
+        <div>
+
+          <motion.div
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            initial={{ x: '0' }}
+            whileInView={{ x: '18%', y: '0%' }}
+            className="relative">
+            <Link to="/nontechnical">
+              <img src={roll} />
+            </Link>
+            <span className="absolute z-50 text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10">
+              Non Technical
+            </span>
+          </motion.div>
+        </div>
+      </div>
+
+      <div
+        className={`${style.domainBoxes} text-[#8B5130] font-semibold font-mono flex md:hidden`}>
+        <div>
+
+          <motion.div
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            initial={{ x: '0' }}
+            whileInView={{ x: '50%', y: '-65%' }}>
+            <Link to="/technical">
+              <img className='h-72' src={roll} />
+            </Link>
+            <span className="absolute z-50 text-2xl sm:text-3xl top-1/2 right-1/2 translate-x-1/2">
+              Technical
+            </span>
+          </motion.div>
+
+        </div>
+        <div>
+
+          <motion.div
+            transition={{ duration: 0.6, ease: 'easeOut' }}
+            initial={{ x: '0' }}
+            whileInView={{ x: '-50%', y: '35%' }}
+            className="relative">
+            <Link to="/nontechnical">
+              <img className='h-72' src={roll} />
+            </Link>
+            <span className="absolute z-50 text-2xl sm:text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10">
+              Non Technical
+            </span>
+          </motion.div>
+        </div>
+      </div>
+
     </div>
   );
 };
