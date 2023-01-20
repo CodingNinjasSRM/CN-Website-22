@@ -1,9 +1,9 @@
-import React from 'react';
-import style from './Domains.module.css';
-import ninja from './assets/Ninja img.svg';
-import roll from './assets/roll.png';
-import { motion } from 'framer-motion';
-import { Link, Links } from 'react-router-dom';
+import { motion } from "framer-motion";
+import React from "react";
+import { Link /* , Links */ } from "react-router-dom";
+import ninja from "./assets/Ninja img.svg";
+import roll from "./assets/roll.png";
+import style from "./Domains.module.css";
 
 const Domains = () => {
   return (
