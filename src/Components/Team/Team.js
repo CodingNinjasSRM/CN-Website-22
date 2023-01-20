@@ -1,5 +1,4 @@
 import {
-  Center,
   Html,
   Image as ImageImpl,
   Preload,
@@ -13,7 +12,7 @@ import { Suspense, useRef, useState } from "react";
 import * as THREE from "three";
 import Footer from "../Footer/Footer";
 import { Cloud1, Cloud2 } from "../Smoke/Smoke";
-import style from "./Team.module.css";
+// import style from "./Team.module.css";
 
 function Texts() {
   const angleToRadians = (angleInDeg) => (Math.PI / 180) * angleInDeg;

@@ -1,6 +1,6 @@
-import { Canvas } from "@react-three/fiber";
+// import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
-import { Route, Routes, useLocation } from "react-router-dom";
+import { Route, Routes /* , useLocation */ } from "react-router-dom";
 import "./App.css";
 import Chatbot from "./Components/Chatbot/Chatbot";
 import Domains from "./Components/Domains/Domains";
@@ -28,6 +28,7 @@ function App() {
       >
         <Chatbot />
       </motion.div>
+      {/* <Navbar /> */}
       <Routes>
         <Route
           path="/"
@@ -68,16 +69,6 @@ function App() {
             </>
           }
         />
-        {/* <Route
-          path="events"
-          element={
-            <>
-              <Navbar />
-              <Events />
-              <Footer />
-            </>
-          }
-        /> */}
         <Route
           path="domains"
           element={

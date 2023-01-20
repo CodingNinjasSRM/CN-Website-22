@@ -1,53 +1,59 @@
-import {
-  Environment,
-  OrbitControls,
-  PerspectiveCamera,
-  Sky,
-  Stats,
-  Text,
-} from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { getProject } from "@theatre/core";
-import { editable as e, SheetProvider } from "@theatre/r3f";
-import extension from "@theatre/r3f/dist/extension";
-import studio from "@theatre/studio";
+// import {
+//   Environment,
+//   OrbitControls,
+//   PerspectiveCamera,
+//   Sky,
+//   Stats,
+//   Text,
+// } from "@react-three/drei";
+// import { Canvas } from "@react-three/fiber";
+// import { getProject } from "@theatre/core";
+// import { editable as e, SheetProvider } from "@theatre/r3f";
+// import extension from "@theatre/r3f/dist/extension";
+// import studio from "@theatre/studio";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { animate, motion, useAnimation, useInView } from "framer-motion";
-import React, { Suspense, useEffect, useRef, useState } from "react";
-import Carousel from "react-multi-carousel";
+import {
+  /* animate, */ motion,
+  /* useAnimation, */ useInView,
+} from "framer-motion";
+import React, {
+  /* Suspense, */ useEffect,
+  useRef /* , useState */,
+} from "react";
+// import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
-import ClipLoader from "react-spinners/ClipLoader";
-import { LoopPingPong } from "three";
-import { ref } from "valtio";
+// import ClipLoader from "react-spinners/ClipLoader";
+// import { LoopPingPong } from "three";
+// import { ref } from "valtio";
 import { DecoderText } from "../DecoderText";
-import { Cloud1 } from "../Smoke/Smoke";
+// import { Cloud1 } from "../Smoke/Smoke";
 import Tiles from "../Tiles/Tiles";
 import num1 from "./assets/01.svg";
 import num2 from "./assets/02.svg";
-import num3 from "./assets/03.svg";
+// import num3 from "./assets/03.svg";
 import arrow from "./assets/arrow.svg";
-import codekaze from "./assets/CodeKaze 1.svg";
+// import codekaze from "./assets/CodeKaze 1.svg";
 import filler from "./assets/filler.svg";
 import group from "./assets/Group.svg";
 import img1 from "./assets/Img1.svg";
 import img2 from "./assets/Img2.svg";
-import img3 from "./assets/Img3.svg";
-import appdev from "./assets/intro to appdev 1.svg";
+// import img3 from "./assets/Img3.svg";
+// import appdev from "./assets/intro to appdev 1.svg";
 import ninja2 from "./assets/Ninja img.svg";
 import ninja from "./assets/ninja.svg";
 import rect from "./assets/Rectangle 126.svg";
 import rect2 from "./assets/Rectangle 127.svg";
-import shuriken from "./assets/shuriken wars 1.svg";
-import House from "./House/house";
-import state from "./House/ninjahouse.json";
+// import shuriken from "./assets/shuriken wars 1.svg";
+// import House from "./House/house";
+// import state from "./House/ninjahouse.json";
 import style from "./Landing.module.css";
 // studio.initialize()
 // studio.extend(extension)
-const demoSheet = getProject("Demo Project", { state: state }).sheet(
-  "Demo Sheet",
-);
+// const demoSheet = getProject("Demo Project", { state: state }).sheet(
+//   "Demo Sheet",
+// );
 
 function Landing() {
   const goToTop = () => {
@@ -61,37 +67,37 @@ function Landing() {
     Aos.init({ duration: 1500 });
   }, []);
 
-  const responsive = {
-    superLargeDesktop: {
-      // the naming can be any, depends on you.
-      breakpoint: { max: 4000, min: 3000 },
-      items: 5,
-    },
-    desktop: {
-      breakpoint: { max: 3000, min: 1024 },
-      items: 3,
-    },
-    tablet: {
-      breakpoint: { max: 1024, min: 464 },
-      items: 2,
-    },
-    mobile: {
-      breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
-  };
-  const [Loading, setLoading] = useState(false);
-  useEffect(() => {
-    setLoading(true);
-    setTimeout(() => {
-      {
-        setLoading(false);
-      }
-    }, 5000);
-    demoSheet.project.ready.then(() => {
-      demoSheet.sequence.play({ iterationCount: 1, range: [0, 10] });
-    });
-  }, []);
+  // const responsive = {
+  //   superLargeDesktop: {
+  //     // the naming can be any, depends on you.
+  //     breakpoint: { max: 4000, min: 3000 },
+  //     items: 5,
+  //   },
+  //   desktop: {
+  //     breakpoint: { max: 3000, min: 1024 },
+  //     items: 3,
+  //   },
+  //   tablet: {
+  //     breakpoint: { max: 1024, min: 464 },
+  //     items: 2,
+  //   },
+  //   mobile: {
+  //     breakpoint: { max: 464, min: 0 },
+  //     items: 1,
+  //   },
+  // };
+  // const [Loading, setLoading] = useState(false);
+  // useEffect(() => {
+  //   setLoading(true);
+  //   setTimeout(() => {
+  //     {
+  //       setLoading(false);
+  //     }
+  //   }, 5000);
+  //   demoSheet.project.ready.then(() => {
+  //     demoSheet.sequence.play({ iterationCount: 1, range: [0, 10] });
+  //   });
+  // }, []);
   const aboutRef = useRef(null);
   const aboutInView = useInView(aboutRef);
   const domainsRef = useRef(null);
@@ -126,22 +132,29 @@ function Landing() {
               className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0"
               alt="Ninja"
             />
-            <motion.img initial={{ opacity: 0 }} whileInView={{opacity:1}} transition={{ delay: 5 ,duration:2}} src={group} className="md:w-auto w-2/3 animate-spin animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 " alt="Group" />
+            <motion.img
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ delay: 5, duration: 2 }}
+              src={group}
+              className="md:w-auto w-2/3 animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 "
+              alt="Group"
+            />
           </div>
         </div>
       </main>
 
       {/* About */}
-      <div className="bg-zinc-900 bg-opacity-40" id="about">
-        <div className="grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 pb-20">
+      <div className="bg-zinc-900 bg-opacity-40" id="about" name="about">
+        <div className="grid grid-cols-1 gap-5 py-8 px-3 xl:grid-cols-2 pb-20">
           <div className="">
             <div
-              className={`md:text-7xl text-5xl text-transparent bg-clip-text md:text-left text-center md:pl-5 md:ml-7 font-extrabold md:mb-10 mb-5 md:pb-12 pb-2 md:pt-20 pt-10 lg:w-[29.8vw] ${style.aboutheading}`}
+              className={`xl:text-7xl md:text-6xl text-5xl text-transparent bg-clip-text xl:text-left text-center xl:pl-5 xl:ml-7 font-extrabold xl:mb-10 mb-5 xl:pb-12 pb-2 xl:pt-20 pt-10 ${style.aboutheading}`}
               ref={aboutRef}
             >
               <DecoderText text="ABOUT CN" start={aboutInView} delay={500} />
             </div>
-            <p className="text-white md:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10">
+            <p className="text-white xl:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10">
               CODING NINJAS CLUB SRM, our syndicate,is one of the institute’s
               fastest-growing and one of the most popular clubs. Coding Ninjas
               does a great job of weaving the notion of “simplicity and
@@ -154,14 +167,14 @@ function Landing() {
               We want to be the best in our domain.
             </p>
           </div>
-          <div className="hidden md:block pl-20 pr-0">
-            <img src={filler} className="md:w-2/3 ml-10 pb-5 pt-20" />
+          <div className="hidden xl:block pl-20 pr-0">
+            <img src={filler} className="md:w-2/3 ml-10 pb-5 pt-20" alt="" />
           </div>
         </div>
       </div>
 
       {/* Domains */}
-      <main className="bg">
+      <main className="bg" id="domains">
         <div>
           <div
             data-aos="fade"
@@ -182,6 +195,7 @@ function Landing() {
                 <img
                   className="md:w-1/2 pl-5 md:h-25 md:pl-10 w-2/3"
                   src={num1}
+                  alt=""
                 />
               </div>
             </div>
@@ -199,19 +213,23 @@ function Landing() {
               </div>
               <Link to="/technical">
                 {" "}
-                <img className="flex-intial w-4 h-4 mt-1 ml-5" src={arrow} />
+                <img
+                  className="flex-intial w-4 h-4 mt-1 ml-5"
+                  src={arrow}
+                  alt=""
+                />
               </Link>
             </div>
           </div>
           {/* image */}
           <div data-aos="fade" className=" xl:ml-20 xl:pl-14 ml-10 pr-10">
-            <img className="lg:pl-10 pl-0" src={img1} />
+            <img className="lg:pl-10 pl-0" src={img1} alt="" />
           </div>
         </div>
         <div className="grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 ">
           {/* image */}
           <div data-aos="fade" className="hidden md:block ml-0 pr-5">
-            <img className="lg:pl-10 pl-0" src={img2} />
+            <img className="lg:pl-10 pl-0" src={img2} alt="" />
           </div>
           {/* Corporate*/}
           <div data-aos="fade-up">
@@ -223,6 +241,7 @@ function Landing() {
                 <img
                   className="md:w-1/2 pl-5 md:h-25 md:pl-10 w-2/3"
                   src={num2}
+                  alt=""
                 />
               </div>
             </div>
@@ -242,7 +261,11 @@ function Landing() {
               </div>
               <Link to="/nontechnical">
                 {" "}
-                <img className="flex-intial w-4 h-4 mt-1 ml-5" src={arrow} />
+                <img
+                  className="flex-intial w-4 h-4 mt-1 ml-5"
+                  src={arrow}
+                  alt=""
+                />
               </Link>
             </div>
           </div>
@@ -250,7 +273,7 @@ function Landing() {
             data-aos="fade"
             className="md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10"
           >
-            <img className="lg:pl-10 pl-0" src={img2} />
+            <img className="lg:pl-10 pl-0" src={img2} alt="" />
           </div>
         </div>
       </main>
@@ -273,7 +296,7 @@ function Landing() {
           </Link>
         </div>
         <div className="absolute right-0 bg-black">
-          <img src={rect} />
+          <img src={rect} alt="" />
         </div>
       </div>
       <Tiles />
@@ -335,11 +358,11 @@ function Landing() {
 
             </Carousel> */}
       <div className="absolute left-0 bg-black">
-        <img src={rect2} />
+        <img src={rect2} alt="" />
       </div>
 
       <div className="justify-center md:mt-10 pt-20 pb-20 md:mb-10 px-20 ">
-        <img src={ninja2} className="mx-auto" />
+        <img src={ninja2} className="mx-auto" alt="" />
       </div>
     </>
   );
