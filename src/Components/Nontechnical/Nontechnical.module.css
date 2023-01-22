@@ -1,8 +1,9 @@
 .corporatebg {
   background-image: url(./assets/bg.svg);
   background-repeat: no-repeat;
-  background-size: 100vw;
   background-size: cover;
+  height: auto;
+  width: 100vw;
 }
 
 .corporateheading {
