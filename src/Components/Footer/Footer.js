@@ -4,7 +4,7 @@ import React from "react";
 
 function Footer() {
   return (
-    <footer className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter bg-neutral-900 dark:bg-neutral-900 w-[100vw]">
+    <footer className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter bg-neutral-900 dark:bg-neutral-900 w-screen">
       <div className="grid grid-cols-3 gap-5 py-8 px-5 md:grid-cols-3">
         {/* Useful divs */}
         <div>
