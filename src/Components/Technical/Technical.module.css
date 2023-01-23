@@ -1,7 +1,9 @@
 .technicalbg {
   background-image: url(./assets/bg.svg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
+  height: auto;
+  width: 100vw;
 }
 
 .technicalheading {

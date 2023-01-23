@@ -3,10 +3,11 @@ import { motion } from "framer-motion";
 import { Route, Routes /* , useLocation */ } from "react-router-dom";
 import "./App.css";
 import Chatbot from "./Components/Chatbot/Chatbot";
+import Domainspage from "./Components/Domains/Components/Domainspage";
 import Domains from "./Components/Domains/Domains";
-import Domainspage  from "./Components/Domains/Components/Domainspage";
 import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
+import FooterMin from "./Components/FooterMin/FooterMin";
 import Landing from "./Components/Landing/Landing";
 import Navbar from "./Components/Navbar/Navbar";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
@@ -25,9 +26,8 @@ function App() {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ delay: 8 }}
-      >
-        <Chatbot />
-      </motion.div>
+      ></motion.div>
+      {/* <Chatbot /> */}
       {/* <Navbar /> */}
       <Routes>
         <Route
@@ -46,7 +46,7 @@ function App() {
             <>
               <Navbar />
               <Technical />
-              <Footer />
+              <FooterMin />
             </>
           }
         />
@@ -56,7 +56,7 @@ function App() {
             <>
               <Navbar />
               <Nontechnical />
-              <Footer />
+              <FooterMin />
             </>
           }
         />
@@ -75,19 +75,18 @@ function App() {
             <>
               <Navbar />
               <Domains />
-              <Footer />
+              <FooterMin />
             </>
           }
         />
         <Route
-        path="domains/dom"
-        element={
-          <>
-          <Navbar />
-          <Domainspage />
-          
-          </>
-        }
+          path="domains/dom"
+          element={
+            <>
+              <Navbar />
+              <Domainspage />
+            </>
+          }
         />
       </Routes>
     </div>

@@ -11,47 +11,66 @@ function Nontechnical() {
   return (
     <div
       className={`min-h-screen flex justify-center items-center ${styles.corporatebg} uppercase`}>
+      <div className='grid grid-cols-1 grid-rows-4  sm:grid-cols-3 sm:grid-rows-2 gap-y-12 sm:gap-y-20 md:gap-20 lg:gap-x-60 lg:gap-y-36 mt-32'>
       <div
-        className={`absolute opacity-0 top-32 left-40 text-2xl text-white font-semibold ${styles.reveal}`}>
-        <img src={editorial} alt="" />
-        <p>Editorial</p>
+        className={`justify-self-center self-center opacity-0  text-2xl text-white font-semibold ${styles.reveal}`}>
+        <img className='-mt-8 w-32' src={editorial} alt="" />
+        <p  className='mt-4'>EDITORIAL</p>
       </div>
+
+      <div className='row-span-2 justify-self-center self-center hidden sm:flex'><img src={ninja} alt="" className={`h-40 ${styles.flip}`} /></div>
+
       <div
-        className={`absolute opacity-0 bottom-32 left-40 text-2xl text-white font-semibold ${styles.reveal1}`}>
-        <img src={creative} alt="" />
-        <p>Creatives</p>
-      </div>
-      <div
-        className={`absolute opacity-0 top-32 right-52 text-2xl text-white font-semibold ${styles.reveal2}`}>
+        className={`justify-self-center self-center opacity-0  text-2xl text-white sm:hidden font-semibold ${styles.reveal1}`}>
         <img src={corporate} alt="" />
-        <p>Corporate</p>
+        <p>CORPORATE</p>
       </div>
+
       <div
-        className={`absolute opacity-0 bottom-32 right-40 text-2xl text-white font-semibold ${styles.reveal3}`}>
-        <img src={dollar} alt="" />
-        <p>Sponsorship</p>
+        className={`justify-self-center self-center opacity-0  text-2xl text-white hidden sm:grid font-semibold ${styles.reveal2}`}>
+        <img src={corporate} alt="" />
+        <p>CORPORATE</p>
       </div>
+
+      <div
+        className={`justify-self-center self-center opacity-0  text-2xl text-white sm:hidden font-semibold ${styles.reveal2}`}>
+        <img src={creative} alt="" />
+        <p>CREATIVES</p>
+      </div>
+
+      <div
+        className={`justify-self-center self-center opacity-0  text-2xl text-white hidden sm:grid font-semibold ${styles.reveal1}`}>
+        <img src={creative} alt="" />
+        <p>CREATIVES</p>
+      </div>
+
+      <div
+        className={`justify-self-center self-center opacity-0  text-2xl text-white font-semibold ${styles.reveal3}`}>
+        <img src={dollar} alt="" />
+        <p  className='mt-4'>SPONSORSHIP</p>
+      </div>
+      </div>
+      
       <img
-        className={`absolute opacity-0 top-32 left-40 ${styles.star1}`}
+        className={`absolute hidden md:flex opacity-0 top-32 left-40 ${styles.star1}`}
         src={shiruken}
         alt=""
       />
       <img
-        className={`absolute opacity-0 bottom-32 left-40 ${styles.star2}`}
+        className={`absolute hidden md:flex  opacity-0 bottom-32 left-40 ${styles.star2}`}
         src={shiruken}
         alt=""
       />
       <img
-        className={`absolute opacity-0 top-32 right-40 ${styles.star3}`}
+        className={`absolute hidden md:flex  opacity-0 top-32 right-40 ${styles.star3}`}
         src={shiruken}
         alt=""
       />
       <img
-        className={`absolute opacity-0 bottom-32 right-40 ${styles.star4}`}
+        className={`absolute hidden md:flex  opacity-0 bottom-32 right-40 ${styles.star4}`}
         src={shiruken}
         alt=""
       />
-      <img src={ninja} alt="" className={`h-40 ${styles.flip}`} />
     </div>
   );
 }
