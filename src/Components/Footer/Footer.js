@@ -13,7 +13,7 @@ function Footer() {
           </div>
           <div className="flex md:space-x-4 space-x-3 justify-center md:justify-center md:mt-0">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/codingninjasSRM/"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -31,7 +31,7 @@ function Footer() {
               <span className="sr-only">Facebook page</span>
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/coding.ninjas_srm/?hl=en"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -49,7 +49,7 @@ function Footer() {
               <span className="sr-only">Instagram page</span>
             </a>
             <a
-              href="https://www.twitter.com/"
+              href="https://mobile.twitter.com/ninjassrm"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -63,7 +63,7 @@ function Footer() {
               <span className="sr-only">Twitter page</span>
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://in.linkedin.com/company/coding-ninjas-club-srm"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -107,7 +107,7 @@ function Footer() {
           </div>
           <div className="flex md:space-x-4 space-x-3 justify-center md:justify-center md:mt-0">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/codingninjasSRM/"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -125,7 +125,7 @@ function Footer() {
               <span className="sr-only">Facebook page</span>
             </a>
             <a
-              href="https://www.instagram.com/"
+              href="https://www.instagram.com/coding.ninjas_srm/?hl=en"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -143,7 +143,7 @@ function Footer() {
               <span className="sr-only">Instagram page</span>
             </a>
             <a
-              href="https://www.twitter.com/"
+              href="https://mobile.twitter.com/ninjassrm"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
@@ -157,7 +157,7 @@ function Footer() {
               <span className="sr-only">Twitter page</span>
             </a>
             <a
-              href="https://www.linkedin.com/"
+              href="https://in.linkedin.com/company/coding-ninjas-club-srm"
               className="text-orange-700 hover:text-gray-900 dark:hover:text-white"
             >
               <svg
