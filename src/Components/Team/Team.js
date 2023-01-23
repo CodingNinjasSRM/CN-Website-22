@@ -259,7 +259,7 @@ function Images() {
 export default function Team() {
   return (
     <>
-      <div className="h-full">
+      <div className="h-screen">
         <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
           <Cloud1 />
           <Cloud2 />
