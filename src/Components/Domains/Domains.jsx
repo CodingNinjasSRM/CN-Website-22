@@ -97,10 +97,10 @@ const Domains = () => {
             className="relative">
             <Link to="/nontechnical">
               <img className="h-72" src={roll} />
+              <span className="absolute z-50 text-2xl sm:text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10">
+                Non Technical
+              </span>
             </Link>
-            <span className="absolute z-50 text-2xl sm:text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10">
-              Non Technical
-            </span>
           </motion.div>
         </div>
       </div>
