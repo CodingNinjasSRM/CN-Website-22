@@ -1,6 +1,6 @@
 import React, { Suspense, useState } from "react";
 import { Link } from "react-router-dom";
-import { Link as Scroll } from "react-scroll";
+import Scroll from "react-scroll";
 import cnlogo from "./assets/cnlogo.png";
 import { Model } from "./Shuriken";
 
@@ -12,6 +12,11 @@ function Navbar() {
       top: 0,
       behavior: "smooth",
     });
+  };
+  const goToAbout = async () => {
+    var scroller = Scroll.scroller;
+    await new Promise((r) => setTimeout(r, 500));
+    scroller.scrollTo("about", { smooth: true, offset: -80, duration: 200 });
   };
 
   const [nav, setNav] = useState(false);
@@ -53,15 +58,17 @@ function Navbar() {
           >
             <ul className="flex text-white flex-col p-4 mt-4 border  md:flex-row md:space-x-12 md:mt-0 md:text-sm md:font-medium md:border-0">
               <li>
-                <Scroll
+                {/* <Scroll
                   to="about"
                   smooth
                   duration={500}
                   offset={-80}
                   className="hover:cursor-pointer"
-                >
+                > */}
+                <Link to="/" className="block" onClick={goToAbout}>
                   About
-                </Scroll>
+                </Link>
+                {/* </Scroll> */}
               </li>
               <li>
                 <Link
@@ -97,18 +104,16 @@ function Navbar() {
           <div className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black via-black to-[#b0442c] text-gray-500">
             <ul className="flex flex-col justify-center items-center">
               <li className="px-4 py-6 text-3xl capitalize font-medium">
-                <Scroll
+                <Link
                   onClick={() => {
                     setNav(!nav);
                     window.scrollBy(0, 1);
+                    goToTop();
                   }}
-                  to="about"
-                  smooth
-                  duration={500}
-                  offset={-80}
+                  to="/"
                 >
-                  About
-                </Scroll>
+                  Home
+                </Link>
               </li>
               <li className="px-4 py-6 text-3xl capitalize font-medium">
                 <Link
@@ -118,7 +123,6 @@ function Navbar() {
                     goToTop();
                   }}
                   to="/domains"
-                  className="block py-2 pr-4 pl-3  md:dark:text-white focus:text-white md:p-0 dark:hover:text-white "
                 >
                   Domains
                 </Link>
@@ -131,7 +135,6 @@ function Navbar() {
                     goToTop();
                   }}
                   to="/team"
-                  className="block py-2 pr-4 pl-3  md:dark:text-white focus:text-white  md:p-0 dark:hover:text-white"
                 >
                   Team
                 </Link>
