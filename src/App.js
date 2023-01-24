@@ -9,8 +9,16 @@ import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
 import Landing from "./Components/Landing/Landing";
 import Navbar from "./Components/Navbar/Navbar";
+import Corporate from "./Components/Nontechnical/Components/Corporate";
+import Creatives from "./Components/Nontechnical/Components/Creatives";
+import Editorial from "./Components/Nontechnical/Components/Editorial";
+import Sponsorship from "./Components/Nontechnical/Components/Sponsorship";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
 import Team from "./Components/Team/Team";
+import AIML from "./Components/Technical/Components/AIML";
+import AppDev from "./Components/Technical/Components/App";
+import Competitive from "./Components/Technical/Components/Competitive";
+import Web from "./Components/Technical/Components/Web";
 import Technical from "./Components/Technical/Technical";
 function App() {
   return (
@@ -76,11 +84,74 @@ function App() {
           }
         />
         <Route
-          path="domains/dom"
+          path="nontechnical/editorial"
           element={
             <>
               <Navbar />
-              <Domainspage />
+              <Editorial />
+            </>
+          }
+        />
+        <Route
+          path="nontechnical/creatives"
+          element={
+            <>
+              <Navbar />
+              <Creatives />
+            </>
+          }
+        />
+        <Route
+          path="nontechnical/corporate"
+          element={
+            <>
+              <Navbar />
+              <Corporate />
+            </>
+          }
+        />
+        <Route
+          path="nontechnical/sponsorship"
+          element={
+            <>
+              <Navbar />
+              <Sponsorship />
+            </>
+          }
+        />
+        <Route
+          path="technical/cp"
+          element={
+            <>
+              <Navbar />
+              <Competitive />
+            </>
+          }
+        />
+        <Route
+          path="technical/aiml"
+          element={
+            <>
+              <Navbar />
+              <AIML />
+            </>
+          }
+        />
+        <Route
+          path="technical/appdev"
+          element={
+            <>
+              <Navbar />
+              <AppDev />
+            </>
+          }
+        />
+        <Route
+          path="technical/webdev"
+          element={
+            <>
+              <Navbar />
+              <Web />
             </>
           }
         />
