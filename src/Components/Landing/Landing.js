@@ -42,7 +42,7 @@ import img2 from "./assets/Img2.svg";
 // import img3 from "./assets/Img3.svg";
 // import appdev from "./assets/intro to appdev 1.svg";
 import ninja2 from "./assets/Ninja img.svg";
-import ninja from "./assets/ninja.svg";
+import ninja from "./assets/cnani.gif";
 import rect from "./assets/Rectangle 126.svg";
 import rect2 from "./assets/Rectangle 127.svg";
 // import shuriken from "./assets/shuriken wars 1.svg";
@@ -122,23 +122,15 @@ function Landing() {
         ) : null} */}
       </div>
       <main className="absolute bg">
-        <div className="md:pb-10 pb-20">
+      <div className="mt-13 md:pb-10 pb-20 " style={{marginTop: "13vh "}}>
           <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
-              transition={{ delay: 4, duration: 2 }}
+              transition={{ delay: 2, duration: 2 }}
               src={ninja}
               className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0"
               alt="Ninja"
-            />
-            <motion.img
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 5, duration: 2 }}
-              src={group}
-              className="md:w-auto w-2/3 animate-slow-spin absolute inset-0 object-cover mx-auto mt-10 md:bottom-8 md:top-28 "
-              alt="Group"
             />
           </div>
         </div>
