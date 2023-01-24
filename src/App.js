@@ -7,7 +7,6 @@ import Domainspage from "./Components/Domains/Components/Domainspage";
 import Domains from "./Components/Domains/Domains";
 import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
-import FooterMin from "./Components/FooterMin/FooterMin";
 import Landing from "./Components/Landing/Landing";
 import Navbar from "./Components/Navbar/Navbar";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
@@ -46,7 +45,6 @@ function App() {
             <>
               <Navbar />
               <Technical />
-              <FooterMin />
             </>
           }
         />
@@ -56,7 +54,6 @@ function App() {
             <>
               <Navbar />
               <Nontechnical />
-              <FooterMin />
             </>
           }
         />
@@ -75,7 +72,6 @@ function App() {
             <>
               <Navbar />
               <Domains />
-              <FooterMin />
             </>
           }
         />
