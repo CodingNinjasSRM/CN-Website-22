@@ -184,67 +184,67 @@ function Images() {
         <Image
           position={[0, -height / 2.5, 0]}
           scale={5}
-          url="./assetsTeam/img1.jpg"
+          url="./assetsTeam/BoardMembers/Abhishek.jpg"
         />
         <Image
           position={[-width * 0.2, -height / 0.8, 2]}
           scale={width * 0.12}
-          url="./assetsTeam/img1.jpg"
+          url="./assetsTeam/BoardMembers/Aritra.jpg"
         />
         <Image
           position={[width * 0, -height / 0.8, 2]}
           scale={width * 0.12}
-          url="./assetsTeam/trip2.jpg"
+          url="./assetsTeam/BoardMembers/Soham.jpg"
         />
         <Image
           position={[width * 0.2, -height / 0.8, 2]}
           scale={width * 0.12}
-          url="./assetsTeam/img8.jpg"
+          url="./assetsTeam/BoardMembers/Tanishq.jpg"
         />
         <Image
           position={[-width * 0.11, -height / 0.55, 2.5]}
           scale={width * 0.12}
-          url="./assetsTeam/trip4.jpg"
+          url="./assetsTeam/BoardMembers/Sanskar.jpg"
         />
         <Image
           position={[width * 0.11, -height / 0.55, 2.5]}
           scale={width * 0.12}
-          url="./assetsTeam/trip4.jpg"
+          url="./assetsTeam/BoardMembers/Utkarsh.jpg"
         />
         <Image
           position={[-width * 0.14, -height * 2.2, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/img3.jpg"
+          url="./assetsTeam/ExecutiveMembers/Aadit.jpg"
         />
         <Image
           position={[-width * 0.045, -height * 2.2, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/img3.jpg"
+          url="./assetsTeam/ExecutiveMembers/Akshat.jpg"
         />
         <Image
           position={[width * 0.05, -height * 2.2, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/img3.jpg"
+          url="./assetsTeam/ExecutiveMembers/Kartikey.jpg"
         />
         <Image
           position={[width * 0.145, -height * 2.2, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/img3.jpg"
+          url="./assetsTeam/ExecutiveMembers/Waseem.jpg"
         />
         <Image
           position={[-width * 0.1, -height * 2.4, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/img3.jpg"
+          url="./assetsTeam/ExecutiveMembers/Aniket.jpg"
         />
         <Image
           position={[width * 0, -height * 2.4, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/img3.jpg"
+          url="./assetsTeam/ExecutiveMembers/Nandini.jpg"
         />
         <Image
           position={[width * 0.1, -height * 2.4, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/img3.jpg"
+          url="./assetsTeam/ExecutiveMembers/Utkarsh.jpg"
         />
         <Image
           position={[0, -height * 3 - height / 4, 0]}
