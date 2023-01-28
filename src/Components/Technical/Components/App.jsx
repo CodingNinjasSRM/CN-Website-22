@@ -11,7 +11,7 @@ const App = () => {
       {/* Our Domain section */}
       <section className=" text-[#EE4623] tracking-widest mt-40">
         <div className="flex flex-col justify-center items-center">
-          <p className="text-2xl md:text-4xl font-medium ">NON-TECHNICAL</p>
+          <p className="text-2xl md:text3xl font-medium ">TECHNICAL</p>
           <p className="text-5xl md:text-7xl font-bold">APP DEV</p>
         </div>
       </section>

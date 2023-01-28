@@ -1,8 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Scroll from "react-scroll";
 // import style from './Footer.module.css'
 // import { div } from 'react-router-dom'
 
 function Footer() {
+  const goToAbout = async () => {
+    var scroller = Scroll.scroller;
+    await new Promise((r) => setTimeout(r, 500));
+    scroller.scrollTo("about", { smooth: true, offset: -80, duration: 200 });
+  };
   return (
     <footer className="dark:bg-opacity-60 backdrop-blur-lg backdrop-filter bg-neutral-900 dark:bg-neutral-900 w-screen">
       <div className="md:grid grid-cols-3 gap-5 py-8 px-5 md:grid-cols-3">
@@ -84,19 +91,17 @@ function Footer() {
           </h2>
           <ul className="text-white dark:text-white">
             <li className="mb-4">
-              <div to="/" className="">
+              <Link to="/" className="" onClick={goToAbout}>
                 About
-              </div>
+              </Link>
             </li>
             <li className="mb-4">
-              <div to="/" className="">
-                Domains
-              </div>
+              <Link to="/domains">Domains</Link>
             </li>
             <li className="mb-4">
-              <div to="/team" className="">
+              <Link to="/team" className="">
                 Team
-              </div>
+              </Link>
             </li>
           </ul>
         </div>
