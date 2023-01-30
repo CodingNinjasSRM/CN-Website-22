@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 import { Route, Routes /* , useLocation */ } from "react-router-dom";
 import "./App.css";
 import Chatbot from "./Components/Chatbot/Chatbot";
-import Domainspage from "./Components/Domains/Components/Domainspage";
 import Domains from "./Components/Domains/Domains";
 import Events from "./Components/Events/Events";
 import Footer from "./Components/Footer/Footer";
