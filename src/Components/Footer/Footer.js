@@ -183,19 +183,19 @@ function Footer() {
           </h2>
           <ul className="text-white dark:text-white">
             <li className="mb-4">
-              <div to="/" className="">
+              <Link to="/technical/aiml" className="">
                 AI/ML
-              </div>
+              </Link>
             </li>
             <li className="mb-4">
-              <div to="/" className="">
+              <Link to="/technical/appdev" className="">
                 App Dev
-              </div>
+              </Link>
             </li>
             <li className="mb-4">
-              <div to="/" className="">
-                Sponsors
-              </div>
+              <Link to="/technical/webdev" className="">
+                Web Dev
+              </Link>
             </li>
           </ul>
         </div>
