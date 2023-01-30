@@ -9,6 +9,7 @@ import {
 } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
+import { isMobile } from "react-device-detect";
 import * as THREE from "three";
 import Footer from "../Footer/Footer";
 import { Cloud1, Cloud2 } from "../Smoke/Smoke";
@@ -33,7 +34,10 @@ function Texts() {
   });
   return (
     <>
-      <group ref={text}>
+      {
+       isMobile?
+       //mobile
+       <group ref={text}>
         <pointLight
           position={[0, 0, 0.6]}
           color="#F26E26"
@@ -51,7 +55,7 @@ function Texts() {
           size={0.5}
           height={0.05}
           font="Inter_bold.json"
-          position={[-width * 0.055, 1, 0]}
+          position={[-width * 0.155, 1, 0]}
         >
           Team
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
@@ -136,7 +140,113 @@ function Texts() {
         <Html>
           <Footer />
         </Html>
-      </group>
+      </group>://desktop
+      <group ref={text}>
+      <pointLight
+        position={[0, 0, 0.6]}
+        color="#F26E26"
+        intensity={6}
+        rotation={[-angleToRadians(90), 0, 0]}
+      />
+      <spotLight
+        position={[0, 0, 0.6]}
+        color="#EE4623"
+        intensity={6}
+        rotation={[-angleToRadians(90), 0, 0]}
+      />
+      <Text3D
+        letterSpacing={0}
+        size={0.5}
+        height={0.05}
+        font="Inter_bold.json"
+        position={[-width * 0.055, 1, 0]}
+      >
+        Team
+        <meshStandardMaterial color="white" metalness={1} opacity={0} />
+      </Text3D>
+      <Text3D
+        letterSpacing={0}
+        bevelEnabled
+        bevelThickness={0}
+        size={0.3}
+        font="Inter_bold.json"
+        height={0.05}
+        position={[-width * 0.055, -6.3, 0]}
+      >
+        President
+        <meshStandardMaterial color="white" metalness={1} opacity={0} />
+      </Text3D>
+      <Text3D
+        letterSpacing={0.01}
+        bevelEnabled
+        height={0.01}
+        bevelThickness={0}
+        bevelSize={0.001}
+        size={width * 0.009}
+        font="Inter_bold.json"
+        position={[-width * 0.25, -11, 2]}
+      >
+        Vice President
+        <meshStandardMaterial color="white" metalness={1} opacity={0} />
+      </Text3D>
+      <Text3D
+        letterSpacing={0.01}
+        bevelEnabled
+        height={0.05}
+        bevelSize={0.001}
+        bevelThickness={0}
+        size={width * 0.009}
+        font="Inter_bold.json"
+        position={[-width * 0.055, -11, 2]}
+      >
+        {`Outreach Officer`}
+        <meshStandardMaterial color="white" metalness={1} opacity={0} />
+      </Text3D>
+      <Text3D
+        letterSpacing={0.01}
+        bevelEnabled
+        height={0.01}
+        bevelSize={0.001}
+        bevelThickness={0}
+        size={width * 0.009}
+        font="Inter_bold.json"
+        position={[width * 0.16, -11, 2]}
+      >
+        {`Project Lead`}
+        <meshStandardMaterial color="white" metalness={1} opacity={0} />
+      </Text3D>
+      <Text3D
+        letterSpacing={0.01}
+        bevelEnabled
+        height={0.01}
+        bevelSize={0.001}
+        bevelThickness={0}
+        size={width * 0.009}
+        font="Inter_bold.json"
+        position={[-width * 0.15, -15.3, 2.5]}
+      >
+        {`Tech Lead`}
+        <meshStandardMaterial color="white" metalness={1} opacity={0} />
+      </Text3D>
+      <Text3D
+        letterSpacing={0.01}
+        bevelEnabled
+        height={0.01}
+        bevelSize={0.001}
+        bevelThickness={0}
+        size={width * 0.009}
+        font="Inter_bold.json"
+        position={[width * 0.06, -15.3, 2.5]}
+      >
+        {`Non-Tech Lead`}
+        <meshStandardMaterial color="white" metalness={1} opacity={0} />
+      </Text3D>
+      <Html>
+        <Footer />
+      </Html>
+    </group>
+      }
+      
     </>
   );
 }
@@ -180,6 +290,81 @@ function Images() {
   });
   return (
     <>
+     {
+       isMobile?
+       <group ref={group}>
+        <Image
+          position={[0, -height / 2.5, 0]}
+          scale={3.25}
+          url="./assetsTeam/BoardMembers/Abhishek.jpg"
+        />
+        <Image
+          position={[0, -height / 0.8, 2]}
+          scale={3.25}
+          url="./assetsTeam/BoardMembers/Aritra.jpg"
+        />
+        <Image
+          position={[0, -height / 0.5, 3]}
+          scale={3.25}
+          url="./assetsTeam/BoardMembers/Soham.jpg"
+        />
+        <Image
+          position={[0, -height / 0.36, 4]}
+          scale={3.25}
+          url="./assetsTeam/BoardMembers/Tanishq.jpg"
+        />
+        <Image
+          position={[0, -height / 0.29, 5]}
+          scale={3.25}
+          url="./assetsTeam/BoardMembers/Sanskar.jpg"
+        />
+        <Image
+          position={[0, -height / 0.24, 3]}
+          scale={1}
+          url="./assetsTeam/BoardMembers/Utkarsh.jpg"
+        />
+        <Image
+          position={[-width * 0, -height /0.1, 0]}
+          scale={3}
+          url="./assetsTeam/ExecutiveMembers/Aadit.jpg"
+        />
+        <Image
+          position={[-width * 0, -height /0.1, 0]}
+          scale={3}
+          url="./assetsTeam/ExecutiveMembers/Akshat.jpg"
+        />
+        <Image
+          position={[width * 0,  -height /0.1, 0]}
+          scale={3}
+          url="./assetsTeam/ExecutiveMembers/Kartikey.jpg"
+        />
+        <Image
+          position={[width * 0, -height /0.1, 0]}
+          scale={3}
+          url="./assetsTeam/ExecutiveMembers/Waseem.jpg"
+        />
+        <Image
+          position={[-width * 0,  -height /0.1, 0]}
+          scale={3}
+          url="./assetsTeam/ExecutiveMembers/Aniket.jpg"
+        />
+        <Image
+          position={[width * 0, -height /0.1, 0]}
+          scale={3}
+          url="./assetsTeam/ExecutiveMembers/Nandini.jpg"
+        />
+        <Image
+          position={[width * 0,  -height /0.1, 0]}
+          scale={3}
+          url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
+        />
+        <Image
+          position={[0,  -height /0.1, 0]}
+          scale={[width * 0.9, height * 0.7, 1]}
+          url="./assetsTeam/img7.jpg"
+        />
+      </group>
+      ://DEktop
       <group ref={group}>
         <Image
           position={[0, -height / 2.5, 0]}
@@ -209,7 +394,7 @@ function Images() {
         <Image
           position={[width * 0.11, -height / 0.55, 2.5]}
           scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Utkarsh.jpg"
+          url="./assetsTeam/BoardMembers/Stuti.jpg"
         />
         <Image
           position={[-width * 0.14, -height * 2.2, 3]}
@@ -252,6 +437,8 @@ function Images() {
           url="./assetsTeam/img7.jpg"
         />
       </group>
+     }
+      
     </>
   );
 }
