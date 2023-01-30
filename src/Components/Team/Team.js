@@ -63,24 +63,24 @@ function Texts() {
         <Text3D
           letterSpacing={0}
           bevelEnabled
-          bevelThickness={0}
+          bevelThickness={0.001}
           size={0.3}
           font="Inter_bold.json"
-          height={0.05}
-          position={[-width * 0.055, -6.3, 0]}
+          height={0.02}
+          position={[-width * 0.22, -5.7, 2]}
         >
           President
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
         </Text3D>
         <Text3D
-          letterSpacing={0.01}
+          letterSpacing={0}
           bevelEnabled
-          height={0.01}
-          bevelThickness={0}
-          bevelSize={0.001}
-          size={width * 0.009}
+          height={0.02}
+          bevelThickness={0.001}
+          bevelSize={0}
+          size={0.17}
           font="Inter_bold.json"
-          position={[-width * 0.25, -11, 2]}
+          position={[-width * 0.185, -11.5, 2.5]}
         >
           Vice President
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
@@ -91,9 +91,9 @@ function Texts() {
           height={0.05}
           bevelSize={0.001}
           bevelThickness={0}
-          size={width * 0.009}
+          size={0.11}
           font="Inter_bold.json"
-          position={[-width * 0.055, -11, 2]}
+          position={[-width * 0.159, -14, 3]}
         >
           {`Outreach Officer`}
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
@@ -104,9 +104,9 @@ function Texts() {
           height={0.01}
           bevelSize={0.001}
           bevelThickness={0}
-          size={width * 0.009}
+          size={0.105}
           font="Inter_bold.json"
-          position={[width * 0.16, -11, 2]}
+          position={[-width * 0.107, -16.2, 3.4]}
         >
           {`Project Lead`}
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
@@ -117,9 +117,9 @@ function Texts() {
           height={0.01}
           bevelSize={0.001}
           bevelThickness={0}
-          size={width * 0.009}
+          size={0.105}
           font="Inter_bold.json"
-          position={[-width * 0.15, -15.3, 2.5]}
+          position={[-width * 0.101, -17.9, 3.6]}
         >
           {`Tech Lead`}
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
@@ -130,9 +130,9 @@ function Texts() {
           height={0.01}
           bevelSize={0.001}
           bevelThickness={0}
-          size={width * 0.009}
+          size={0.08}
           font="Inter_bold.json"
-          position={[width * 0.06, -15.3, 2.5]}
+          position={[-width * 0.107, -20, 3.7]}
         >
           {`Non-Tech Lead`}
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
@@ -294,73 +294,73 @@ function Images() {
        isMobile?
        <group ref={group}>
         <Image
-          position={[0, -height / 2.5, 0]}
-          scale={3.25}
+          position={[0, -height / 2.5,2]}
+          scale={2}
           url="./assetsTeam/BoardMembers/Abhishek.jpg"
         />
         <Image
-          position={[0, -height / 0.8, 2]}
-          scale={3.25}
+          position={[0, -height / 0.8, 2.5]}
+          scale={1.65}
           url="./assetsTeam/BoardMembers/Aritra.jpg"
         />
         <Image
-          position={[0, -height / 0.5, 3]}
-          scale={3.25}
+          position={[0, -height / 0.6, 3]}
+          scale={1.33}
           url="./assetsTeam/BoardMembers/Soham.jpg"
         />
         <Image
-          position={[0, -height / 0.36, 4]}
-          scale={3.25}
+          position={[0, -height / 0.5,3.4]}
+          scale={1.065}
           url="./assetsTeam/BoardMembers/Tanishq.jpg"
         />
         <Image
-          position={[0, -height / 0.29, 5]}
-          scale={3.25}
+          position={[0, -height / 0.45, 3.6]}
+          scale={0.93}
           url="./assetsTeam/BoardMembers/Sanskar.jpg"
         />
         <Image
-          position={[0, -height / 0.24, 3]}
-          scale={1}
+          position={[0, -height / 0.4, 3.7]}
+          scale={0.85}
           url="./assetsTeam/BoardMembers/Utkarsh.jpg"
         />
         <Image
-          position={[-width * 0, -height /0.1, 0]}
-          scale={3}
+          position={[-width * 0, -height /0.35, 3.7]}
+          scale={0.85}
           url="./assetsTeam/ExecutiveMembers/Aadit.jpg"
         />
         <Image
-          position={[-width * 0, -height /0.1, 0]}
-          scale={3}
+          position={[-width * 0, -height /0.33, 3.7]}
+          scale={0.85}
           url="./assetsTeam/ExecutiveMembers/Akshat.jpg"
         />
         <Image
-          position={[width * 0,  -height /0.1, 0]}
-          scale={3}
+          position={[width * 0,  -height /0.31, 3.7]}
+          scale={0.85}
           url="./assetsTeam/ExecutiveMembers/Kartikey.jpg"
         />
         <Image
-          position={[width * 0, -height /0.1, 0]}
-          scale={3}
+          position={[width * 0, -height /0.295, 3.7]}
+          scale={0.85}
           url="./assetsTeam/ExecutiveMembers/Waseem.jpg"
         />
         <Image
-          position={[-width * 0,  -height /0.1, 0]}
-          scale={3}
+          position={[-width * 0,  -height /0.28, 3.7]}
+          scale={0.85}
           url="./assetsTeam/ExecutiveMembers/Aniket.jpg"
         />
         <Image
-          position={[width * 0, -height /0.1, 0]}
-          scale={3}
+          position={[width * 0, -height /0.265, 3.7]}
+          scale={0.85}
           url="./assetsTeam/ExecutiveMembers/Nandini.jpg"
         />
         <Image
-          position={[width * 0,  -height /0.1, 0]}
-          scale={3}
+          position={[width * 0,  -height /0.265, 3.7]}
+          scale={0.85}
           url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
         />
         <Image
-          position={[0,  -height /0.1, 0]}
-          scale={[width * 0.9, height * 0.7, 1]}
+          position={[0,  -height /0.25, 3.7]}
+          scale={1}
           url="./assetsTeam/img7.jpg"
         />
       </group>
