@@ -394,7 +394,7 @@ function Images() {
         <Image
           position={[width * 0.11, -height / 0.55, 2.5]}
           scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Stuti.jpg"
+          url="./assetsTeam/BoardMembers/Utkarsh.jpg"
         />
         <Image
           position={[-width * 0.14, -height * 2.2, 3]}
@@ -429,7 +429,7 @@ function Images() {
         <Image
           position={[width * 0.1, -height * 2.4, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Utkarsh.jpg"
+          url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
         />
         <Image
           position={[0, -height * 3 - height / 4, 0]}
