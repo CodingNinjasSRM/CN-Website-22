@@ -122,7 +122,7 @@ function Landing() {
         ) : null} */}
       </div>
       <main className="absolute bg">
-      <div className="mt-13 md:pb-10 pb-20 " style={{marginTop: "13vh "}}>
+        <div className="mt-13 md:pb-10 pb-20 " style={{ marginTop: "13vh " }}>
           <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
             <motion.img
               initial={{ opacity: 0 }}
@@ -199,18 +199,21 @@ function Landing() {
               full website, this domain completes it all. So, fasten your seat
               belts for the technical fight.
             </p>
+
             <div className="flex md:pb-20 pb-10">
               <div className="flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold">
-                VIEW DETAILS
+                <Link to="/technical">VIEW DETAILS</Link>
               </div>
-              <Link to="/technical">
+              <div>
                 {" "}
-                <img
-                  className="flex-intial w-4 h-4 mt-1 ml-5"
-                  src={arrow}
-                  alt=""
-                />
-              </Link>
+                <Link to="/technical">
+                  <img
+                    className="flex-intial w-4 h-4 mt-1 ml-5"
+                    src={arrow}
+                    alt=""
+                  />
+                </Link>
+              </div>
             </div>
           </div>
           {/* image */}
@@ -249,10 +252,9 @@ function Landing() {
             </p>
             <div className="flex md:pb-20 pb-10">
               <div className="flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold">
-                VIEW DETAILS
-              </div>
+                <Link to="/nontechnical"> VIEW DETAILS</Link>
+              </div>{" "}
               <Link to="/nontechnical">
-                {" "}
                 <img
                   className="flex-intial w-4 h-4 mt-1 ml-5"
                   src={arrow}

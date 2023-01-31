@@ -11,7 +11,7 @@ const Corporate = () => {
       {/* Our Domain section */}
       <section className=" text-[#EE4623] tracking-widest mt-40">
         <div className="flex flex-col justify-center items-center">
-          <p className="text-2xl md:text-4xl font-medium ">NON-TECHNICAL</p>
+          <p className="text-2xl md:text-3xl font-medium ">NON-TECHNICAL</p>
           <p className="text-5xl md:text-7xl font-bold">CORPORATE</p>
         </div>
       </section>
