@@ -3,7 +3,7 @@ import style from "./Domainspage.module.css";
 import leftlogo from "./logo.svg";
 import linelogo from "./logo2.png";
 import Aos from "aos";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 import FooterMin from "../../FooterMin/FooterMin";
 
@@ -38,17 +38,17 @@ const AIML = () => {
         <div>
           <img
             className=" lg:w-[380px] h-auto w-60 md:w-80  lg:mb-0 lg:ml-20 lg:mr-20 md "
-            data-aos = "zoom-out"
+            data-aos="zoom-out"
             src={leftlogo}
             alt=""
           />
         </div>
-        <div className=" flex text-center justify-center items-center lg:w-1/2 mx-2 md:mx-5" data-aos="zoom-in">
-          <img className=" mx-2 bottom-0 h-64" src={linelogo}  alt="" />
-          <p
-            className=" text-white mx-10 text-base md:text-2xl lg:leading-9 lg:text-sm"
-            
-          >
+        <div
+          className=" flex text-center justify-center items-center lg:w-1/2 mx-2 md:mx-5"
+          data-aos="zoom-in"
+        >
+          <img className=" mx-2 bottom-0 h-64" src={linelogo} alt="" />
+          <p className=" text-white mx-10 text-base md:text-xl lg:leading-7 lg:text-sm">
             The last decade brought AI into the forefront of some of the world's
             most progressive technology companies. With AI and ML we can build
             high performance and data-intensive applications without
@@ -57,10 +57,8 @@ const AIML = () => {
           </p>
           <img className=" mx-2 h-64" src={linelogo} alt="" />
         </div>
-       
       </div>
       <FooterMin classNames="block lg:absolute mb-6 lg:bottom-0" />
-      
     </div>
   );
 };
