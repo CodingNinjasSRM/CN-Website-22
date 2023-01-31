@@ -55,7 +55,7 @@ function Texts() {
           size={0.5}
           height={0.05}
           font="Inter_bold.json"
-          position={[-width * 0.155, 1, 0]}
+          position={[-width * 0.25, 1, 0]}
         >
           Team
           <meshStandardMaterial color="white" metalness={1} opacity={0} />
