@@ -45,6 +45,7 @@ import ninja2 from "./assets/Ninja img.svg";
 import ninja from "./assets/cnani.gif";
 import rect from "./assets/Rectangle 126.svg";
 import rect2 from "./assets/Rectangle 127.svg";
+import background from "./assets/1035529526-preview.mp4";
 // import shuriken from "./assets/shuriken wars 1.svg";
 // import House from "./House/house";
 // import state from "./House/ninjahouse.json";
