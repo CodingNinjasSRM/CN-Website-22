@@ -123,6 +123,9 @@ function Landing() {
         ) : null} */}
       </div>
       <main className="absolute bg">
+        <div>
+          
+        </div>
         <div className="mt-13 md:pb-10 pb-20 " style={{ marginTop: "13vh " }}>
           <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
             <motion.img
