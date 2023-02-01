@@ -29,7 +29,7 @@ import { Link } from "react-router-dom";
 // import { ref } from "valtio";
 import { DecoderText } from "../DecoderText";
 // import { Cloud1 } from "../Smoke/Smoke";
-import Tiles from "../Tiles/Tiles";
+import {Tiles} from "../Tiles/Tiles";
 import num1 from "./assets/01.svg";
 import num2 from "./assets/02.svg";
 // import num3 from "./assets/03.svg";
