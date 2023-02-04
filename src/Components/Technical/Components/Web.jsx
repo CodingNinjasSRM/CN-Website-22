@@ -1,8 +1,8 @@
+import Aos from "aos";
 import React, { useEffect } from "react";
 import style from "./Domainspage.module.css";
 import leftlogo from "./logo.svg";
 import linelogo from "./logo2.png";
-import Aos from "aos";
 // import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 import FooterMin from "../../FooterMin/FooterMin";
@@ -13,7 +13,7 @@ const Web = () => {
   }, []);
   return (
     <div
-      className={`${style.domainHeadingbg} top-0 h-full lg:h-screen  absolute `}
+      className={`${style.domainHeadingbg} top-0 h-full lg:h-3/5  absolute flex flex-col justify-center items-center lg:pb-40`}
     >
       {/* Our Domain section */}
       <section className=" text-[#EE4623] tracking-widest mt-20">
@@ -44,14 +44,56 @@ const Web = () => {
           />
         </div>
         <div
-          className=" flex text-center justify-center items-center lg:w-1/2 mx-2 md:mx-5"
+          className=" flex text-center justify-center items-center lg:w-1/2 mx-2 md:mx-5 my-10"
           data-aos="zoom-in"
         >
-          <img className=" mx-2 bottom-0 h-64" src={linelogo} alt="" />
-          <p className=" text-white mx-10 text-base md:text-xl lg:leading-7 lg:text-sm">
-           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis officia cumque mollitia repudiandae officiis, placeat necessitatibus, eligendi libero quod delectus harum. Assumenda et ipsa dolorem maiores ducimus sint aperiam earum illo tenetur ab accusantium, rerum repellendus iusto! Quos illo necessitatibus, earum nam ducimus quo 
+          <img className=" mx-2 bottom-0 h-80" src={linelogo} alt="" />
+          <p className=" text-white mx-10 text-base md:text-xl lg:leading-7 lg:text-sm lg:text-left h-80 overflow-y-auto">
+            Welcome to the Web Development Club of CN SRM, a community of
+            students who are passionate about creating and building innovative
+            web applications. Our goal is to provide a platform for students to
+            learn and enhance their web development skills, and to collaborate
+            with like-minded individuals to bring their ideas to life.
+            <br />
+            <br />
+            Our club offers a wide range of activities and events that cater to
+            students of all levels, from beginners to experienced developers.
+            Whether you are interested in learning HTML, CSS, and JavaScript, or
+            you want to explore the latest trends in web development, our club
+            has something for everyone.
+            <br />
+            <br />
+            <strong>
+              <u>Events and Workshops</u>
+            </strong>
+            <br />
+            Our club regularly hosts workshops, coding sessions, and hackathons
+            to help students learn and grow their skills in web development. Our
+            events are led by experienced web developers, who are passionate
+            about sharing their knowledge and expertise with others.
+            <br />
+            <br />
+            <strong>
+              <u>Networking Opportunities</u>
+            </strong>
+            <br />
+            We believe that networking is an important aspect of a successful
+            career in web development. Our club provides a platform for students
+            to connect with industry professionals, to gain insight into the
+            world of web development, and to learn about career opportunities in
+            this field.
+            <br />
+            <br />
+            Whether you are just starting out in web development or you are a
+            seasoned pro, we welcome you to join us and be a part of our
+            community.
+            <br />
+            <br />
+            Join us today and take your first step towards a successful career
+            in web development. With access to resources, events, and a
+            supportive community, you will have everything you need to succeed.
           </p>
-          <img className=" mx-2 h-64" src={linelogo} alt="" />
+          <img className=" mx-2 h-80" src={linelogo} alt="" />
         </div>
       </div>
       <FooterMin classNames="block lg:absolute mb-6 lg:bottom-0" />
