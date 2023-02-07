@@ -5,14 +5,17 @@ import {
   Scroll,
   ScrollControls,
   Text3D,
-  useScroll,
+  useScroll
 } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
 import { isMobile } from "react-device-detect";
 import * as THREE from "three";
+
 import Footer from "../Footer/Footer";
+import FooterMin from "../FooterMin/FooterMin";
 import { Cloud1, Cloud2 } from "../Smoke/Smoke";
+import Vfootermin from "../VFooterMin/Vfootermin";
 // import style from "./Team.module.css";
 
 function Texts() {
@@ -447,6 +450,7 @@ export default function Team() {
   return (
     <>
       <div className="h-screen">
+      
         <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
           <Cloud1 />
           <Cloud2 />
@@ -460,10 +464,12 @@ export default function Team() {
                 <Texts />
               </Scroll>
             </ScrollControls>
-
+          
             <Preload />
           </Suspense>
+         
         </Canvas>
+        <Vfootermin classNamess="absolute bottom-1 left-1 lg:bottom-6 lg:left-4" />
       </div>
     </>
   );
