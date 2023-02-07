@@ -13,12 +13,12 @@ const Competitive = () => {
   }, []);
   return (
     <div
-      className={`${style.domainHeadingbg} top-0 h-full lg:h-3/5  absolute flex flex-col justify-center items-center lg:pb-40`}
+      className={`${style.domainHeadingbg} top-40 lg:top-0 h-full lg:h-3/5  absolute flex flex-col justify-center items-center pb-40`}
     >
       {/* Our Domain section */}
       <section className=" text-[#EE4623] tracking-widest mt-20">
         <div className="flex flex-col justify-center items-center">
-          <p className="text-5xl md:text-7xl font-bold ">TECHNICAL</p>
+          <p className="text-5xl md:text-7xl lg:mt-32 md:mt-96 ">TECHNICAL</p>
           <p className="text-3xl md:text-5xl font-medium pb-6">
             {/* <motion.div
               animate={{
@@ -34,7 +34,7 @@ const Competitive = () => {
           </p>
         </div>
       </section>
-      <div className="flex flex-col  lg:flex-row mt-20 items-center justify-center  lg:pb-0">
+      <div className="flex flex-col  lg:flex-row mt-8 items-center justify-center  lg:pb-0 ">
         <div>
           <img
             className=" lg:w-[380px] h-auto w-60 md:w-80  lg:mb-0 lg:ml-20 lg:mr-20 md "
@@ -48,7 +48,7 @@ const Competitive = () => {
           data-aos="zoom-in"
         >
           <img className=" mx-2 bottom-0 h-80" src={linelogo} alt="" />
-          <p className=" text-white mx-10 text-base md:text-xl lg:leading-7 lg:text-sm lg:text-left h-80 overflow-y-auto">
+          <p className=" text-white mx-10 text-base md:text-md lg:leading-7 lg:text-sm lg:text-left h-80 overflow-y-auto md:h-60">
             Welcome to the Competitive Programming Domain of CN SRM! Our aim is
             to provide students with a platform to learn and practice
             competitive programming, and to participate in various coding
@@ -103,7 +103,7 @@ const Competitive = () => {
           <img className=" mx-2 h-80" src={linelogo} alt="" />
         </div>
       </div>
-      <FooterMin classNames="block lg:absolute mb-6 lg:bottom-0" />
+      <FooterMin classNames="block lg:absolute mb-6  lg:bottom-0" />
     </div>
   );
 };
