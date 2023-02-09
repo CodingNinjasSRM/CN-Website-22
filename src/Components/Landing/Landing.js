@@ -21,6 +21,7 @@ import React, {
   /* Suspense, */ useEffect,
   useRef /* , useState */,
 } from "react";
+import ParticleBGLanding from "../ParticleBG/ParticleBGLanding";
 // import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
@@ -29,7 +30,7 @@ import { Link } from "react-router-dom";
 // import { ref } from "valtio";
 import { DecoderText } from "../DecoderText";
 // import { Cloud1 } from "../Smoke/Smoke";
-import {Tiles} from "../Tiles/Tiles";
+import { Tiles } from "../Tiles/Tiles";
 import num1 from "./assets/01.svg";
 import num2 from "./assets/02.svg";
 // import num3 from "./assets/03.svg";
@@ -41,8 +42,8 @@ import img1 from "./assets/Img1.svg";
 import img2 from "./assets/Img2.svg";
 // import img3 from "./assets/Img3.svg";
 // import appdev from "./assets/intro to appdev 1.svg";
-import ninja2 from "./assets/Ninja img.svg";
 import ninja from "./assets/cnani.gif";
+import ninja2 from "./assets/Ninja img.svg";
 import rect from "./assets/Rectangle 126.svg";
 import rect2 from "./assets/Rectangle 127.svg";
 // import shuriken from "./assets/shuriken wars 1.svg";
@@ -107,6 +108,9 @@ function Landing() {
 
   return (
     <>
+      <div className="h-screen w-full -z-10 absolute">
+        <ParticleBGLanding />
+      </div>
       <div className="h-screen w-full">
         {/* {House ? (
           <Canvas>
