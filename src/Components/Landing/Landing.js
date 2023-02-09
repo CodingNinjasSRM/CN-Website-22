@@ -55,6 +55,11 @@ import style from "./Landing.module.css";
 //   "Demo Sheet",
 // );
 
+import technical from "./assets/technical.png";
+import nontechnical from "./assets/non technical.png"
+
+
+
 function Landing() {
   const goToTop = () => {
     window.scrollTo({
@@ -218,13 +223,13 @@ function Landing() {
           </div>
           {/* image */}
           <div data-aos="fade" className=" xl:ml-20 xl:pl-14 ml-10 pr-10">
-            <img className="lg:pl-10 pl-0" src={img1} alt="" />
+            <img className="lg:pl-10 pl-0" src={technical} alt="" />
           </div>
         </div>
         <div className="grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 ">
           {/* image */}
           <div data-aos="fade" className="hidden md:block ml-0 pr-5">
-            <img className="lg:pl-10 pl-0" src={img2} alt="" />
+            <img className="lg:pl-10 pl-0" src={nontechnical} alt="" />
           </div>
           {/* Corporate*/}
           <div data-aos="fade-up">
