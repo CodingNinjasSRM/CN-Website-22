@@ -19,8 +19,8 @@ function Technical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white font-semibold ${styles.reveal}`}
         >
           <Link to="/technical/cp">
-            <img src={c} alt="" />
-            <p>CPP</p>
+            <img src={c} alt="" className="hover:animate-bounce" />
+            <p>CP</p>
           </Link>
         </div>
 
@@ -32,7 +32,7 @@ function Technical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white sm:hidden font-semibold ${styles.reveal1}`}
         >
           <Link to="/technical/webdev">
-            <img src={laptop} alt="" />
+            <img src={laptop} alt="" className="hover:animate-bounce" />
             <p>Web Dev</p>
           </Link>
         </div>
@@ -41,7 +41,7 @@ function Technical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white hidden sm:grid  font-semibold ${styles.reveal2}`}
         >
           <Link to="/technical/webdev">
-            <img src={laptop} alt="" />
+            <img src={laptop} alt="" className="hover:animate-bounce"/>
             <p>Web Dev</p>
           </Link>
         </div>
@@ -50,7 +50,7 @@ function Technical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white sm:hidden font-semibold ${styles.reveal2} `}
         >
           <Link to="/technical/aiml">
-            <img src={pcb} alt="" />
+            <img src={pcb} alt="" className="hover:animate-bounce"/>
             <p>AI/ML</p>
           </Link>
         </div>
@@ -59,7 +59,7 @@ function Technical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white hidden sm:grid font-semibold ${styles.reveal1} `}
         >
           <Link to="/technical/aiml">
-            <img src={pcb} alt="" />
+            <img src={pcb} alt="" className="hover:animate-bounce" />
             <p>AI/ML</p>
           </Link>
         </div>
@@ -68,7 +68,7 @@ function Technical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white font-semibold ${styles.reveal3}`}
         >
           <Link to="/technical/appdev">
-            <img src={android} alt="" />
+            <img src={android} alt="" className="hover:animate-bounce" />
             <p>App Dev</p>
           </Link>
         </div>
