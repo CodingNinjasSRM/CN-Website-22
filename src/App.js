@@ -14,6 +14,8 @@ import Creatives from "./Components/Nontechnical/Components/Creatives";
 import Editorial from "./Components/Nontechnical/Components/Editorial";
 import Sponsorship from "./Components/Nontechnical/Components/Sponsorship";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
+import ParticleBG from "./Components/ParticleBG/ParticleBG";
+import Team from "./Components/Team/Team";
 // import Team from "./Components/Team/Team";
 import AIML from "./Components/Technical/Components/AIML";
 import AppDev from "./Components/Technical/Components/App";
@@ -58,6 +60,7 @@ function App() {
             <>
               <Navbar />
               <Technical />
+              <ParticleBG />
             </>
           }
         />
@@ -67,6 +70,7 @@ function App() {
             <>
               <Navbar />
               <Nontechnical />
+              <ParticleBG />
             </>
           }
         />
@@ -87,6 +91,7 @@ function App() {
             <>
               <Navbar />
               <Domains />
+              <ParticleBG />
             </>
           }
         />
@@ -96,6 +101,7 @@ function App() {
             <>
               <Navbar />
               <Editorial />
+              <ParticleBG />
             </>
           }
         />
@@ -105,6 +111,7 @@ function App() {
             <>
               <Navbar />
               <Creatives />
+              <ParticleBG />
             </>
           }
         />
@@ -114,6 +121,7 @@ function App() {
             <>
               <Navbar />
               <Corporate />
+              <ParticleBG />
             </>
           }
         />
@@ -123,6 +131,7 @@ function App() {
             <>
               <Navbar />
               <Sponsorship />
+              <ParticleBG />
             </>
           }
         />
@@ -132,6 +141,7 @@ function App() {
             <>
               <Navbar />
               <Competitive />
+              <ParticleBG />
             </>
           }
         />
@@ -141,6 +151,7 @@ function App() {
             <>
               <Navbar />
               <AIML />
+              <ParticleBG />
             </>
           }
         />
@@ -150,6 +161,7 @@ function App() {
             <>
               <Navbar />
               <AppDev />
+              <ParticleBG />
             </>
           }
         />
@@ -159,6 +171,7 @@ function App() {
             <>
               <Navbar />
               <Web />
+              <ParticleBG />
             </>
           }
         />
