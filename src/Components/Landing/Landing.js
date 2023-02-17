@@ -276,7 +276,7 @@ function Landing() {
             data-aos="fade"
             className="md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10"
           >
-            <img className="lg:pl-10 pl-0" src={img2} alt="" />
+            <img className="lg:pl-10 pl-0" src={nontechnical} alt="" />
           </div>
         </div>
       </main>
