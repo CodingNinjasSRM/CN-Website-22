@@ -21,6 +21,7 @@ import React, {
   /* Suspense, */ useEffect,
   useRef /* , useState */,
 } from "react";
+import ParticleBGLanding from "../ParticleBG/ParticleBGLanding";
 // import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import { Link } from "react-router-dom";
@@ -29,7 +30,7 @@ import { Link } from "react-router-dom";
 // import { ref } from "valtio";
 import { DecoderText } from "../DecoderText";
 // import { Cloud1 } from "../Smoke/Smoke";
-import {Tiles} from "../Tiles/Tiles";
+import { Tiles } from "../Tiles/Tiles";
 import num1 from "./assets/01.svg";
 import num2 from "./assets/02.svg";
 // import num3 from "./assets/03.svg";
@@ -41,8 +42,8 @@ import img1 from "./assets/Img1.svg";
 import img2 from "./assets/Img2.svg";
 // import img3 from "./assets/Img3.svg";
 // import appdev from "./assets/intro to appdev 1.svg";
-import ninja2 from "./assets/Ninja img.svg";
 import ninja from "./assets/cnani.gif";
+import ninja2 from "./assets/Ninja img.svg";
 import rect from "./assets/Rectangle 126.svg";
 import rect2 from "./assets/Rectangle 127.svg";
 import background from "./assets/1035529526-preview.mp4";
@@ -55,6 +56,11 @@ import style from "./Landing.module.css";
 // const demoSheet = getProject("Demo Project", { state: state }).sheet(
 //   "Demo Sheet",
 // );
+
+import technical from "./assets/technical.png";
+import nontechnical from "./assets/non technical.png"
+
+
 
 function Landing() {
   const goToTop = () => {
@@ -108,6 +114,9 @@ function Landing() {
 
   return (
     <>
+      <div className="h-screen w-full -z-10 absolute">
+        <ParticleBGLanding />
+      </div>
       <div className="h-screen w-full">
         {/* {House ? (
           <Canvas>
@@ -222,13 +231,13 @@ function Landing() {
           </div>
           {/* image */}
           <div data-aos="fade" className=" xl:ml-20 xl:pl-14 ml-10 pr-10">
-            <img className="lg:pl-10 pl-0" src={img1} alt="" />
+            <img className="lg:pl-10 pl-0" src={technical} alt="" />
           </div>
         </div>
         <div className="grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 ">
           {/* image */}
           <div data-aos="fade" className="hidden md:block ml-0 pr-5">
-            <img className="lg:pl-10 pl-0" src={img2} alt="" />
+            <img className="lg:pl-10 pl-0" src={nontechnical} alt="" />
           </div>
           {/* Corporate*/}
           <div data-aos="fade-up">
@@ -271,7 +280,7 @@ function Landing() {
             data-aos="fade"
             className="md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10"
           >
-            <img className="lg:pl-10 pl-0" src={img2} alt="" />
+            <img className="lg:pl-10 pl-0" src={nontechnical} alt="" />
           </div>
         </div>
       </main>

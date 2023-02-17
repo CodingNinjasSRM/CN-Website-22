@@ -14,7 +14,7 @@ function Technical() {
     <div
       className={`min-h-screen flex flex-col justify-center items-center ${styles.technicalbg} uppercase mt-32 sm:mt-0`}
     >
-      <div className="grid grid-cols-1 grid-rows-4  sm:grid-cols-3 sm:grid-rows-2 gap-y-16 sm:gap-y-20 md:gap-20 lg:gap-x-60 lg:gap-y-36">
+      <div className="grid grid-cols-1 grid-rows-4 lg:mt-12  sm:grid-cols-3 sm:grid-rows-2 gap-y-16 sm:gap-y-20 md:gap-20 lg:gap-x-60 lg:gap-y-36">
         <div
           className={`justify-self-center self-center opacity-0  text-2xl text-white font-semibold ${styles.reveal}`}
         >
