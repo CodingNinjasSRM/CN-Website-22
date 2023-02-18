@@ -19,7 +19,7 @@ function Nontechnical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white font-semibold ${styles.reveal}`}
         >
           <Link to="/nontechnical/editorial">
-            <img className=" w-32" src={editorial} alt="" className="hover:animate-bounce" />
+            <img  src={editorial} alt="" className=" w-32 hover:animate-bounce" />
             <p className="mt-4">EDITORIAL</p>
           </Link>
         </div>
