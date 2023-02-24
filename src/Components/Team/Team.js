@@ -13,7 +13,6 @@ import { isMobile } from "react-device-detect";
 import * as THREE from "three";
 
 import Footer from "../Footer/Footer";
-import FooterMin from "../FooterMin/FooterMin";
 import { Cloud1, Cloud2 } from "../Smoke/Smoke";
 import Vfootermin from "../VFooterMin/Vfootermin";
 // import style from "./Team.module.css";
@@ -364,7 +363,7 @@ function Images() {
         <Image
           position={[0,  -height /0.25, 3.7]}
           scale={1}
-          url="./assetsTeam/img7.jpg"
+          url="./assetsTeam/lastimg.jpg"
         />
       </group>
       ://DEktop
@@ -437,7 +436,7 @@ function Images() {
         <Image
           position={[0, -height * 3 - height / 4, 0]}
           scale={[width * 0.9, height * 0.7, 1]}
-          url="./assetsTeam/img7.jpg"
+          url="./assetsTeam/lastimg.jpg"
         />
       </group>
      }
