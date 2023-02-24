@@ -19,7 +19,7 @@ function Nontechnical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white font-semibold ${styles.reveal}`}
         >
           <Link to="/nontechnical/editorial">
-            <img className=" w-32" src={editorial} alt="" />
+            <img  src={editorial} alt="" className=" w-32 hover:animate-bounce" />
             <p className="mt-4">EDITORIAL</p>
           </Link>
         </div>
@@ -32,7 +32,7 @@ function Nontechnical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white sm:hidden font-semibold ${styles.reveal1}`}
         >
           <Link to="/nontechnical/corporate">
-            <img src={corporate} alt="" />
+            <img src={corporate} alt="" className="hover:animate-bounce"/>
             <p>CORPORATE</p>
           </Link>
         </div>
@@ -41,7 +41,7 @@ function Nontechnical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white hidden sm:grid font-semibold ${styles.reveal2}`}
         >
           <Link to="/nontechnical/corporate">
-            <img src={corporate} alt="" />
+            <img src={corporate} alt="" className="hover:animate-bounce"/>
             <p>CORPORATE</p>
           </Link>
         </div>
@@ -50,7 +50,7 @@ function Nontechnical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white sm:hidden font-semibold ${styles.reveal2}`}
         >
           <Link to="/nontechnical/creatives">
-            <img src={creative} alt="" />
+            <img src={creative} alt="" className="hover:animate-bounce"/>
             <p>CREATIVES</p>
           </Link>
         </div>
@@ -59,7 +59,7 @@ function Nontechnical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white hidden sm:grid font-semibold ${styles.reveal1}`}
         >
           <Link to="/nontechnical/creatives">
-            <img src={creative} alt="" />
+            <img src={creative} alt="" className="hover:animate-bounce" />
             <p>CREATIVES</p>
           </Link>
         </div>
@@ -68,7 +68,7 @@ function Nontechnical() {
           className={`justify-self-center self-center opacity-0  text-2xl text-white font-semibold ${styles.reveal3}`}
         >
           <Link to="/nontechnical/sponsorship">
-            <img src={dollar} alt="" />
+            <img src={dollar} alt="" className="hover:animate-bounce"/>
             <p className="mt-4">SPONSORSHIP</p>
           </Link>
         </div>

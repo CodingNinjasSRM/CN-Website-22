@@ -1,7 +1,7 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
 import style from "./Domainspage.module.css";
-import leftlogo from "./logo.svg";
+import leftlogo from "./appdevimg.jpg";
 import linelogo from "./logo2.png";
 // import { motion } from "framer-motion";
 import "aos/dist/aos.css";
@@ -37,7 +37,7 @@ const App = () => {
       <div className="flex flex-col  lg:flex-row mt-8 items-center justify-center  lg:pb-0 ">
         <div>
           <img
-            className=" lg:w-[380px] h-auto w-60 md:w-80  lg:mb-0 lg:ml-20 lg:mr-20 md "
+            className=" lg:w-[380px] h-auto w-60 md:w-80  lg:mb-0 lg:ml-20 lg:mr-20 md rounded-xl"
             data-aos="zoom-out"
             src={leftlogo}
             alt=""
