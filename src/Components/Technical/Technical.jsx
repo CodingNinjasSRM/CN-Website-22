@@ -33,7 +33,7 @@ function Technical() {
         </div>
 
         <div
-          className={`justify-self-center self-center opacity-0  text-xl text-white sm:hidden font-semibold ${styles.reveal1}`}
+          className={`justify-self-center self-center opacity-0  text-lg text-white sm:hidden font-semibold ${styles.reveal1}`}
         >
           <Link to="/technical/webdev">
             <img
@@ -46,7 +46,7 @@ function Technical() {
         </div>
 
         <div
-          className={`justify-self-center self-center opacity-0  text-xl text-white hidden sm:grid  font-semibold ${styles.reveal2}`}
+          className={`justify-self-center self-center opacity-0 text-lg text-white hidden sm:grid  font-semibold ${styles.reveal2}`}
         >
           <Link to="/technical/webdev">
             <img
@@ -59,7 +59,7 @@ function Technical() {
         </div>
 
         <div
-          className={`justify-self-center self-center opacity-0  text-xl text-white sm:hidden font-semibold ${styles.reveal2} `}
+          className={`justify-self-center self-center opacity-0  text-lg text-white sm:hidden font-semibold ${styles.reveal2} `}
         >
           <Link to="/technical/aiml">
             <img
@@ -72,7 +72,7 @@ function Technical() {
         </div>
 
         <div
-          className={`justify-self-center self-center opacity-0  text-xl text-white hidden sm:grid font-semibold ${styles.reveal1} `}
+          className={`justify-self-center self-center opacity-0  text-lg text-white hidden sm:grid font-semibold ${styles.reveal1} `}
         >
           <Link to="/technical/aiml">
             <img
@@ -85,7 +85,7 @@ function Technical() {
         </div>
 
         <div
-          className={`justify-self-center self-center opacity-0  text-xl text-white font-semibold ${styles.reveal3}`}
+          className={`justify-self-center self-center opacity-0  text-lg text-white font-semibold ${styles.reveal3}`}
         >
           <Link to="/technical/appdev">
             <img
