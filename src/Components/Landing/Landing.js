@@ -46,6 +46,7 @@ import ninja from "./assets/cnani.gif";
 import ninja2 from "./assets/Ninja img.svg";
 import rect from "./assets/Rectangle 126.svg";
 import rect2 from "./assets/Rectangle 127.svg";
+import background from "./assets/1035529526-preview.mp4";
 // import shuriken from "./assets/shuriken wars 1.svg";
 // import House from "./House/house";
 // import state from "./House/ninjahouse.json";
@@ -131,6 +132,9 @@ function Landing() {
         ) : null} */}
       </div>
       <main className="absolute bg">
+        <div>
+          
+        </div>
         <div className="mt-13 md:pb-10 pb-20 " style={{ marginTop: "13vh " }}>
           <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
             <motion.img
@@ -156,20 +160,14 @@ function Landing() {
               <DecoderText text="ABOUT CN" start={aboutInView} delay={500} />
             </div>
             <p className="text-white xl:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10">
-              CODING NINJAS CLUB SRM, our syndicate,is one of the institute’s
-              fastest-growing and one of the most popular clubs. Coding Ninjas
-              does a great job of weaving the notion of “simplicity and
-              creativity ” throughout its events and work. We work in
-              collaboration with CODING NINJAS company. We team up with bright
-              minds to create exciting and meaningful experiences. Along the way
-              , We have a footfall of over 50,000 young and creative minds from
-              various concerts around the World. We are a diverse team of
-              budding intellectuals, who are keen and highly driven to create.
-              We want to be the best in our domain.
+            Welcome to the Web Development Club of CN SRM, a community of students who are passionate about creating and building innovative web applications. Our goal is to provide a platform for students to learn and enhance their web development skills, and to collaborate with like-minded individuals to bring their ideas to life.
+
+            Our club offers a wide range of activities and events that cater to students of all levels, from beginners to experienced developers. Whether you are interested in learning HTML, CSS, and JavaScript, or you want to explore the latest trends in web development, our club has something for everyone.
+
             </p>
           </div>
           <div className="hidden xl:block pl-20 pr-0">
-            <img src={filler} className="md:w-2/3 ml-10 pb-5 pt-20" alt="" />
+            <img loading="lazy" src={filler} className="md:w-2/3 ml-10 pb-5 pt-20" alt="" />
           </div>
         </div>
       </div>
@@ -195,6 +193,7 @@ function Landing() {
               <div className="absolute inset-0 justify-center ">
                 <img
                   className="md:w-1/2 pl-5 md:h-25 md:pl-10 w-2/3"
+                  loading="lazy"
                   src={num1}
                   alt=""
                 />
@@ -218,6 +217,7 @@ function Landing() {
                 <Link to="/technical">
                   <img
                     className="flex-intial w-4 h-4 mt-1 ml-5"
+                    loading="lazy"
                     src={arrow}
                     alt=""
                   />
@@ -227,7 +227,7 @@ function Landing() {
           </div>
           {/* image */}
           <div data-aos="fade" className=" xl:ml-20 xl:pl-14 ml-10 pr-10">
-            <img className="lg:pl-10 pl-0" src={technical} alt="" />
+            <img className="lg:pl-10 pl-0" loading="lazy" src={technical} alt="" />
           </div>
         </div>
         <div className="grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 ">
@@ -244,6 +244,7 @@ function Landing() {
               <div className="absolute inset-0 justify-center ">
                 <img
                   className="md:w-1/2 pl-5 md:h-25 md:pl-10 w-2/3"
+                  loading="lazy"
                   src={num2}
                   alt=""
                 />
@@ -266,6 +267,7 @@ function Landing() {
               <Link to="/nontechnical">
                 <img
                   className="flex-intial w-4 h-4 mt-1 ml-5"
+                  loading="lazy"
                   src={arrow}
                   alt=""
                 />
@@ -276,7 +278,7 @@ function Landing() {
             data-aos="fade"
             className="md:hidden block xl:ml-20 xl:pl-14 ml-10 pr-10"
           >
-            <img className="lg:pl-10 pl-0" src={nontechnical} alt="" />
+            <img className="lg:pl-10 pl-0" src={img2} alt="" />
           </div>
         </div>
       </main>
@@ -299,7 +301,7 @@ function Landing() {
           </Link>
         </div>
         <div className="absolute right-0 bg-black">
-          <img src={rect} alt="" />
+          <img loading="lazy" src={rect} alt="" />
         </div>
       </div>
       <Tiles />
@@ -361,11 +363,11 @@ function Landing() {
 
             </Carousel> */}
       <div className="absolute left-0 bg-black">
-        <img src={rect2} alt="" />
+        <img loading="lazy" src={rect2} alt="" />
       </div>
 
       <div className="justify-center md:mt-10 pt-20 pb-20 md:mb-10 px-20 ">
-        <img src={ninja2} className="mx-auto" alt="" />
+        <img loading="lazy" src={ninja2} className="mx-auto" alt="" />
       </div>
     </>
   );
