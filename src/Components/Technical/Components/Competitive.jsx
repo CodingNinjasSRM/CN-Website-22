@@ -1,7 +1,7 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
 import style from "./Domainspage.module.css";
-import leftlogo from "./compimg.jpg";
+import leftlogo from "./assets/cp.png";
 import linelogo from "./logo2.png";
 // import { motion } from "framer-motion";
 import "aos/dist/aos.css";

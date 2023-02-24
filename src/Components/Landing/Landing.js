@@ -36,7 +36,7 @@ import num2 from "./assets/02.svg";
 // import num3 from "./assets/03.svg";
 import arrow from "./assets/arrow.svg";
 // import codekaze from "./assets/CodeKaze 1.svg";
-import filler from "./assets/filler.svg";
+import filler from "./assets/Frame 8.png";
 import group from "./assets/Group.svg";
 import img1 from "./assets/Img1.svg";
 import img2 from "./assets/Img2.svg";
