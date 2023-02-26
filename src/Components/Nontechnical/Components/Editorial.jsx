@@ -13,7 +13,7 @@ const Editorial = () => {
   }, []);
   return (
     <div
-      className={`${style.domainHeadingbg} top-40 lg:top-0 h-full lg:h-3/5  absolute flex flex-col justify-center items-center pb-40`}
+      className={`${style.domainHeadingbg} top-64 lg:top-0 h-full lg:h-3/5  absolute flex flex-col justify-center items-center pb-40`}
     >
       {/* Our Domain section */}
       <section className=" text-[#EE4623] tracking-widest mt-20">

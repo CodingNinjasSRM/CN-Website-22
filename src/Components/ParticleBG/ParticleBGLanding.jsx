@@ -23,7 +23,7 @@ const ParticleBGLanding = () => {
           fpsLimit: 40,
           particles: {
             number: {
-              value: 30,
+              value: 50,
               density: {
                 enable: true,
                 value_area: 800,
@@ -37,7 +37,7 @@ const ParticleBGLanding = () => {
               random: true,
             },
             size: {
-              value: 4,
+              value: 6,
               random: true,
             },
             move: {
