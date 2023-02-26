@@ -13,7 +13,6 @@ import { isMobile } from "react-device-detect";
 import * as THREE from "three";
 
 import Footer from "../Footer/Footer";
-import FooterMin from "../FooterMin/FooterMin";
 import { Cloud1, Cloud2 } from "../Smoke/Smoke";
 import Vfootermin from "../VFooterMin/Vfootermin";
 // import style from "./Team.module.css";
@@ -309,7 +308,7 @@ function Images() {
         <Image
           position={[0, -height / 0.6, 3]}
           scale={1.33}
-          url="./assetsTeam/BoardMembers/Soham.jpg"
+          url="./assetsTeam/BoardMembers/Soham.png"
         />
         <Image
           position={[0, -height / 0.5,3.4]}
@@ -354,17 +353,17 @@ function Images() {
         <Image
           position={[width * 0, -height /0.265, 3.7]}
           scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Nandini.jpg"
+          url="./assetsTeam/ExecutiveMembers/Nandini.png"
         />
         <Image
           position={[width * 0,  -height /0.265, 3.7]}
           scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
+          url="./assetsTeam/ExecutiveMembers/Stuti.png"
         />
         <Image
           position={[0,  -height /0.25, 3.7]}
           scale={1}
-          url="./assetsTeam/img7.jpg"
+          url="./assetsTeam/lastimg.jpg"
         />
       </group>
       ://DEktop
@@ -382,7 +381,7 @@ function Images() {
         <Image
           position={[width * 0, -height / 0.8, 2]}
           scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Soham.jpg"
+          url="./assetsTeam/BoardMembers/Soham.png"
         />
         <Image
           position={[width * 0.2, -height / 0.8, 2]}
@@ -427,17 +426,17 @@ function Images() {
         <Image
           position={[width * 0, -height * 2.4, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Nandini.jpg"
+          url="./assetsTeam/ExecutiveMembers/Nandini.png"
         />
         <Image
           position={[width * 0.1, -height * 2.4, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
+          url="./assetsTeam/ExecutiveMembers/Stuti.png"
         />
         <Image
           position={[0, -height * 3 - height / 4, 0]}
           scale={[width * 0.9, height * 0.7, 1]}
-          url="./assetsTeam/img7.jpg"
+          url="./assetsTeam/lastimg.jpg"
         />
       </group>
      }
