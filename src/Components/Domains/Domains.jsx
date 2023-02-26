@@ -8,7 +8,7 @@ import style from "./Domains.module.css";
 
 const Domains = () => {
   return (
-    <div className={`${style.domainsbg} h-screen mt-10 mb-5`}>
+    <div className={`${style.domainsbg} h-screen mt-10 `}>
       <div className={`${style.ninjacontainer} hidden lg:flex`}>
         <img src={ninja} />
       </div>
@@ -56,9 +56,9 @@ const Domains = () => {
             whileInView={{ x: "-18%", y: "0%" }}
           >
             <Link to="/technical">
-              <img src={roll} />
+              <img src={roll} alt=""/>
             </Link>
-            <span className="absolute z-50 text-3xl top-1/2 right-1/2 translate-x-1/2">
+            <span className="absolute z-50 text-3xl top-[40%] md:top-1/2  right-1/2 translate-x-1/2">
               Technical
             </span>
           </motion.div>
@@ -71,7 +71,7 @@ const Domains = () => {
             className="relative"
           >
             <Link to="/nontechnical">
-              <img src={roll} />
+              <img src={roll} alt=""/>
               <span className="absolute z-50 text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10">
                 Non Technical
               </span>
@@ -91,7 +91,7 @@ const Domains = () => {
           >
             <Link to="/technical">
               <img className="h-72" src={roll} alt="Technical"/>
-              <span className="absolute z-50 text-2xl sm:text-3xl top-1/2 right-1/2 translate-x-1/2 ">
+              <span className="absolute z-50 text-2xl sm:text-3xl top-[40%] md:top-1/2  right-1/2 translate-x-1/2 ">
                 Technical
               </span>
             </Link>
@@ -106,14 +106,14 @@ const Domains = () => {
           >
             <Link to="/nontechnical">
               <img className="h-72" src={roll} alt="Non Technical " />
-              <span className="absolute z-50 text-2xl sm:text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10">
+              <span className="absolute z-50 text-2xl sm:text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10 ">
                 Non Technical
               </span>
             </Link>
           </motion.div>
         </div>
       </div>
-      <FooterMin classNames="absolute bottom-1" />
+      <FooterMin classNames="relative top-[90%] lg:top-[88%]" />
     </div>
   );
 };

@@ -39,7 +39,7 @@ import arrow from "./assets/arrow.svg";
 import filler from "./assets/Frame 8.png";
 import group from "./assets/Group.svg";
 import img1 from "./assets/Img1.svg";
-import img2 from "./assets/Img2.svg";
+import img2 from "./assets/non technical.png";
 // import img3 from "./assets/Img3.svg";
 // import appdev from "./assets/intro to appdev 1.svg";
 import ninja from "./assets/cnani.gif";
