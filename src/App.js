@@ -1,5 +1,8 @@
 // import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
+import lottyimg from "./Components/Landing/assets/land_lazy.json";
+import teamlottyimg from "./Components/Landing/assets/team_lazy.json";
+import Lottie from "lottie-react";
 import { Route, Routes /* , useLocation */ } from "react-router-dom";
 import React, {Suspense} from 'react';
 import "./App.css";
@@ -25,6 +28,7 @@ import Technical from "./Components/Technical/Technical";
 const LazyLanding = React.lazy(()=>import('./Components/Landing/Landing'))
 const LazyTeam = React.lazy(()=>import('./Components/Team/Team'))
 
+
 function App() {
   return (
     <div className="App">
@@ -47,10 +51,13 @@ function App() {
           element={
             <>
               <Navbar />
-              <Suspense fallback={<div>Loading...</div>}>
+              <Suspense fallback={<div className="h-screen"><Lottie animationData={lottyimg} className="relative mx-auto top-[20%] h-72 "/></div>}>
                 <LazyLanding />
+                
               </Suspense>
               <Footer />
+              
+             
             </>
           }
         />
@@ -79,7 +86,7 @@ function App() {
           element={
             <>
               <Navbar />
-              <Suspense fallback={<div>Teams page is loading...</div>}>
+              <Suspense fallback={<div className="h-screen"><Lottie animationData={teamlottyimg} className="relative mx-auto top-[20%] h-72 "/></div>}>
               <LazyTeam />
               </Suspense>
             </>
@@ -90,7 +97,9 @@ function App() {
           element={
             <>
               <Navbar />
+              <Suspense fallback={<div className="h-screen"><Lottie animationData={lottyimg} className="relative mx-auto top-[20%] h-72 "/></div>}>
               <Domains />
+              </Suspense>
               <ParticleBG />
             </>
           }
