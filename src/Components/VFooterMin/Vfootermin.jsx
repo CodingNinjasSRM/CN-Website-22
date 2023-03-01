@@ -3,7 +3,7 @@ import React from "react";
 const FooterMin = ({ classNamess }) => {
   return (
     <div
-      className={`flex flex-col space-y-3 md:mt-0 w-full ${classNamess}`}
+      className={`flex flex-col space-y-3 md:mt-0  ${classNamess}`}
     >
       <a
         href="https://www.facebook.com/codingninjasSRM/"

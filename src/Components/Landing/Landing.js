@@ -18,7 +18,7 @@ import {
   /* useAnimation, */ useInView,
 } from "framer-motion";
 import React, {
-  /* Suspense, */ useEffect,
+  /* Suspense, */ useEffect,useState,
   useRef /* , useState */,
 } from "react";
 import ParticleBGLanding from "../ParticleBG/ParticleBGLanding";
@@ -39,7 +39,10 @@ import arrow from "./assets/arrow.svg";
 import filler from "./assets/Frame 8.png";
 import group from "./assets/Group.svg";
 import img1 from "./assets/Img1.svg";
-import img2 from "./assets/Img2.svg";
+import img2 from "./assets/non technical.png";
+import Lottie from "lottie-react";
+import Ninja from "./assets/lottie_ninja2.json";
+import landlotty from "./assets/landinglotty.json";
 // import img3 from "./assets/Img3.svg";
 // import appdev from "./assets/intro to appdev 1.svg";
 import ninja from "./assets/cnani.gif";
@@ -63,6 +66,7 @@ import nontechnical from "./assets/non technical.png"
 
 
 function Landing() {
+
   const goToTop = () => {
     window.scrollTo({
       top: 0,
@@ -114,6 +118,7 @@ function Landing() {
 
   return (
     <>
+    
       <div className="h-screen w-full -z-10 absolute">
         <ParticleBGLanding />
       </div>
@@ -367,7 +372,7 @@ function Landing() {
       </div>
 
       <div className="justify-center md:mt-10 pt-20 pb-20 md:mb-10 px-20 ">
-        <img loading="lazy" src={ninja2} className="mx-auto" alt="" />
+        <Lottie  animationData={Ninja} className="mx-auto h-64" alt="" />
       </div>
     </>
   );

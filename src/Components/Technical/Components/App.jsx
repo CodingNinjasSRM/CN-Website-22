@@ -13,7 +13,7 @@ const App = () => {
   }, []);
   return (
     <div
-      className={`${style.domainHeadingbg} top-40 lg:top-0 h-full lg:h-3/5  absolute flex flex-col justify-center items-center pb-40`}
+      className={`${style.domainHeadingbg} top-52 lg:top-0 h-full lg:h-3/5  absolute flex flex-col justify-center items-center pb-40`}
     >
       {/* Our Domain section */}
       <section className=" text-[#EE4623] tracking-widest mt-20">
@@ -37,7 +37,7 @@ const App = () => {
       <div className="flex flex-col  lg:flex-row mt-8 items-center justify-center  lg:pb-0 ">
         <div>
           <img
-            className=" lg:w-[380px] h-auto w-60 md:w-80  lg:mb-0 lg:ml-20 lg:mr-20 md rounded-xl"
+            className=" lg:w-[380px] h-auto w-60 md:w-80  lg:mb-0 lg:ml-20 lg:mr-20 rounded-xl"
             data-aos="zoom-out"
             src={leftlogo}
             alt=""
@@ -102,7 +102,7 @@ const App = () => {
           <img className=" mx-2 h-80" src={linelogo} alt="" />
         </div>
       </div>
-      <FooterMin classNames="block lg:absolute mb-6  lg:bottom-0" />
+      <FooterMin classNames="block lg:absolute mb-5  lg:bottom-0" />
     </div>
   );
 };
