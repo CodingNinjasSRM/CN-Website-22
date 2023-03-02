@@ -57,9 +57,18 @@ function App() {
           path="/"
           element={
             <>
-              loading ?
-              {<div className="">
-                <Lottie animationData={landlotty} className="absolute mx-auto h-64 top-[35%] left-[45%]"/></div>
+              {loading} ?
+              {
+                <div className="flex absolute top-[40%] left-[40%] md:left-[45%] md:top-[45%] ">
+                  <ClimbingBoxLoader
+                    color="#EE4623"
+                    loading={loading}
+                    // cssOverride={override}
+                    size={40}
+                    aria-label="Loading Spinner"
+                    data-testid="loader"
+                  />
+                </div>
               }
               :{<Navbar />}
               <Suspense fallback={<div>Loading......</div>}>
@@ -93,8 +102,7 @@ function App() {
           path="team"
           element={
             <>
-             <Navbar />
-             
+              <Navbar />
               loading ?
               {
                 <div className="flex absolute top-[40%] left-[40%] md:left-[45%] md:top-[45%] ">
@@ -109,10 +117,12 @@ function App() {
                 </div>
               }
               :
-              {<> 
-                <Suspense fallback={<div>Loading......</div>}>
-                  <LazyTeam />
-                </Suspense></>
+              {
+                <>
+                  <Suspense fallback={<div>Loading......</div>}>
+                    <LazyTeam />
+                  </Suspense>
+                </>
               }
             </>
           }
