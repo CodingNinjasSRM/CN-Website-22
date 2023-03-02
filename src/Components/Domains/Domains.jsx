@@ -8,7 +8,7 @@ import style from "./Domains.module.css";
 
 const Domains = () => {
   return (
-    <div className={`${style.domainsbg} h-screen mt-10 `}>
+    <div className={`${style.domainsbg} h-screen  `}>
       <div className={`${style.ninjacontainer} hidden lg:flex`}>
         <img src={ninja} />
       </div>
@@ -56,7 +56,7 @@ const Domains = () => {
             whileInView={{ x: "-18%", y: "0%" }}
           >
             <Link to="/technical">
-              <img src={roll} alt=""/>
+              <img src={roll} alt="" />
             </Link>
             <span className="absolute z-50 text-3xl top-[40%] md:top-1/2  right-1/2 translate-x-1/2">
               Technical
@@ -71,7 +71,7 @@ const Domains = () => {
             className="relative"
           >
             <Link to="/nontechnical">
-              <img src={roll} alt=""/>
+              <img src={roll} alt="" />
               <span className="absolute z-50 text-3xl top-1/2 right-1/2 translate-x-1/2 -translate-y-10">
                 Non Technical
               </span>
@@ -90,7 +90,7 @@ const Domains = () => {
             whileInView={{ x: "50%", y: "-65%" }}
           >
             <Link to="/technical">
-              <img className="h-72" src={roll} alt="Technical"/>
+              <img className="h-72" src={roll} alt="Technical" />
               <span className="absolute z-50 text-2xl sm:text-3xl top-[40%] md:top-1/2  right-1/2 translate-x-1/2 ">
                 Technical
               </span>
@@ -113,7 +113,7 @@ const Domains = () => {
           </motion.div>
         </div>
       </div>
-      <FooterMin classNames="relative top-[90%] lg:top-[88%]" />
+      <FooterMin classNames="relative top-[90%] md:top-[92%]" />
     </div>
   );
 };
