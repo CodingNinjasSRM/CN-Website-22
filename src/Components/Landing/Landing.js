@@ -18,7 +18,8 @@ import {
   /* useAnimation, */ useInView,
 } from "framer-motion";
 import React, {
-  /* Suspense, */ useEffect,useState,
+  /* Suspense, */ useEffect,
+  useState,
   useRef /* , useState */,
 } from "react";
 import ParticleBGLanding from "../ParticleBG/ParticleBGLanding";
@@ -41,7 +42,7 @@ import group from "./assets/Group.svg";
 import img1 from "./assets/Img1.svg";
 import img2 from "./assets/non technical.png";
 import Lottie from "lottie-react";
-import Ninja from "./assets/lottie_ninja2.json";
+import Ninja from "./assets/lottie_ninja.json";
 import landlotty from "./assets/landinglotty.json";
 // import img3 from "./assets/Img3.svg";
 // import appdev from "./assets/intro to appdev 1.svg";
@@ -61,12 +62,9 @@ import style from "./Landing.module.css";
 // );
 
 import technical from "./assets/technical.png";
-import nontechnical from "./assets/non technical.png"
-
-
+import nontechnical from "./assets/non technical.png";
 
 function Landing() {
-
   const goToTop = () => {
     window.scrollTo({
       top: 0,
@@ -115,10 +113,18 @@ function Landing() {
   const domainsInView = useInView(domainsRef);
   const eventsRef = useRef(null);
   const eventsInView = useInView(eventsRef);
-
+  //   function timeout(delay: number) {
+  //     return new Promise( res => setTimeout(res, delay) );
+  // }
+  // const [visible,setVisible] = useState(false);
+  // useEffect(() => {
+  //   setVisible(true);
+  //   setTimeout(() => {
+  //     setVisible(false);
+  //   }, 5000);
+  // }, []);
   return (
     <>
-    
       <div className="h-screen w-full -z-10 absolute">
         <ParticleBGLanding />
       </div>
@@ -135,11 +141,10 @@ function Landing() {
             </SheetProvider>
           </Canvas>
         ) : null} */}
+        <ParticleBGLanding />
       </div>
       <main className="absolute bg">
-        <div>
-          
-        </div>
+        <div></div>
         <div className="mt-13 md:pb-10 pb-20 " style={{ marginTop: "13vh " }}>
           <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
             <motion.img
@@ -165,14 +170,25 @@ function Landing() {
               <DecoderText text="ABOUT CN" start={aboutInView} delay={500} />
             </div>
             <p className="text-white xl:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10">
-            Welcome to the Web Development Club of CN SRM, a community of students who are passionate about creating and building innovative web applications. Our goal is to provide a platform for students to learn and enhance their web development skills, and to collaborate with like-minded individuals to bring their ideas to life.
-
-            Our club offers a wide range of activities and events that cater to students of all levels, from beginners to experienced developers. Whether you are interested in learning HTML, CSS, and JavaScript, or you want to explore the latest trends in web development, our club has something for everyone.
-
+              Welcome to the Web Development Club of CN SRM, a community of
+              students who are passionate about creating and building innovative
+              web applications. Our goal is to provide a platform for students
+              to learn and enhance their web development skills, and to
+              collaborate with like-minded individuals to bring their ideas to
+              life. Our club offers a wide range of activities and events that
+              cater to students of all levels, from beginners to experienced
+              developers. Whether you are interested in learning HTML, CSS, and
+              JavaScript, or you want to explore the latest trends in web
+              development, our club has something for everyone.
             </p>
           </div>
           <div className="hidden xl:block pl-20 pr-0">
-            <img loading="lazy" src={filler} className="md:w-2/3 ml-10 pb-5 pt-20" alt="" />
+            <img
+              loading="lazy"
+              src={filler}
+              className="md:w-2/3 ml-10 pb-5 pt-20"
+              alt=""
+            />
           </div>
         </div>
       </div>
@@ -232,7 +248,12 @@ function Landing() {
           </div>
           {/* image */}
           <div data-aos="fade" className=" xl:ml-20 xl:pl-14 ml-10 pr-10">
-            <img className="lg:pl-10 pl-0" loading="lazy" src={technical} alt="" />
+            <img
+              className="lg:pl-10 pl-0"
+              loading="lazy"
+              src={technical}
+              alt=""
+            />
           </div>
         </div>
         <div className="grid grid-cols-1 gap-5 py-8 px-3 md:grid-cols-2 ">
@@ -372,7 +393,7 @@ function Landing() {
       </div>
 
       <div className="justify-center md:mt-10 pt-20 pb-20 md:mb-10 px-20 ">
-        <Lottie  animationData={Ninja} className="mx-auto h-64" alt="" />
+        <Lottie animationData={Ninja} className="mx-auto h-64" alt="" />
       </div>
     </>
   );

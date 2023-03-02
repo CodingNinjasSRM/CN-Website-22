@@ -1,13 +1,9 @@
 import { useState, useEffect } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
-
-import SyncLoader from "react-spinners/SyncLoader";
 // import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
 // import lottyimg from "./Components/Landing/assets/land_lazy.json";
 // import teamlottyimg from "./Components/Landing/assets/team_lazy.json";
-import Lottie from "lottie-react";
-import landlotty from "./Components/Landing/assets/landinglotty.json"
 import { Route, Routes /* , useLocation */ } from "react-router-dom";
 import React, { Suspense } from "react";
 import "./App.css";
@@ -39,7 +35,7 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
     <div className="App">
@@ -61,9 +57,18 @@ function App() {
           path="/"
           element={
             <>
-              loading ?
-              {<div className="">
-                <Lottie animationData={landlotty} className="absolute mx-auto h-64 top-[35%] left-[45%]"/></div>
+              {loading} ?
+              {
+                <div className="flex absolute top-[40%] left-[40%] md:left-[45%] md:top-[45%] ">
+                  <ClimbingBoxLoader
+                    color="#EE4623"
+                    loading={loading}
+                    // cssOverride={override}
+                    size={40}
+                    aria-label="Loading Spinner"
+                    data-testid="loader"
+                  />
+                </div>
               }
               :{<Navbar />}
               <Suspense fallback={<div>Loading......</div>}>
@@ -97,28 +102,27 @@ function App() {
           path="team"
           element={
             <>
-             <Navbar />
-             
+              <Navbar />
               loading ?
-              
-              {<div className="flex items-center absolute justify-center top-1/2 left-[45%] text-center">
-             
-                <ClimbingBoxLoader
-                  color="#EE4623"
-                  loading={loading}
-                  // cssOverride={override}
-                  size={40}
-                
-                  aria-label="Loading Spinner"
-                  data-testid="loader"
-                />
-              </div>}
-              
+              {
+                <div className="flex absolute top-[40%] left-[40%] md:left-[45%] md:top-[45%] ">
+                  <ClimbingBoxLoader
+                    color="#EE4623"
+                    loading={loading}
+                    // cssOverride={override}
+                    size={20}
+                    aria-label="Loading Spinner"
+                    data-testid="loader"
+                  />
+                </div>
+              }
               :
-              {<> 
-                <Suspense fallback={<div>Loading......</div>}>
-                  <LazyTeam />
-                </Suspense></>
+              {
+                <>
+                  <Suspense fallback={<div>Loading......</div>}>
+                    <LazyTeam />
+                  </Suspense>
+                </>
               }
             </>
           }
