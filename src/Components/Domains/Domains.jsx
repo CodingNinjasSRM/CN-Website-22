@@ -8,7 +8,7 @@ import style from "./Domains.module.css";
 
 const Domains = () => {
   return (
-    <div className={`${style.domainsbg} h-screen  `}>
+    <div className={`${style.domainsbg} h-screen`}>
       <div className={`${style.ninjacontainer} hidden lg:flex`}>
         <img src={ninja} />
       </div>

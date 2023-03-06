@@ -14,7 +14,7 @@ function Technical() {
     <div
       className={`min-h-screen flex flex-col justify-center items-center ${styles.technicalbg} uppercase mt-32 sm:mt-0`}
     >
-      <div className="grid grid-cols-1 grid-rows-4 lg:mt-12  sm:grid-cols-3 sm:grid-rows-2 gap-y-16 sm:gap-y-20 md:gap-20 lg:gap-x-60 lg:gap-y-36">
+      <div className="grid grid-cols-1 grid-rows-4 lg:mt-12  sm:grid-cols-3 sm:grid-rows-2 gap-y-16 sm:gap-y-20 md:gap-20 lg:gap-x-60 lg:gap-y-36 px-5">
         <div
           className={`justify-self-center self-center opacity-0  text-lg text-white font-semibold ${styles.reveal}`}
         >
@@ -22,7 +22,7 @@ function Technical() {
             <img
               src={compimg}
               alt=""
-              className="transition-transform hover:scale-110 h-56 translate-x-5"
+              className="transition-transform hover:scale-110 h-56 translate-x-5 rounded-md"
             />
             <p className="mt-2 uppercase">competitive programming</p>
           </Link>
@@ -39,7 +39,7 @@ function Technical() {
             <img
               src={webdevimg}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
              <p className="mt-2">Web Dev</p>
           </Link>
@@ -52,7 +52,7 @@ function Technical() {
             <img
               src={webdevimg}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
              <p className="mt-2">Web Dev</p>
           </Link>
@@ -65,20 +65,20 @@ function Technical() {
             <img
               src={aimlimg}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
              <p className="mt-2">AI/ML</p>
           </Link>
         </div>
 
         <div
-          className={`justify-self-center self-center opacity-0  text-lg text-white hidden sm:grid font-semibold ${styles.reveal1} `}
+          className={`justify-self-center self-center opacity-0  text-lg text-white hidden sm:grid font-semibold ${styles.reveal1}  `}
         >
           <Link to="/technical/aiml">
             <img
               src={aimlimg}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
             <p className="mt-2">AI/ML</p>
           </Link>
@@ -91,7 +91,7 @@ function Technical() {
             <img
               src={appimg}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
             <p className="mt-2">App Dev</p>
           </Link>

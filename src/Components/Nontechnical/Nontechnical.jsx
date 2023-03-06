@@ -14,7 +14,7 @@ function Nontechnical() {
     <div
       className={`min-h-screen flex flex-col justify-center items-center ${styles.corporatebg} uppercase mt-32 sm:mt-0`}
     >
-      <div className="grid grid-cols-1 grid-rows-4 lg:mt-12 sm:grid-cols-3 sm:grid-rows-2 gap-y-16 sm:gap-y-20 md:gap-20 lg:gap-x-60 lg:gap-y-36">
+      <div className="grid grid-cols-1 grid-rows-4 lg:mt-12 sm:grid-cols-3 sm:grid-rows-2 gap-y-16 sm:gap-y-20 md:gap-20 lg:gap-x-60 lg:gap-y-36 px-5">
         <div
           className={`justify-self-center self-center opacity-0  text-lg text-white font-semibold ${styles.reveal}`}
         >
@@ -22,7 +22,7 @@ function Nontechnical() {
             <img
               src={editorial}
               alt=""
-              className="transition-transform hover:scale-110 h-56 translate-x-5"
+              className="transition-transform hover:scale-110 h-56 translate-x-5 rounded-md"
             />
             <p className="mt-2">EDITORIAL</p>
           </Link>
@@ -39,7 +39,7 @@ function Nontechnical() {
             <img
               src={corporate}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
             <p className="mt-2">CORPORATE</p>
           </Link>
@@ -52,7 +52,7 @@ function Nontechnical() {
             <img
               src={corporate}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
             <p className="mt-2">CORPORATE</p>
           </Link>
@@ -65,7 +65,7 @@ function Nontechnical() {
             <img
               src={creative}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
             <p className="mt-2">CREATIVES</p>
           </Link>
@@ -78,7 +78,7 @@ function Nontechnical() {
             <img
               src={creative}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
             <p className="mt-2">CREATIVES</p>
           </Link>
@@ -91,7 +91,7 @@ function Nontechnical() {
             <img
               src={dollar}
               alt=""
-              className="transition-transform hover:scale-110 h-56"
+              className="transition-transform hover:scale-110 h-56 rounded-md"
             />
             <p className="mt-2">SPONSORSHIP</p>
           </Link>
