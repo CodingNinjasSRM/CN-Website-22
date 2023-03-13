@@ -50,7 +50,7 @@ const Sponsorship = () => {
           data-aos="zoom-in"
         >
           <img className=" mx-2 bottom-0 h-80" src={linelogo} alt="" />
-          <p className=" text-white mx-10 text-base md:text-md lg:leading-7 lg:text-sm lg:text-left h-80 overflow-y-auto md:h-60">
+          <p className=" text-white mx-10 text-left text-base md:text-md lg:leading-7 lg:text-sm lg:text-left h-80 overflow-y-auto md:h-60">
             Welcome to the Sponsorship Domain of CN SRM! Our aim is to provide
             businesses and organizations with opportunities to support and
             engage with our student community.

@@ -169,17 +169,9 @@ function Landing() {
             >
               <DecoderText text="ABOUT CN" start={aboutInView} delay={500} />
             </div>
-            <p className="text-white xl:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10">
-              Welcome to the Web Development Club of CN SRM, a community of
-              students who are passionate about creating and building innovative
-              web applications. Our goal is to provide a platform for students
-              to learn and enhance their web development skills, and to
-              collaborate with like-minded individuals to bring their ideas to
-              life. Our club offers a wide range of activities and events that
-              cater to students of all levels, from beginners to experienced
-              developers. Whether you are interested in learning HTML, CSS, and
-              JavaScript, or you want to explore the latest trends in web
-              development, our club has something for everyone.
+            <p className="text-white xl:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10 tracking-wider leading-7">
+              Welcome to Coding Ninjas Club SRM! We are a community of passionate coders and executives who love to explore the world of technology and push our limits to create innovative solutions. Our club is designed to provide a platform for students to learn, share, and grow their technical skills.We organize a variety of events throughout the year, from Hackathons and Workshops to amazing Gaming Events.At Coding Ninjas Club SRM, we believe that technology can be a force for good in the world.That's why we encourage our members to use their skills to solve real-world problems and make a positive impact on the society.
+
             </p>
           </div>
           <div className="hidden xl:block pl-20 pr-0">
@@ -220,7 +212,7 @@ function Landing() {
                 />
               </div>
             </div>
-            <p className="text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 ">
+            <p className="text-white md:text-xl text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 tracking-wide ">
               This domain is the backbone of the club that needs certain
               ideation, technical skills and innovation. Members of this domain
               are the pillars of the team who work tirelessly to make it what it
@@ -276,7 +268,7 @@ function Landing() {
                 />
               </div>
             </div>
-            <p className="text-white md:text-xl text-[12px] text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 ">
+            <p className="text-white md:text-xl text-left md:ml-12 md:pr-20 md:mr-10 md:pb-10 ml-12 mb-5 mr-8 tracking-wide">
               In CN, we not only work in technical fields, but also in non tech
               fields. In this domain, we work with creative minds to produce
               good content for stories and posts, we work with the strategic
