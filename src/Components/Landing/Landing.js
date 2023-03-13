@@ -222,14 +222,14 @@ function Landing() {
             </p>
 
             <div className="flex md:pb-20 pb-10">
-              <div className="flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold">
+              <div className="flex-none text-[#EE4623] text-left ml-12 mr-0 font-bold ">
                 <Link to="/technical">VIEW DETAILS</Link>
               </div>
               <div>
                 {" "}
                 <Link to="/technical">
                   <img
-                    className="flex-intial w-4 h-4 mt-1 ml-5"
+                    className="flex-intial w-4 h-4 mt-1 ml-5 hover:translate-x-3  ease-in-out"
                     loading="lazy"
                     src={arrow}
                     alt=""
@@ -284,7 +284,7 @@ function Landing() {
               </div>{" "}
               <Link to="/nontechnical">
                 <img
-                  className="flex-intial w-4 h-4 mt-1 ml-5"
+                  className="flex-intial w-4 h-4 mt-1 ml-5 hover:translate-x-3  ease-in-out"
                   loading="lazy"
                   src={arrow}
                   alt=""
