@@ -328,7 +328,7 @@ function Images() {
         <Image
           position={[-width * 0, -height /0.35, 3.7]}
           scale={0.85}
-          url="./assetsTeam/BoardMembers/Magesh.jpg"
+          url="./assetsTeam/BoardMembers/Magesh.JPG"
         />
         <Image
           position={[-width * 0, -height /0.33, 3.7]}
@@ -401,7 +401,7 @@ function Images() {
         <Image
           position={[-width * 0.14, -height * 2.2, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/BoardMembers/Magesh.jpg"
+          url="./assetsTeam/BoardMembers/Magesh.JPG"
         />
         <Image
           position={[-width * 0.045, -height * 2.2, 3]}
