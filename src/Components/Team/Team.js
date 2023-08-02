@@ -303,12 +303,12 @@ function Images() {
         <Image
           position={[0, -height / 0.8, 2.5]}
           scale={1.65}
-          url="./assetsTeam/BoardMembers/Aritra.jpg"
+          url="./assetsTeam/BoardMembers/Stuti.png"
         />
         <Image
           position={[0, -height / 0.6, 3]}
           scale={1.33}
-          url="./assetsTeam/BoardMembers/Soham.png"
+          url="./assetsTeam/BoardMembers/Toshak.png"
         />
         <Image
           position={[0, -height / 0.5,3.4]}
@@ -323,12 +323,12 @@ function Images() {
         <Image
           position={[0, -height / 0.4, 3.7]}
           scale={0.85}
-          url="./assetsTeam/BoardMembers/Utkarsh.jpg"
+          url="./assetsTeam/BoardMembers/Manas.png"
         />
         <Image
           position={[-width * 0, -height /0.35, 3.7]}
           scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Aadit.jpg"
+          url="./assetsTeam/BoardMembers/Magesh.JPG"
         />
         <Image
           position={[-width * 0, -height /0.33, 3.7]}
@@ -338,12 +338,12 @@ function Images() {
         <Image
           position={[width * 0,  -height /0.31, 3.7]}
           scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Kartikey.jpg"
+          url="./assetsTeam/BoardMembers/Yashaswini.jpg"
         />
         <Image
           position={[width * 0, -height /0.295, 3.7]}
           scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Waseem.jpg"
+          url="./assetsTeam/ExecutiveMembers/Pavan.jpg"
         />
         <Image
           position={[-width * 0,  -height /0.28, 3.7]}
@@ -358,7 +358,7 @@ function Images() {
         <Image
           position={[width * 0,  -height /0.265, 3.7]}
           scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Stuti.png"
+          url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
         />
         <Image
           position={[0,  -height /0.25, 3.7]}
@@ -376,12 +376,12 @@ function Images() {
         <Image
           position={[-width * 0.2, -height / 0.8, 2]}
           scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Aritra.jpg"
+          url="./assetsTeam/BoardMembers/Stuti.png"
         />
         <Image
           position={[width * 0, -height / 0.8, 2]}
           scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Soham.png"
+          url="./assetsTeam/BoardMembers/Toshak.png"
         />
         <Image
           position={[width * 0.2, -height / 0.8, 2]}
@@ -396,12 +396,12 @@ function Images() {
         <Image
           position={[width * 0.11, -height / 0.55, 2.5]}
           scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Utkarsh.jpg"
+          url="./assetsTeam/BoardMembers/Manas.png"
         />
         <Image
           position={[-width * 0.14, -height * 2.2, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Aadit.jpg"
+          url="./assetsTeam/BoardMembers/Magesh.JPG"
         />
         <Image
           position={[-width * 0.045, -height * 2.2, 3]}
@@ -411,12 +411,12 @@ function Images() {
         <Image
           position={[width * 0.05, -height * 2.2, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Kartikey.jpg"
+          url="./assetsTeam/ExecutiveMembers/Pavan.jpg"
         />
         <Image
           position={[width * 0.145, -height * 2.2, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Waseem.jpg"
+          url="./assetsTeam/BoardMembers/Yashaswini.jpg"
         />
         <Image
           position={[-width * 0.1, -height * 2.4, 3]}
@@ -431,7 +431,7 @@ function Images() {
         <Image
           position={[width * 0.1, -height * 2.4, 3]}
           scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Stuti.png"
+          url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
         />
         <Image
           position={[0, -height * 3 - height / 4, 0]}
