@@ -13,7 +13,7 @@ export const president = [
     name: "Abhishek Dubey",
     position: "President",
     image: pres,
-    style: "h-96 w-96",
+    style: "h-64 w-64 md:h-96 md:w-96",
   },
 ];
 
@@ -22,7 +22,7 @@ export const vicePresident = [
     name: "Stuti Gupta",
     position: "Vice President",
     image: vp,
-    style: "h-06 w-96",
+    style: "h-64 w-64 md:h-96 md:w-96 ",
   },
 ];
 
