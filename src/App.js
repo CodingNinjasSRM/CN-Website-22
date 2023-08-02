@@ -19,8 +19,9 @@ import Editorial from "./Components/Nontechnical/Components/Editorial";
 import Sponsorship from "./Components/Nontechnical/Components/Sponsorship";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
 import ParticleBG from "./Components/ParticleBG/ParticleBG";
-import Team from "./Components/Team/Team";
 // import Team from "./Components/Team/Team";
+import TeamNew from "./Components/Team/TeamNew";
+import Team from "./Components/Team/Team";
 import AIML from "./Components/Technical/Components/AIML";
 import AppDev from "./Components/Technical/Components/App";
 import Competitive from "./Components/Technical/Components/Competitive";
@@ -100,30 +101,36 @@ function App() {
         />
         <Route
           path="team"
-          element={
+          // element={
+          //   <>
+          //     <Navbar />
+          //     loading ?
+          //     {
+          //       <div className="flex absolute top-[40%] left-[40%] md:left-[45%] md:top-[45%] ">
+          //         <ClimbingBoxLoader
+          //           color="#EE4623"
+          //           loading={loading}
+          //           // cssOverride={override}
+          //           size={40}
+          //           aria-label="Loading Spinner"
+          //           data-testid="loader"
+          //         />
+          //       </div>
+          //     }
+          //     :
+          //     {
+          //       <>
+          //         <Suspense fallback={<div>Loading......</div>}>
+          //           <LazyTeam />
+          //         </Suspense>
+          //       </>
+          //     }
+          //   </>
+          // }
+          element = {
             <>
-              <Navbar />
-              loading ?
-              {
-                <div className="flex absolute top-[40%] left-[40%] md:left-[45%] md:top-[45%] ">
-                  <ClimbingBoxLoader
-                    color="#EE4623"
-                    loading={loading}
-                    // cssOverride={override}
-                    size={40}
-                    aria-label="Loading Spinner"
-                    data-testid="loader"
-                  />
-                </div>
-              }
-              :
-              {
-                <>
-                  <Suspense fallback={<div>Loading......</div>}>
-                    <LazyTeam />
-                  </Suspense>
-                </>
-              }
+            <Navbar />
+            <TeamNew />
             </>
           }
         />
