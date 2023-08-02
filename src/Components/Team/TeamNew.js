@@ -22,7 +22,11 @@ const TeamNew = () => {
 
   return (
     <div className="flex flex-col justify-center items-center mt-5 w-screen h-auto gap-y-10">
-      <div className={`pt-16 text-[60px] font-[700] teamheading`}>Our Team</div>
+      <div
+        className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading`}
+      >
+        Our Team
+      </div>
       <SmokeBackground />
       {/* <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Cloud1 />
@@ -65,7 +69,9 @@ const TeamNew = () => {
         ))}
       </div>
 
-      <div className={`pt-16 text-[60px] font-[700] teamheading`}>
+      <div
+        className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading`}
+      >
         Team Leads
       </div>
       <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
@@ -93,7 +99,9 @@ const TeamNew = () => {
           showDomains ? "flex" : "hidden"
         }  flex-col justify-center items-center w-screen`}
       >
-        <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
+        <div
+          className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
+        >
           App Dev
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-3/5">
@@ -107,7 +115,9 @@ const TeamNew = () => {
           ))}
         </div>
 
-        <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
+        <div
+          className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
+        >
           Web Dev
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
@@ -121,7 +131,9 @@ const TeamNew = () => {
           ))}
         </div>
 
-        <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
+        <div
+          className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
+        >
           Corporate
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
@@ -135,7 +147,9 @@ const TeamNew = () => {
           ))}
         </div>
 
-        <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
+        <div
+          className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
+        >
           Creatives
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
@@ -149,7 +163,9 @@ const TeamNew = () => {
           ))}
         </div>
 
-        <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
+        <div
+          className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
+        >
           Editorial
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
@@ -163,7 +179,9 @@ const TeamNew = () => {
           ))}
         </div>
 
-        <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
+        <div
+          className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
+        >
           Sponsorship
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
