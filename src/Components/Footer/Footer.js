@@ -205,7 +205,7 @@ function Footer() {
       {/* Copyrights */}
       <div classNameName="dark:bg-neutral-800 dark:bg-opacity-30">
         <div className="mt-7 pt-4 pb-4 text-sm text-white dark:text-stone-200 sm:text-center text-light">
-          © 2022 <a href="/">Coding Ninjas SRM™</a>. All Rights Reserved.
+          © 2023 <a href="/">Coding Ninjas SRM™</a>. All Rights Reserved.
         </div>
       </div>
     </footer>
