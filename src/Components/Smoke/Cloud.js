@@ -8,7 +8,6 @@ const SmokeBackground = () => {
         let scene, camera, renderer;
         const container = containerRef.current;
 
-        // Set up the Three.js scene
         scene = new THREE.Scene();
         camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         camera.position.z = 5;
@@ -16,12 +15,10 @@ const SmokeBackground = () => {
         renderer.setSize(window.innerWidth, window.innerHeight);
         container.appendChild(renderer.domElement);
 
-        // Create a custom 3D smoke geometry
         const smokeTexture = new THREE.TextureLoader().load(cloudImg);
         const smokeMaterial = new THREE.MeshLambertMaterial({ color: 0x622E0C, map: smokeTexture, transparent: true });
         const smokeGeo = new THREE.PlaneBufferGeometry(10, 10);
 
-        // Create multiple smoke particles
         const numParticles = 5;
         for (let i = 0; i < numParticles; i++) {
             const particle = new THREE.Mesh(smokeGeo, smokeMaterial);
@@ -29,23 +26,18 @@ const SmokeBackground = () => {
             scene.add(particle);
         }
 
-        // Set up the lighting
         const ambientLight = new THREE.AmbientLight(0x622E0C);
         scene.add(ambientLight);
         const pointLight = new THREE.PointLight(0x622E0C);
         pointLight.position.set(0, 0, 10);
         scene.add(pointLight);
 
-        // Function to animate the smoke particles
         const animate = () => {
             requestAnimationFrame(animate);
             scene.children.forEach((particle) => {
-                // Rotate the particle around its own axis
-                // particle.rotation.y += 0.005;
 
                 particle.position.y += Math.random() * 0.01;
 
-                // Reset the particle's position when it goes too far away from the camera
                 if (particle.position.y > 5) {
                     particle.position.y = -Math.random() * 2;
                 }
@@ -55,7 +47,6 @@ const SmokeBackground = () => {
 
         animate();
 
-        // Clean up on unmount
         return () => {
             container.removeChild(renderer.domElement);
         };
