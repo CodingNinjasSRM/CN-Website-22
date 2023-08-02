@@ -34,7 +34,7 @@ import ediHead2 from "./assets/Board/Edi/VaishnaviHead.png";
 import sponsiAssoc1 from "./assets/Board/Sponsi/DivyanshiAssoc.png";
 import sponsiAssoc2 from "./assets/Board/Sponsi/LokeshAssoc.png";
 import sponsiHead1 from "./assets/Board/Sponsi/SukhumjeetHead.png";
-// import webHead1 from "./assets/Board/Web/AkshatHead.png";
+import webHead1 from "./assets/Board/Web/AkshatHead.png";
 import webAssoc1 from "./assets/Board/Web/JatinAssoc.png";
 import webHead2 from "./assets/Board/Web/PaavanHead.png";
 
@@ -267,7 +267,7 @@ export const webDev = [
   {
     name: "Akshat Agarwal",
     position: "Head",
-    // image: webHead1,
+    image: webHead1,
     style: "h-52 w-52",
   },
   {
