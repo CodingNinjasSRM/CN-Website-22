@@ -40,7 +40,7 @@ const TeamNew = () => {
         ))}
       </div>
 
-      <Vfootermin classNamess="absolute bottom-1 left-1 lg:bottom-6 lg:left-4" />
+      <Vfootermin classNamess="fixed bottom-1 left-1 lg:bottom-6 lg:left-4" />
     </div>
   );
 };
