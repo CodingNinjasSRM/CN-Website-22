@@ -13,6 +13,7 @@ export const president = [
     name: "Abhishek Dubey",
     position: "President",
     image: pres,
+    style: "h-96 w-96",
   },
 ];
 
@@ -21,6 +22,7 @@ export const vicePresident = [
     name: "Stuti Gupta",
     position: "Vice President",
     image: vp,
+    style: "h-06 w-96",
   },
 ];
 
@@ -29,16 +31,19 @@ export const board = [
     name: "Toshak Kaushik",
     position: "Outreach Officer",
     image: outreach,
+    style: "h-52 w-52",
   },
   {
     name: "Magesh Chockalingam",
     position: "Club Representative",
     image: cr1,
+    style: "h-52 w-52",
   },
   {
     name: "Priyanshi Sharma",
     position: "Club Representative",
     image: cr2,
+    style: "h-52 w-52",
   },
 ];
 
@@ -47,20 +52,24 @@ export const leads = [
     name: "Yashaswini Singh Shaktawat",
     position: "Non-Tech Lead",
     image: ntl1,
+    style: "h-52 w-52",
   },
   {
     name: "Manas Sharma",
     position: "Non-Tech Lead",
     image: ntl2,
+    style: "h-52 w-52",
   },
   {
     name: "Sanskar Gupta",
     position: "Tech Lead",
     image: tl,
+    style: "h-52 w-52",
   },
   {
     name: "Tanishq Kashyap",
     position: "Project Lead",
     image: pl,
+    style: "h-52 w-52",
   },
 ];
