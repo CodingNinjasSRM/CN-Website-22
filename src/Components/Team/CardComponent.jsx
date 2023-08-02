@@ -9,7 +9,7 @@ const CardComponent = ({ name, position, img, style }) => {
   }, []);
   return (
     <div
-      className="text-white flex flex-col items-center justify-center mx-auto gap-1"
+      className="text-white flex flex-col items-center justify-center gap-1 mx-6"
       data-aos="zoom-in-down"
       data-aos-duration="1000"
       data-aos-easing="linear"
