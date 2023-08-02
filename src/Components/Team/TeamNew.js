@@ -108,6 +108,20 @@ const TeamNew = () => {
         </div>
 
         <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
+          Web Development
+        </div>
+        <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
+          {webDev.map(({ name, position, image, style }) => (
+            <CardComponent
+              name={name}
+              position={position}
+              img={image}
+              style={style}
+            />
+          ))}
+        </div>
+
+        <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
           Corporate
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
@@ -154,20 +168,6 @@ const TeamNew = () => {
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
           {sponsi.map(({ name, position, image, style }) => (
-            <CardComponent
-              name={name}
-              position={position}
-              img={image}
-              style={style}
-            />
-          ))}
-        </div>
-
-        <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
-          Web Development
-        </div>
-        <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
-          {webDev.map(({ name, position, image, style }) => (
             <CardComponent
               name={name}
               position={position}

@@ -23,8 +23,8 @@ import corpAssoc6 from "./assets/Board/Corporate/ShrinjoyeeAssoc.png";
 import corpAssoc7 from "./assets/Board/Corporate/SuhaniAssoc.png";
 import creativesAssoc1 from "./assets/Board/Creatives/ArchismanAssoc.png";
 import creativesHead1 from "./assets/Board/Creatives/MilindHead.png";
-// import creativesHead2 from "./assets/Board/Creatives/RajdeepHead.png";
 import creativesAssoc2 from "./assets/Board/Creatives/ParthAssoc.png";
+import creativesHead2 from "./assets/Board/Creatives/RajdeepHead.png";
 import creativesAssoc3 from "./assets/Board/Creatives/VikrantAssoc.png";
 import ediAssoc1 from "./assets/Board/Edi/AmitabhAssoc.png";
 import ediHead1 from "./assets/Board/Edi/DevroopHead.png";
@@ -186,7 +186,7 @@ export const creatives = [
   {
     name: "Rajdeep Chatterjee",
     position: "Head",
-    // image: creativesHead2,
+    image: creativesHead2,
     style: "h-52 w-52",
   },
   {
