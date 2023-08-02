@@ -1,7 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.teamheading{
+  background: linear-gradient(180.94deg, #EE4623 42.62%, rgba(216, 69, 22, 0.8) 51.94%, #EE4623 62.29%, #000000 101.72%);
+  -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

@@ -5,15 +5,20 @@ import Vfootermin from "../VFooterMin/Vfootermin";
 import CardComponent from "./CardComponent";
 
 import { board, leads, president, vicePresident } from "./board";
+import SmokeBackground from "../Smoke/Cloud";
 
 const TeamNew = () => {
   // console.log(president);
   return (
     <div className="flex flex-col justify-center items-center mt-5 w-screen h-auto gap-y-10">
-      <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
+      <div className={`pt-16 text-[60px] font-[700] teamheading`}>
+        Our Team
+      </div>
+      <SmokeBackground />
+      {/* <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
         <Cloud1 />
         <Cloud2 />
-      </Canvas>
+      </Canvas> */}
 
       <div className="flex flex-row flex-wrap items-center justify-around">
         {president.map(({ name, position, image, style }) => (
