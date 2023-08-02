@@ -94,7 +94,7 @@ const TeamNew = () => {
         }  flex-col justify-center items-center w-screen`}
       >
         <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
-          App Development
+          App Dev
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-3/5">
           {appDev.map(({ name, position, image, style }) => (
@@ -108,7 +108,7 @@ const TeamNew = () => {
         </div>
 
         <div className={`pt-16 text-[60px] font-[700] teamheading mb-4`}>
-          Web Development
+          Web Dev
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
           {webDev.map(({ name, position, image, style }) => (
