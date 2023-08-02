@@ -5,7 +5,7 @@ import {
   Scroll,
   ScrollControls,
   Text3D,
-  useScroll
+  useScroll,
 } from "@react-three/drei";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { Suspense, useRef, useState } from "react";
@@ -36,219 +36,218 @@ function Texts() {
   });
   return (
     <>
-      {
-       isMobile?
-       //mobile
-       <group ref={text}>
-        <pointLight
-          position={[0, 0, 0.6]}
-          color="#F26E26"
-          intensity={6}
-          rotation={[-angleToRadians(90), 0, 0]}
-        />
-        <spotLight
-          position={[0, 0, 0.6]}
-          color="#EE4623"
-          intensity={6}
-          rotation={[-angleToRadians(90), 0, 0]}
-        />
-        <Text3D
-          letterSpacing={0}
-          size={0.5}
-          height={0.05}
-          font="Inter_bold.json"
-          position={[-width * 0.25, 1, 0]}
-        >
-          Team
-          <meshStandardMaterial color="white" metalness={1} opacity={0} />
-        </Text3D>
-        <Text3D
-          letterSpacing={0}
-          bevelEnabled
-          bevelThickness={0.001}
-          size={0.3}
-          font="Inter_bold.json"
-          height={0.02}
-          position={[-width * 0.22, -5.7, 2]}
-        >
-          President
-          <meshStandardMaterial color="white" metalness={1} opacity={0} />
-        </Text3D>
-        <Text3D
-          letterSpacing={0}
-          bevelEnabled
-          height={0.02}
-          bevelThickness={0.001}
-          bevelSize={0}
-          size={0.17}
-          font="Inter_bold.json"
-          position={[-width * 0.185, -11.5, 2.5]}
-        >
-          Vice President
-          <meshStandardMaterial color="white" metalness={1} opacity={0} />
-        </Text3D>
-        <Text3D
-          letterSpacing={0.01}
-          bevelEnabled
-          height={0.05}
-          bevelSize={0.001}
-          bevelThickness={0}
-          size={0.11}
-          font="Inter_bold.json"
-          position={[-width * 0.159, -14, 3]}
-        >
-          {`Outreach Officer`}
-          <meshStandardMaterial color="white" metalness={1} opacity={0} />
-        </Text3D>
-        <Text3D
-          letterSpacing={0.01}
-          bevelEnabled
-          height={0.01}
-          bevelSize={0.001}
-          bevelThickness={0}
-          size={0.105}
-          font="Inter_bold.json"
-          position={[-width * 0.107, -16.2, 3.4]}
-        >
-          {`Project Lead`}
-          <meshStandardMaterial color="white" metalness={1} opacity={0} />
-        </Text3D>
-        <Text3D
-          letterSpacing={0.01}
-          bevelEnabled
-          height={0.01}
-          bevelSize={0.001}
-          bevelThickness={0}
-          size={0.105}
-          font="Inter_bold.json"
-          position={[-width * 0.101, -17.9, 3.6]}
-        >
-          {`Tech Lead`}
-          <meshStandardMaterial color="white" metalness={1} opacity={0} />
-        </Text3D>
-        <Text3D
-          letterSpacing={0.01}
-          bevelEnabled
-          height={0.01}
-          bevelSize={0.001}
-          bevelThickness={0}
-          size={0.08}
-          font="Inter_bold.json"
-          position={[-width * 0.107, -20, 3.7]}
-        >
-          {`Non-Tech Lead`}
-          <meshStandardMaterial color="white" metalness={1} opacity={0} />
-        </Text3D>
-        <Html>
-          <Footer />
-        </Html>
-      </group>://desktop
-      <group ref={text}>
-      <pointLight
-        position={[0, 0, 0.6]}
-        color="#F26E26"
-        intensity={6}
-        rotation={[-angleToRadians(90), 0, 0]}
-      />
-      <spotLight
-        position={[0, 0, 0.6]}
-        color="#EE4623"
-        intensity={6}
-        rotation={[-angleToRadians(90), 0, 0]}
-      />
-      <Text3D
-        letterSpacing={0}
-        size={0.5}
-        height={0.05}
-        font="Inter_bold.json"
-        position={[-width * 0.055, 1, 0]}
-      >
-        Team
-        <meshStandardMaterial color="white" metalness={1} opacity={0} />
-      </Text3D>
-      <Text3D
-        letterSpacing={0}
-        bevelEnabled
-        bevelThickness={0}
-        size={0.3}
-        font="Inter_bold.json"
-        height={0.05}
-        position={[-width * 0.055, -6.3, 0]}
-      >
-        President
-        <meshStandardMaterial color="white" metalness={1} opacity={0} />
-      </Text3D>
-      <Text3D
-        letterSpacing={0.01}
-        bevelEnabled
-        height={0.01}
-        bevelThickness={0}
-        bevelSize={0.001}
-        size={width * 0.009}
-        font="Inter_bold.json"
-        position={[-width * 0.25, -11, 2]}
-      >
-        Vice President
-        <meshStandardMaterial color="white" metalness={1} opacity={0} />
-      </Text3D>
-      <Text3D
-        letterSpacing={0.01}
-        bevelEnabled
-        height={0.05}
-        bevelSize={0.001}
-        bevelThickness={0}
-        size={width * 0.009}
-        font="Inter_bold.json"
-        position={[-width * 0.055, -11, 2]}
-      >
-        {`Outreach Officer`}
-        <meshStandardMaterial color="white" metalness={1} opacity={0} />
-      </Text3D>
-      <Text3D
-        letterSpacing={0.01}
-        bevelEnabled
-        height={0.01}
-        bevelSize={0.001}
-        bevelThickness={0}
-        size={width * 0.009}
-        font="Inter_bold.json"
-        position={[width * 0.16, -11, 2]}
-      >
-        {`Project Lead`}
-        <meshStandardMaterial color="white" metalness={1} opacity={0} />
-      </Text3D>
-      <Text3D
-        letterSpacing={0.01}
-        bevelEnabled
-        height={0.01}
-        bevelSize={0.001}
-        bevelThickness={0}
-        size={width * 0.009}
-        font="Inter_bold.json"
-        position={[-width * 0.15, -15.3, 2.5]}
-      >
-        {`Tech Lead`}
-        <meshStandardMaterial color="white" metalness={1} opacity={0} />
-      </Text3D>
-      <Text3D
-        letterSpacing={0.01}
-        bevelEnabled
-        height={0.01}
-        bevelSize={0.001}
-        bevelThickness={0}
-        size={width * 0.009}
-        font="Inter_bold.json"
-        position={[width * 0.06, -15.3, 2.5]}
-      >
-        {`Non-Tech Lead`}
-        <meshStandardMaterial color="white" metalness={1} opacity={0} />
-      </Text3D>
-      <Html>
-        <Footer />
-      </Html>
-    </group>
-      }
-      
+      {isMobile ? (
+        //mobile
+        <group ref={text}>
+          <pointLight
+            position={[0, 0, 0.6]}
+            color="#F26E26"
+            intensity={6}
+            rotation={[-angleToRadians(90), 0, 0]}
+          />
+          <spotLight
+            position={[0, 0, 0.6]}
+            color="#EE4623"
+            intensity={6}
+            rotation={[-angleToRadians(90), 0, 0]}
+          />
+          <Text3D
+            letterSpacing={0}
+            size={0.5}
+            height={0.05}
+            font="Inter_bold.json"
+            position={[-width * 0.25, 1, 0]}
+          >
+            Team
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0}
+            bevelEnabled
+            bevelThickness={0.001}
+            size={0.3}
+            font="Inter_bold.json"
+            height={0.02}
+            position={[-width * 0.22, -5.7, 2]}
+          >
+            President
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0}
+            bevelEnabled
+            height={0.02}
+            bevelThickness={0.001}
+            bevelSize={0}
+            size={0.17}
+            font="Inter_bold.json"
+            position={[-width * 0.185, -11.5, 2.5]}
+          >
+            Vice President
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0.01}
+            bevelEnabled
+            height={0.05}
+            bevelSize={0.001}
+            bevelThickness={0}
+            size={0.11}
+            font="Inter_bold.json"
+            position={[-width * 0.159, -14, 3]}
+          >
+            {`Outreach Officer`}
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0.01}
+            bevelEnabled
+            height={0.01}
+            bevelSize={0.001}
+            bevelThickness={0}
+            size={0.105}
+            font="Inter_bold.json"
+            position={[-width * 0.107, -16.2, 3.4]}
+          >
+            {`Project Lead`}
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0.01}
+            bevelEnabled
+            height={0.01}
+            bevelSize={0.001}
+            bevelThickness={0}
+            size={0.105}
+            font="Inter_bold.json"
+            position={[-width * 0.101, -17.9, 3.6]}
+          >
+            {`Tech Lead`}
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0.01}
+            bevelEnabled
+            height={0.01}
+            bevelSize={0.001}
+            bevelThickness={0}
+            size={0.08}
+            font="Inter_bold.json"
+            position={[-width * 0.107, -20, 3.7]}
+          >
+            {`Non-Tech Lead`}
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Html>
+            <Footer />
+          </Html>
+        </group> //desktop
+      ) : (
+        <group ref={text}>
+          <pointLight
+            position={[0, 0, 0.6]}
+            color="#F26E26"
+            intensity={6}
+            rotation={[-angleToRadians(90), 0, 0]}
+          />
+          <spotLight
+            position={[0, 0, 0.6]}
+            color="#EE4623"
+            intensity={6}
+            rotation={[-angleToRadians(90), 0, 0]}
+          />
+          <Text3D
+            letterSpacing={0}
+            size={0.5}
+            height={0.05}
+            font="Inter_bold.json"
+            position={[-width * 0.055, 1, 0]}
+          >
+            Team
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0}
+            bevelEnabled
+            bevelThickness={0}
+            size={0.3}
+            font="Inter_bold.json"
+            height={0.05}
+            position={[-width * 0.055, -6.3, 0]}
+          >
+            President
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0.01}
+            bevelEnabled
+            height={0.01}
+            bevelThickness={0}
+            bevelSize={0.001}
+            size={width * 0.009}
+            font="Inter_bold.json"
+            position={[-width * 0.25, -11, 2]}
+          >
+            Vice President
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0.01}
+            bevelEnabled
+            height={0.05}
+            bevelSize={0.001}
+            bevelThickness={0}
+            size={width * 0.009}
+            font="Inter_bold.json"
+            position={[-width * 0.055, -11, 2]}
+          >
+            {`Outreach Officer`}
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0.01}
+            bevelEnabled
+            height={0.01}
+            bevelSize={0.001}
+            bevelThickness={0}
+            size={width * 0.009}
+            font="Inter_bold.json"
+            position={[width * 0.16, -11, 2]}
+          >
+            {`Project Lead`}
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0.01}
+            bevelEnabled
+            height={0.01}
+            bevelSize={0.001}
+            bevelThickness={0}
+            size={width * 0.009}
+            font="Inter_bold.json"
+            position={[-width * 0.15, -15.3, 2.5]}
+          >
+            {`Tech Lead`}
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Text3D
+            letterSpacing={0.01}
+            bevelEnabled
+            height={0.01}
+            bevelSize={0.001}
+            bevelThickness={0}
+            size={width * 0.009}
+            font="Inter_bold.json"
+            position={[width * 0.06, -15.3, 2.5]}
+          >
+            {`Non-Tech Lead`}
+            <meshStandardMaterial color="white" metalness={1} opacity={0} />
+          </Text3D>
+          <Html>
+            <Footer />
+          </Html>
+        </group>
+      )}
     </>
   );
 }
@@ -292,155 +291,154 @@ function Images() {
   });
   return (
     <>
-     {
-       isMobile?
-       <group ref={group}>
-        <Image
-          position={[0, -height / 2.5,2]}
-          scale={2}
-          url="./assetsTeam/BoardMembers/Abhishek.jpg"
-        />
-        <Image
-          position={[0, -height / 0.8, 2.5]}
-          scale={1.65}
-          url="./assetsTeam/BoardMembers/Stuti.png"
-        />
-        <Image
-          position={[0, -height / 0.6, 3]}
-          scale={1.33}
-          url="./assetsTeam/BoardMembers/Toshak.png"
-        />
-        <Image
-          position={[0, -height / 0.5,3.4]}
-          scale={1.065}
-          url="./assetsTeam/BoardMembers/Tanishq.jpg"
-        />
-        <Image
-          position={[0, -height / 0.45, 3.6]}
-          scale={0.93}
-          url="./assetsTeam/BoardMembers/Sanskar.jpg"
-        />
-        <Image
-          position={[0, -height / 0.4, 3.7]}
-          scale={0.85}
-          url="./assetsTeam/BoardMembers/Manas.png"
-        />
-        <Image
-          position={[-width * 0, -height /0.35, 3.7]}
-          scale={0.85}
-          url="./assetsTeam/BoardMembers/Magesh.JPG"
-        />
-        <Image
-          position={[-width * 0, -height /0.33, 3.7]}
-          scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Akshat.jpg"
-        />
-        <Image
-          position={[width * 0,  -height /0.31, 3.7]}
-          scale={0.85}
-          url="./assetsTeam/BoardMembers/Yashaswini.jpg"
-        />
-        <Image
-          position={[width * 0, -height /0.295, 3.7]}
-          scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Pavan.jpg"
-        />
-        <Image
-          position={[-width * 0,  -height /0.28, 3.7]}
-          scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Aniket.jpg"
-        />
-        <Image
-          position={[width * 0, -height /0.265, 3.7]}
-          scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Nandini.png"
-        />
-        <Image
-          position={[width * 0,  -height /0.265, 3.7]}
-          scale={0.85}
-          url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
-        />
-        <Image
-          position={[0,  -height /0.25, 3.7]}
-          scale={1}
-          url="./assetsTeam/lastimg.jpg"
-        />
-      </group>
-      ://DEktop
-      <group ref={group}>
-        <Image
-          position={[0, -height / 2.5, 0]}
-          scale={5}
-          url="./assetsTeam/BoardMembers/Abhishek.jpg"
-        />
-        <Image
-          position={[-width * 0.2, -height / 0.8, 2]}
-          scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Stuti.png"
-        />
-        <Image
-          position={[width * 0, -height / 0.8, 2]}
-          scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Toshak.png"
-        />
-        <Image
-          position={[width * 0.2, -height / 0.8, 2]}
-          scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Tanishq.jpg"
-        />
-        <Image
-          position={[-width * 0.11, -height / 0.55, 2.5]}
-          scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Sanskar.jpg"
-        />
-        <Image
-          position={[width * 0.11, -height / 0.55, 2.5]}
-          scale={width * 0.12}
-          url="./assetsTeam/BoardMembers/Manas.png"
-        />
-        <Image
-          position={[-width * 0.14, -height * 2.2, 3]}
-          scale={width * 0.06}
-          url="./assetsTeam/BoardMembers/Magesh.JPG"
-        />
-        <Image
-          position={[-width * 0.045, -height * 2.2, 3]}
-          scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Akshat.jpg"
-        />
-        <Image
-          position={[width * 0.05, -height * 2.2, 3]}
-          scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Pavan.jpg"
-        />
-        <Image
-          position={[width * 0.145, -height * 2.2, 3]}
-          scale={width * 0.06}
-          url="./assetsTeam/BoardMembers/Yashaswini.jpg"
-        />
-        <Image
-          position={[-width * 0.1, -height * 2.4, 3]}
-          scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Aniket.jpg"
-        />
-        <Image
-          position={[width * 0, -height * 2.4, 3]}
-          scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Nandini.png"
-        />
-        <Image
-          position={[width * 0.1, -height * 2.4, 3]}
-          scale={width * 0.06}
-          url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
-        />
-        <Image
-          position={[0, -height * 3 - height / 4, 0]}
-          scale={[width * 0.9, height * 0.7, 1]}
-          url="./assetsTeam/lastimg.jpg"
-        />
-      </group>
-     }
-      
+      {isMobile ? (
+        <group ref={group}>
+          <Image
+            position={[0, -height / 2.5, 2]}
+            scale={2}
+            url="./assetsTeam/BoardMembers/Abhishek.jpg"
+          />
+          <Image
+            position={[0, -height / 0.8, 2.5]}
+            scale={1.65}
+            url="./assetsTeam/BoardMembers/Stuti.png"
+          />
+          <Image
+            position={[0, -height / 0.6, 3]}
+            scale={1.33}
+            url="./assetsTeam/BoardMembers/Toshak.png"
+          />
+          <Image
+            position={[0, -height / 0.5, 3.4]}
+            scale={1.065}
+            url="./assetsTeam/BoardMembers/Tanishq.jpg"
+          />
+          <Image
+            position={[0, -height / 0.45, 3.6]}
+            scale={0.93}
+            url="./assetsTeam/BoardMembers/Sanskar.jpg"
+          />
+          <Image
+            position={[0, -height / 0.4, 3.7]}
+            scale={0.85}
+            url="./assetsTeam/BoardMembers/Manas.png"
+          />
+          <Image
+            position={[-width * 0, -height / 0.35, 3.7]}
+            scale={0.85}
+            url="./assetsTeam/BoardMembers/Magesh.JPG"
+          />
+          <Image
+            position={[-width * 0, -height / 0.33, 3.7]}
+            scale={0.85}
+            url="./assetsTeam/ExecutiveMembers/Akshat.jpg"
+          />
+          <Image
+            position={[width * 0, -height / 0.31, 3.7]}
+            scale={0.85}
+            url="./assetsTeam/BoardMembers/Yashaswini.jpg"
+          />
+          <Image
+            position={[width * 0, -height / 0.295, 3.7]}
+            scale={0.85}
+            url="./assetsTeam/ExecutiveMembers/Pavan.jpg"
+          />
+          <Image
+            position={[-width * 0, -height / 0.28, 3.7]}
+            scale={0.85}
+            url="./assetsTeam/ExecutiveMembers/Aniket.jpg"
+          />
+          <Image
+            position={[width * 0, -height / 0.265, 3.7]}
+            scale={0.85}
+            url="./assetsTeam/ExecutiveMembers/Nandini.png"
+          />
+          <Image
+            position={[width * 0, -height / 0.265, 3.7]}
+            scale={0.85}
+            url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
+          />
+          <Image
+            position={[0, -height / 0.25, 3.7]}
+            scale={1}
+            url="./assetsTeam/lastimg.jpg"
+          />
+        </group>
+      ) : (
+        //DEktop
+        <group ref={group}>
+          <Image
+            position={[0, -height / 2.5, 0]}
+            scale={5}
+            url="./assetsTeam/BoardMembers/Abhishek.jpg"
+          />
+          <Image
+            position={[-width * 0.2, -height / 0.8, 2]}
+            scale={width * 0.12}
+            url="./assetsTeam/BoardMembers/Stuti.png"
+          />
+          <Image
+            position={[width * 0, -height / 0.8, 2]}
+            scale={width * 0.12}
+            url="./assetsTeam/BoardMembers/Toshak.png"
+          />
+          <Image
+            position={[width * 0.2, -height / 0.8, 2]}
+            scale={width * 0.12}
+            url="./assetsTeam/BoardMembers/Tanishq.jpg"
+          />
+          <Image
+            position={[-width * 0.11, -height / 0.55, 2.5]}
+            scale={width * 0.12}
+            url="./assetsTeam/BoardMembers/Sanskar.jpg"
+          />
+          <Image
+            position={[width * 0.11, -height / 0.55, 2.5]}
+            scale={width * 0.12}
+            url="./assetsTeam/BoardMembers/Manas.png"
+          />
+          <Image
+            position={[-width * 0.14, -height * 2.2, 3]}
+            scale={width * 0.06}
+            url="./assetsTeam/BoardMembers/Magesh.JPG"
+          />
+          <Image
+            position={[-width * 0.045, -height * 2.2, 3]}
+            scale={width * 0.06}
+            url="./assetsTeam/ExecutiveMembers/Akshat.jpg"
+          />
+          <Image
+            position={[width * 0.05, -height * 2.2, 3]}
+            scale={width * 0.06}
+            url="./assetsTeam/ExecutiveMembers/Pavan.jpg"
+          />
+          <Image
+            position={[width * 0.145, -height * 2.2, 3]}
+            scale={width * 0.06}
+            url="./assetsTeam/BoardMembers/Yashaswini.jpg"
+          />
+          <Image
+            position={[-width * 0.1, -height * 2.4, 3]}
+            scale={width * 0.06}
+            url="./assetsTeam/ExecutiveMembers/Aniket.jpg"
+          />
+          <Image
+            position={[width * 0, -height * 2.4, 3]}
+            scale={width * 0.06}
+            url="./assetsTeam/ExecutiveMembers/Nandini.png"
+          />
+          <Image
+            position={[width * 0.1, -height * 2.4, 3]}
+            scale={width * 0.06}
+            url="./assetsTeam/ExecutiveMembers/Stuti.jpg"
+          />
+          <Image
+            position={[0, -height * 3 - height / 4, 0]}
+            scale={[width * 0.9, height * 0.7, 1]}
+            url="./assetsTeam/lastimg.jpg"
+          />
+        </group>
+      )}
     </>
   );
 }
@@ -449,7 +447,6 @@ export default function Team() {
   return (
     <>
       <div className="h-screen">
-      
         <Canvas gl={{ antialias: false }} dpr={[1, 1.5]}>
           <Cloud1 />
           <Cloud2 />
@@ -463,10 +460,9 @@ export default function Team() {
                 <Texts />
               </Scroll>
             </ScrollControls>
-          
+
             <Preload />
           </Suspense>
-         
         </Canvas>
         <Vfootermin classNamess="absolute bottom-1 left-1 lg:bottom-6 lg:left-4" />
       </div>
