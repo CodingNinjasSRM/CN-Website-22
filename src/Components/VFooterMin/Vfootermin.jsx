@@ -27,6 +27,7 @@ const FooterMin = ({ classNamess }) => {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
+          className="md:w-8 md:h-8 w-6 h-6"
           fill="currentColor"
           viewBox="0 0 50 50"
           aria-hidden="true"
