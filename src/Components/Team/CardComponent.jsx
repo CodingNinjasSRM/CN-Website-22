@@ -9,14 +9,19 @@ const CardComponent = ({ name, position, img, style }) => {
   }, []);
   return (
     <div
-      className="text-white flex flex-col items-center justify-center mx-auto gap-1"
+      className="text-white flex flex-col items-center justify-center gap-1 mx-6"
       data-aos="zoom-in-down"
       data-aos-duration="1000"
       data-aos-easing="linear"
     >
       <div className=" w-75 h-110 bg-gray-1000 flex justify-center rounded-xl p-8 shadow-[0_0_4px_2px_rgba(255,165,0,0.5)]">
         {console.log(typeof style)}
-        <img src={img} alt={name} className={`my-5 object-contain ${style}`} />
+        <img
+          loading="lazy"
+          src={img}
+          alt={name}
+          className={`my-5 object-contain ${style}`}
+        />
       </div>
       <div>
         {" "}
