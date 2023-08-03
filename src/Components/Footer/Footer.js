@@ -100,6 +100,11 @@ function Footer() {
                 Team
               </Link>
             </li>
+            <li className="mb-4">
+              <a href="https://medium.com/@cnsrm" className="">
+                Medium
+              </a>
+            </li>
           </ul>
         </div>
         {/* Social media handles */}
@@ -173,25 +178,55 @@ function Footer() {
         {/* Services */}
         <div>
           <h2 className="mb-6 text-sm font-bold text-gray-500  dark:text-orange-700">
-            Pages
+            Domains
           </h2>
-          <ul className="text-white dark:text-white">
-            <li className="mb-4">
-              <Link to="/technical/aiml" className="">
-                AI/ML
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link to="/technical/appdev" className="">
-                App Dev
-              </Link>
-            </li>
-            <li className="mb-4">
-              <Link to="/technical/webdev" className="">
-                Web Dev
-              </Link>
-            </li>
-          </ul>
+          <div className="flex items-center justify-center gap-10 ">
+            <ul className="text-white dark:text-white">
+              <li className="mb-4">
+                <Link to="/technical/aiml" className="">
+                  AI/ML
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link to="/technical/appdev" className="">
+                  App Dev
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link to="/technical/webdev" className="">
+                  Web Dev
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link to="/technical/webdev" className="">
+                  CP
+                </Link>
+              </li>
+
+            </ul>
+            <ul className="text-white dark:text-white">
+              <li className="mb-4">
+                <Link to="/nontechnical/corporate" className="">
+                  Corporate
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link to="/nontechnical/creative" className="">
+                  Creative
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link to="/nontechnical/editorial" className="">
+                  Editorial
+                </Link>
+              </li>
+              <li className="mb-4">
+                <Link to="/nontechnical/sponsorship" className="">
+                  Sponsorship
+                </Link>
+              </li>
+            </ul>
+          </div>
         </div>
         <div></div>
       </div>
