@@ -173,7 +173,7 @@ function Footer() {
         {/* Services */}
         <div>
           <h2 className="mb-6 text-sm font-bold text-gray-500  dark:text-orange-700">
-            Services
+            Pages
           </h2>
           <ul className="text-white dark:text-white">
             <li className="mb-4">

@@ -313,10 +313,9 @@ function Landing() {
       </div>
       <div className="pb-5">
         <div className="text-white text-center md:text-xl pb-10">
-          Know more about the upcoming{" "}
-          <Link to="/events" onClick={goToTop}>
-            <span className="text-orange-700">Events</span>
-          </Link>
+          Stay tuned new
+          Events
+          loading...
         </div>
         <div className="absolute right-0 bg-black">
           <img loading="lazy" src={rect} alt="" />
