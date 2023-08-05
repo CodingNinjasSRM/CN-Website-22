@@ -5,6 +5,7 @@ import Vfootermin from "../VFooterMin/Vfootermin";
 import CardComponent from "./CardComponent";
 
 import {
+  aiml,
   appDev,
   board,
   corporate,
@@ -99,6 +100,22 @@ const TeamNew = () => {
           showDomains ? "flex" : "hidden"
         }  flex-col justify-center items-center w-screen`}
       >
+        <div
+          className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
+        >
+          AI/ML
+        </div>
+        <div className="flex flex-row flex-wrap items-center justify-around w-3/5">
+          {aiml.map(({ name, position, image, style }) => (
+            <CardComponent
+              name={name}
+              position={position}
+              img={image}
+              style={style}
+            />
+          ))}
+        </div>
+
         <div
           className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
         >

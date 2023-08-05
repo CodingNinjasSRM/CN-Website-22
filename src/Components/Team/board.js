@@ -10,6 +10,8 @@ import vp from "./assets/ExecutiveTeam/VicePresident.png";
 import ntl1 from "./assets/ExecutiveTeam/WiniNonTechLead.jpg";
 
 // Heads and Associates
+import aimlAssoc1 from "./assets/Board/AIML/AmriteshAssoc.png";
+import aimlAssoc2 from "./assets/Board/AIML/RatishAssoc.png";
 import appHead1 from "./assets/Board/App/MehulHead.png";
 import appHead2 from "./assets/Board/App/PrathamHead.png";
 import corpHead1 from "./assets/Board/Corporate/AarohiHead.png";
@@ -280,6 +282,21 @@ export const webDev = [
     name: "Jatin Kumar",
     position: "Associate",
     image: webAssoc1,
+    style: "h-52 w-52",
+  },
+];
+
+export const aiml = [
+  {
+    name: "Amritesh Kumar",
+    position: "Head",
+    image: aimlAssoc1,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Ratish Oberoi",
+    position: "Head",
+    image: aimlAssoc2,
     style: "h-52 w-52",
   },
 ];
