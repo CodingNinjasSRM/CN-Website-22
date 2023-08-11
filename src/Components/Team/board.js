@@ -37,8 +37,9 @@ import sponsiAssoc1 from "./assets/Board/Sponsi/DivyanshiAssoc.png";
 import sponsiAssoc2 from "./assets/Board/Sponsi/LokeshAssoc.png";
 import sponsiHead1 from "./assets/Board/Sponsi/SukhumjeetHead.png";
 import webHead1 from "./assets/Board/Web/AkshatHead.png";
-import webAssoc1 from "./assets/Board/Web/JatinAssoc.png";
+import webAssoc2 from "./assets/Board/Web/JatinAssoc.png";
 import webHead2 from "./assets/Board/Web/PaavanHead.png";
+import webAssoc1 from "./assets/Board/Web/ShreeAssoc.png";
 
 export const president = [
   {
@@ -279,9 +280,15 @@ export const webDev = [
     style: "h-52 w-52",
   },
   {
-    name: "Jatin Kumar",
+    name: "Shreenidhi",
     position: "Associate",
     image: webAssoc1,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Jatin Kumar",
+    position: "Associate",
+    image: webAssoc2,
     style: "h-52 w-52",
   },
 ];
