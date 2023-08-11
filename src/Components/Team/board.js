@@ -280,7 +280,7 @@ export const webDev = [
     style: "h-52 w-52",
   },
   {
-    name: "Shreenidhi",
+    name: "Shreenidhi Sashisekar",
     position: "Associate",
     image: webAssoc1,
     style: "h-52 w-52",
