@@ -135,6 +135,12 @@ export const corporate = [
     style: "h-52 w-52",
   },
   {
+    name: "Pradyumn Srivastava",
+    position: "Head",
+    image: corpAssoc3,
+    style: "h-52 w-52",
+  },
+  {
     name: "Daksh",
     position: "Associate",
     image: corpAssoc1,
@@ -146,12 +152,7 @@ export const corporate = [
     image: corpAssoc2,
     style: "h-52 w-52",
   },
-  {
-    name: "Pradyumn Srivastava",
-    position: "Associate",
-    image: corpAssoc3,
-    style: "h-52 w-52",
-  },
+
   {
     name: "Raj",
     position: "Associate",
