@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react";
+import { useEffect, useState } from "react";
 import ClimbingBoxLoader from "react-spinners/ClimbingBoxLoader";
 // import { Canvas } from "@react-three/fiber";
 import { motion } from "framer-motion";
 // import lottyimg from "./Components/Landing/assets/land_lazy.json";
 // import teamlottyimg from "./Components/Landing/assets/team_lazy.json";
-import { Route, Routes /* , useLocation */ } from "react-router-dom";
 import React, { Suspense } from "react";
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 // import Chatbot from "./Components/Chatbot/Chatbot";
 import Domains from "./Components/Domains/Domains";
@@ -20,8 +20,8 @@ import Sponsorship from "./Components/Nontechnical/Components/Sponsorship";
 import Nontechnical from "./Components/Nontechnical/Nontechnical";
 import ParticleBG from "./Components/ParticleBG/ParticleBG";
 // import Team from "./Components/Team/Team";
-import TeamNew from "./Components/Team/TeamNew";
 import Team from "./Components/Team/Team";
+import TeamNew from "./Components/Team/TeamNew";
 import AIML from "./Components/Technical/Components/AIML";
 import AppDev from "./Components/Technical/Components/App";
 import Competitive from "./Components/Technical/Components/Competitive";
@@ -38,6 +38,7 @@ function App() {
       setLoading(false);
     }, 2500);
   }, []);
+
   return (
     <div className="App">
       {/* <motion.div
@@ -127,10 +128,10 @@ function App() {
           //     }
           //   </>
           // }
-          element = {
+          element={
             <>
-            <Navbar />
-            <TeamNew />
+              <Navbar />
+              <TeamNew />
             </>
           }
         />
@@ -226,9 +227,18 @@ function App() {
             </>
           }
         />
+        <Route path="apply" element={<Apply />} />
       </Routes>
     </div>
   );
 }
 
 export default App;
+
+const Apply = () => {
+  useEffect(() => {
+    window.location.href = "https://67o0gv9etwk.typeform.com/to/lMTP9Ulh";
+  }, []);
+
+  return <></>;
+};
