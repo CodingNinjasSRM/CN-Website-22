@@ -120,6 +120,11 @@ const Sponsorship = () => {
           <img className=" mx-2 h-80" src={linelogo} alt="" />
         </div>
       </div>
+      <a href="https://forms.gle/FrHSJjG4eEyxTMMy9" target="new" className="py-10">
+        <button className="px-5 py-3 bg-[#EE4623] text-white">
+          Apply Now
+        </button>
+      </a>
       <FooterMin classNames="block lg:absolute mb-5  lg:bottom-0" />
     </div>
   );

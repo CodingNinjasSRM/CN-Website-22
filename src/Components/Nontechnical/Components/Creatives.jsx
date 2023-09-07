@@ -103,6 +103,11 @@ const Creatives = () => {
           <img className=" mx-2 h-80" src={linelogo} alt="" />
         </div>
       </div>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSduy8VZdzffB-evatADS80LOkaqC9R1aunE0fS0lYv772IRtA/viewform?usp=sf_link" target="new" className="py-10">
+        <button className="px-5 py-3 bg-[#EE4623] text-white">
+          Apply Now
+        </button>
+      </a>
       <FooterMin classNames="block lg:absolute mb-5  lg:bottom-0" />
     </div>
   );
