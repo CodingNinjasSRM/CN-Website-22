@@ -237,7 +237,7 @@ export default App;
 
 const Apply = () => {
   useEffect(() => {
-    window.location.href = "https://67o0gv9etwk.typeform.com/to/lMTP9Ulh";
+    window.location.href = "https://codingninjasatsrm.com/domains";
   }, []);
 
   return <></>;
