@@ -1,8 +1,8 @@
 import React, { Suspense, useState } from "react";
 import { Link } from "react-router-dom";
 import Scroll from "react-scroll";
-import cnlogo from "./assets/cnlogo.png";
 import { Model } from "./Shuriken";
+import cnlogo from "./assets/cnlogo.png";
 
 import { Canvas } from "@react-three/fiber";
 
@@ -39,6 +39,18 @@ function Navbar() {
                 <Model />
               </Suspense>
             </Canvas>
+          </div>
+          <div className="pl-4 block md:hidden text-xl sm:text-3xl capitalize font-medium text-[#ee4623]">
+            <Link
+              onClick={() => {
+                setNav(!nav);
+                window.scrollBy(0, 1);
+                goToTop();
+              }}
+              to="/domains"
+            >
+              Apply Now
+            </Link>
           </div>
           <div
             onClick={() => setNav(!nav)}
@@ -86,6 +98,15 @@ function Navbar() {
                   className="block py-2 pr-4 pl-3  md:dark:text-white focus:text-white  md:p-0 dark:hover:text-white"
                 >
                   Team
+                </Link>
+              </li>
+              <li className="">
+                <Link
+                  to="/domains"
+                  onClick={goToTop}
+                  className="block py-2 pr-3 pl-3 md:p-0 hover:text-white text-[#ee4623]"
+                >
+                  Apply Now
                 </Link>
               </li>
               {/* <li>
