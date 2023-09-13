@@ -1,8 +1,8 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
 import style from "./Domainspage.module.css";
-import linelogo from "./logo2.png";
 import leftlogo from "./assets/web_dev.png";
+import linelogo from "./logo2.png";
 // import { motion } from "framer-motion";
 import "aos/dist/aos.css";
 import FooterMin from "../../FooterMin/FooterMin";
@@ -96,10 +96,12 @@ const Web = () => {
           <img className=" mx-2 h-80" src={linelogo} alt="" />
         </div>
       </div>
-      <a href="https://forms.gle/Dec9qGFvfNfTBsJV6" target="new" className="py-10">
-        <button className="px-5 py-3 bg-[#EE4623] text-white">
-          Apply Now
-        </button>
+      <a
+        href="https://forms.gle/ymrDRnHUTxqo81E27"
+        target="new"
+        className="py-10"
+      >
+        <button className="px-5 py-3 bg-[#EE4623] text-white">Apply Now</button>
       </a>
       <FooterMin classNames="block lg:absolute mb-5 lg:bottom-0" />
     </div>
