@@ -40,18 +40,7 @@ function Navbar() {
               </Suspense>
             </Canvas>
           </div>
-          <div className="pl-4 block md:hidden text-xl sm:text-3xl capitalize font-medium text-[#ee4623]">
-            <Link
-              onClick={() => {
-                setNav(!nav);
-                window.scrollBy(0, 1);
-                goToTop();
-              }}
-              to="/domains"
-            >
-              Apply Now
-            </Link>
-          </div>
+
           <div
             onClick={() => setNav(!nav)}
             className="flex md:hidden md:order-2 px-5 py-2.5 mr-3 md:mr-0 z-20"
@@ -98,15 +87,6 @@ function Navbar() {
                   className="block py-2 pr-4 pl-3  md:dark:text-white focus:text-white  md:p-0 dark:hover:text-white"
                 >
                   Team
-                </Link>
-              </li>
-              <li className="">
-                <Link
-                  to="/domains"
-                  onClick={goToTop}
-                  className="block py-2 pr-3 pl-3 md:p-0 hover:text-white text-[#ee4623]"
-                >
-                  Apply Now
                 </Link>
               </li>
               {/* <li>
