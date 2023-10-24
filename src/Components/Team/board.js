@@ -1,7 +1,5 @@
 // Executive Team
 import cr1 from "./assets/ExecutiveTeam/MageshCR.png";
-import ntl2 from "./assets/ExecutiveTeam/ManasNonTechLead.png";
-import outreach from "./assets/ExecutiveTeam/Outreach.png";
 import pres from "./assets/ExecutiveTeam/President.png";
 import cr2 from "./assets/ExecutiveTeam/PriyanshiCR.png";
 import pl from "./assets/ExecutiveTeam/ProjectLead.png";
@@ -35,6 +33,7 @@ import ediAssoc3 from "./assets/Board/Edi/TanayAssoc.png";
 import ediHead2 from "./assets/Board/Edi/VaishnaviHead.png";
 import sponsiAssoc1 from "./assets/Board/Sponsi/DivyanshiAssoc.png";
 import sponsiAssoc2 from "./assets/Board/Sponsi/LokeshAssoc.png";
+import sponsiAssoc3 from "./assets/Board/Sponsi/SoumyaAssoc.png"
 import sponsiHead1 from "./assets/Board/Sponsi/SukhumjeetHead.png";
 import webHead1 from "./assets/Board/Web/AkshatHead.png";
 import webAssoc2 from "./assets/Board/Web/JatinAssoc.png";
@@ -43,7 +42,7 @@ import webAssoc1 from "./assets/Board/Web/ShreeAssoc.png";
 
 export const president = [
   {
-    name: "Abhishek Dubey",
+    name: "Toshak Kaushik",
     position: "President",
     image: pres,
     style: "h-64 w-64 md:h-80 md:w-80",
@@ -52,7 +51,7 @@ export const president = [
 
 export const vicePresident = [
   {
-    name: "Stuti Gupta",
+    name: "Manas Sharma",
     position: "Vice President",
     image: vp,
     style: "h-64 w-64 md:h-80 md:w-80 ",
@@ -60,12 +59,6 @@ export const vicePresident = [
 ];
 
 export const board = [
-  {
-    name: "Toshak Kaushik",
-    position: "Outreach Officer",
-    image: outreach,
-    style: "h-52 w-52",
-  },
   {
     name: "Magesh Chockalingam",
     position: "Club Representative",
@@ -85,12 +78,6 @@ export const leads = [
     name: "Yashaswini Singh Shaktawat",
     position: "Non-Tech Lead",
     image: ntl1,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Manas Sharma",
-    position: "Non-Tech Lead",
-    image: ntl2,
     style: "h-52 w-52",
   },
   {
@@ -124,27 +111,9 @@ export const appDev = [
 
 export const corporate = [
   {
-    name: "Aarohi Kothari",
-    position: "Head",
-    image: corpHead1,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Naman Singh",
-    position: "Head",
-    image: corpHead2,
-    style: "h-52 w-52",
-  },
-  {
     name: "Pradyumn Srivastava",
     position: "Head",
     image: corpAssoc3,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Daksh",
-    position: "Associate",
-    image: corpAssoc1,
     style: "h-52 w-52",
   },
   {
@@ -164,12 +133,6 @@ export const corporate = [
     name: "Sanskriti Garg",
     position: "Associate",
     image: corpAssoc5,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Shrinjoyee Chatterjee",
-    position: "Associate",
-    image: corpAssoc6,
     style: "h-52 w-52",
   },
   {
@@ -197,12 +160,6 @@ export const creatives = [
     name: "Archisman",
     position: "Associate",
     image: creativesAssoc1,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Parth",
-    position: "Associate",
-    image: creativesAssoc2,
     style: "h-52 w-52",
   },
   {
@@ -265,6 +222,12 @@ export const sponsi = [
     image: sponsiAssoc2,
     style: "h-52 w-52",
   },
+  {
+    name: "Soumya Upadhyay",
+    position: "Associate",
+    image: sponsiAssoc3,
+    style: "h-52 w-52",
+  },
 ];
 
 export const webDev = [
@@ -284,12 +247,6 @@ export const webDev = [
     name: "Shreenidhi Sashisekar",
     position: "Associate",
     image: webAssoc1,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Jatin Kumar",
-    position: "Associate",
-    image: webAssoc2,
     style: "h-52 w-52",
   },
 ];
