@@ -27,6 +27,9 @@ import AppDev from "./Components/Technical/Components/App";
 import Competitive from "./Components/Technical/Components/Competitive";
 import Web from "./Components/Technical/Components/Web";
 import Technical from "./Components/Technical/Technical";
+import CodeA from "./Components/cad/CodeA";
+import CodeB from "./Components/cad/CodeB";
+import CodeC from "./Components/cad/CodeC";
 const LazyLanding = React.lazy(() => import("./Components/Landing/Landing"));
 const LazyTeam = React.lazy(() => import("./Components/Team/Team"));
 
@@ -228,6 +231,18 @@ function App() {
           }
         />
         <Route path="apply" element={<Apply />} />
+        <Route
+          path="c10618fd-b31c-4536-8641-7a291dece111"
+          element={<CodeA />}
+        />
+        <Route
+          path="79d7e974-c632-4716-939e-70fb1e4d5b1b"
+          element={<CodeB />}
+        />
+        <Route
+          path="eeeef92f-f281-40d5-9c81-dba4890b9084"
+          element={<CodeC />}
+        />
       </Routes>
     </div>
   );
