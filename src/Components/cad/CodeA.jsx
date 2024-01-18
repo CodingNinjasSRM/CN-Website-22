@@ -15,23 +15,42 @@ function CodeA() {
   }, []);
 
   const aboutRef = useRef(null);
+  const aboutRef2 = useRef(null);
   const scrollButtonRef = useRef(null);
   const aboutInView = useInView(aboutRef);
 
   const [showScrollButton, setShowScrollButton] = useState(false);
 
   const scrollToRules = () => {
-    aboutRef.current.scrollIntoView({ behavior: "smooth" });
+    aboutRef2.current.scrollIntoView({ behavior: "smooth" });
   };
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowScrollButton(true);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timeoutId);
   }, []);
 
+  const data ={
+    "rules": {
+      "Screenshot Requirement": {
+        "a": "Upon scanning the QR code for Day 1, open the corresponding website and take a screenshot.",
+        "b": "Save the screenshot on your device."
+      },
+      "Code Preservation": 'Keep the Day 1 Code ("PRERAJULiSATION") stored on your device. It will be required for future stages of the challenge.',
+      "Critical Information in QR Codes": {
+        "a": "One of the QR codes encountered during the challenge will reveal details about the final day.",
+        "b": "Be attentive and make sure not to miss any information provided by the QR codes."
+      },
+      "Continuation of the Challenge": {
+        "a": "Tomorrow, a new QR code will be placed at the same location where you found the Day 1 QR code.",
+        "b": "Ensure that you are ready to scan the new QR code to proceed with the challenge."
+      }
+    },
+    "note": "It is crucial to follow these rules to successfully navigate through the challenge. Stay vigilant for updates and information in the QR codes for a seamless progression and make sure you follow us on our INSTAGRAM for further updates. (add the insta link here)"
+  }
   return (
     <>
       <div className="h-screen w-full -z-10 absolute">
@@ -42,10 +61,10 @@ function CodeA() {
       </div>
       <div className="w-screen h-screen flex flex-col items-center justify-center absolute inset-0">
         <div
-          className={`${styles.heading} xl:text-9xl md:text-8xl text-5xl text-transparent`}
+          className={`${styles.heading} md:text-6xl text-3xl text-transparent font-medium`}
           ref={aboutRef}
         >
-          <DecoderText text="NINJA" start={aboutInView} delay={500} />
+          <DecoderText text="TOSHAKERATION" start={aboutInView} delay={500} />
         </div>
         {showScrollButton && (
           <motion.button
@@ -61,8 +80,8 @@ function CodeA() {
         </motion.button>
         )}
       </div>
-      <div ref={aboutRef}>
-        <Rules />
+      <div ref={aboutRef2}>
+        <Rules data={data}/>
       </div>
     </>
   );

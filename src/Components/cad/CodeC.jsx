@@ -15,6 +15,7 @@ function CodeC() {
   }, []);
 
   const aboutRef = useRef(null);
+  const aboutRef2 = useRef(null);
   const scrollButtonRef = useRef(null);
   const aboutInView = useInView(aboutRef);
 
@@ -27,11 +28,27 @@ function CodeC() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowScrollButton(true);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timeoutId);
   }, []);
-
+  const data ={
+    "rules": {
+      "screenshot_requirement": {
+        "a": "Upon scanning the QR code for Day 3, visit the corresponding website and take a screenshot.",
+        "b": "Save the screenshot on your device."
+      },
+      "code_preservation": "Keep the Day 3 Code (\"100000+\") stored on your device. This code is essential for the Final Day.",
+      "final_day_information": {
+        "a": "The Final Day is scheduled for tomorrow. Ensure you have the Day 3 Code saved for the upcoming events."
+      },
+      "reporting_to_helpdesk": {
+        "a": "Tomorrow, report to the HELPDESK of CODING NINJAS SRM, located on the ground floor UB.",
+        "b": "Representatives at the HELPDESK will provide you with the final step to redeem the prize."
+      }
+    },
+    "note": "Make sure to adhere to these instructions to successfully complete the challenge. Your presence at the HELPDESK on the Final Day is crucial for the redemption process. Keep the code and screenshots secure for the upcoming events."
+  }
   return (
     <>
       <div className="h-screen w-full -z-10 absolute">
@@ -42,10 +59,10 @@ function CodeC() {
       </div>
       <div className="w-screen h-screen flex flex-col items-center justify-center absolute inset-0">
         <div
-          className={`${styles.heading} xl:text-9xl md:text-8xl text-5xl text-transparent`}
+          className={`${styles.heading} md:text-6xl text-3xl text-transparent font-medium`}
           ref={aboutRef}
         >
-          <DecoderText text="HEART" start={aboutInView} delay={500} />
+          <DecoderText text="7ANISHQ" start={aboutInView} delay={500} />
         </div>
         {showScrollButton && (
           <motion.button
@@ -61,8 +78,8 @@ function CodeC() {
         </motion.button>
         )}
       </div>
-      <div ref={aboutRef}>
-        <Rules />
+      <div ref={aboutRef2}>
+        <Rules data={data}/>
       </div>
     </>
   );

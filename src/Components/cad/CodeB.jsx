@@ -15,6 +15,7 @@ function CodeB() {
   }, []);
 
   const aboutRef = useRef(null);
+  const aboutRef2 = useRef(null);
   const scrollButtonRef = useRef(null);
   const aboutInView = useInView(aboutRef);
 
@@ -27,11 +28,28 @@ function CodeB() {
   useEffect(() => {
     const timeoutId = setTimeout(() => {
       setShowScrollButton(true);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timeoutId);
   }, []);
-
+  const data ={
+    "rules": {
+      "Screenshot Requirement": {
+        "a": "Upon scanning the QR code for Day 2, access the corresponding website and take a screenshot.",
+        "b": "Save the screenshot on your device."
+      },
+      "Code Preservation": 'Keep the Day 2 Code ("FARHANiTRATE") stored on your device. This code will be essential for the Final Day.',
+      "Critical Information in QR Codes": {
+        "a": "Details about the final day will be revealed in one of the QR codes encountered during the challenge.",
+        "b": "Pay close attention to the information provided by the QR codes to avoid missing any crucial updates."
+      },
+      "Continuation of the Challenge": {
+        "a": "Tomorrow, a new QR code will be placed at the same location where you found the Day 2 QR code.",
+        "b": "Ensure that you have the necessary preparations to scan the new QR code for the next stage of the challenge."
+      }
+    },
+    "note": "It is crucial to follow these rules to successfully navigate through the challenge. Stay vigilant for updates and information in the QR codes for a seamless progression and make sure you follow us on our INSTAGRAM for further updates. (add the insta link here)"
+  }
   return (
     <>
       <div className="h-screen w-full -z-10 absolute">
@@ -42,10 +60,10 @@ function CodeB() {
       </div>
       <div className="w-screen h-screen flex flex-col items-center justify-center absolute inset-0">
         <div
-          className={`${styles.heading} xl:text-9xl md:text-8xl text-5xl text-transparent`}
+          className={`${styles.heading} md:text-6xl text-3xl text-transparent font-medium`}
           ref={aboutRef}
         >
-          <DecoderText text="AT" start={aboutInView} delay={500} />
+          <DecoderText text="SANSKARMANTRA" start={aboutInView} delay={500} />
         </div>
         {showScrollButton && (
           <motion.button
@@ -61,8 +79,8 @@ function CodeB() {
         </motion.button>
         )}
       </div>
-      <div ref={aboutRef}>
-        <Rules />
+      <div ref={aboutRef2}>
+        <Rules data={data} />
       </div>
     </>
   );
