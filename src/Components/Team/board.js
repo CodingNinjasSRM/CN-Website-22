@@ -33,7 +33,7 @@ import ediAssoc3 from "./assets/Board/Edi/TanayAssoc.png";
 import ediHead2 from "./assets/Board/Edi/VaishnaviHead.png";
 import sponsiAssoc1 from "./assets/Board/Sponsi/DivyanshiAssoc.png";
 import sponsiAssoc2 from "./assets/Board/Sponsi/LokeshAssoc.png";
-import sponsiAssoc3 from "./assets/Board/Sponsi/SoumyaAssoc.png"
+import sponsiAssoc3 from "./assets/Board/Sponsi/SoumyaAssoc.png";
 import sponsiHead1 from "./assets/Board/Sponsi/SukhumjeetHead.png";
 import webHead1 from "./assets/Board/Web/AkshatHead.png";
 import webAssoc2 from "./assets/Board/Web/JatinAssoc.png";
@@ -65,21 +65,11 @@ export const board = [
     image: cr1,
     style: "h-52 w-52",
   },
-  {
-    name: "Priyanshi Sharma",
-    position: "Club Representative",
-    image: cr2,
-    style: "h-52 w-52",
-  },
+
 ];
 
 export const leads = [
-  {
-    name: "Yashaswini Singh Shaktawat",
-    position: "Non-Tech Lead",
-    image: ntl1,
-    style: "h-52 w-52",
-  },
+
   {
     name: "Sanskar Gupta",
     position: "Tech Lead",
