@@ -234,9 +234,9 @@ function App() {
         />
         <Route path="apply" element={<Apply />} />
         {codeEnabled && (
-             <Route
-              path="79d7e974-c632-4716-939e-70fb1e4d5b1b"
-              element={<CodeB />}
+           <Route
+              path="eeeef92f-f281-40d5-9c81-dba4890b9084"
+              element={<CodeC />}
             />
         
         )}
@@ -246,9 +246,9 @@ function App() {
             path="c10618fd-b31c-4536-8641-7a291dece111"
             element={<CodeA />}
           />
-            <Route
-              path="eeeef92f-f281-40d5-9c81-dba4890b9084"
-              element={<CodeC />}
+              <Route
+              path="79d7e974-c632-4716-939e-70fb1e4d5b1b"
+              element={<CodeB />}
             />
           </>
         )}
