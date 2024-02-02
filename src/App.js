@@ -30,6 +30,7 @@ import Technical from "./Components/Technical/Technical";
 import CodeA from "./Components/cad/CodeA";
 import CodeB from "./Components/cad/CodeB";
 import CodeC from "./Components/cad/CodeC";
+import CodeForm from "./Components/CodeCheck/CodeCheck";
 const LazyLanding = React.lazy(() => import("./Components/Landing/Landing"));
 const LazyTeam = React.lazy(() => import("./Components/Team/Team"));
 
@@ -209,6 +210,15 @@ function App() {
               <Navbar />
               <AIML />
               <ParticleBG />
+            </>
+          }
+        />
+        <Route
+          path="code"
+          element={
+            <>
+            <Navbar/>
+              <CodeForm/>
             </>
           }
         />

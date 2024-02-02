@@ -32,6 +32,7 @@ function Navbar() {
             <img src={cnlogo} className="h-8 " alt="CN Logo" />
           </Link>
           <div className="hidden md:flex md:order-2 px-5 py-2.5 mr-3 md:mr-0">
+          <Link to="/code">
             <Canvas className="!w-10 !h-10">
               <ambientLight intensity={10} color={"#942b14"} />
               <spotLight position={[0, 0, 20]} />
@@ -39,12 +40,14 @@ function Navbar() {
                 <Model />
               </Suspense>
             </Canvas>
+                </Link>
           </div>
 
           <div
             onClick={() => setNav(!nav)}
             className="flex md:hidden md:order-2 px-5 py-2.5 mr-3 md:mr-0 z-20"
           >
+            <Link to="/code">
             <Canvas className="!w-10 !h-10">
               <ambientLight intensity={10} color={"#942b14"} />
               <spotLight position={[0, 0, 20]} />
@@ -52,6 +55,7 @@ function Navbar() {
                 <Model />
               </Suspense>
             </Canvas>
+            </Link>
           </div>
           <div
             className="hidden justify-between items-center w-full md:flex ml-10 md:w-auto md:order-1"

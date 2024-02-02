@@ -174,7 +174,8 @@ function Landing() {
 
             </p>
           </div>
-          <div className="hidden xl:block pl-20 pr-0">
+          <Link to="/code">
+          <div className="hidden xl:block pl-20 pr-0 cursor-pointer">
             <img
               loading="lazy"
               src={filler}
@@ -182,6 +183,7 @@ function Landing() {
               alt=""
             />
           </div>
+          </Link>
         </div>
       </div>
 
