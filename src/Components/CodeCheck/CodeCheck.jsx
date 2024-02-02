@@ -15,7 +15,7 @@ const CodeForm = () => {
 
     if (
       code1 ===
-        "TOSHAKREATiON" &&
+        "TOSHAKERATION" &&
       code2 ===
         "SANSKARMANTRA" &&
       code3 ===
