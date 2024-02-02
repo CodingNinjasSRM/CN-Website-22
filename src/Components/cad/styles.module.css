@@ -1,0 +1,6 @@
+.heading {
+  /* background: linear-gradient(92.92deg, #ee4623 25%, #0d0d0d 124.11%); */
+  background: #ee4623;
+  background-clip: text;
+  font-family: "Montserrat";
+}
