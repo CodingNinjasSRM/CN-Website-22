@@ -27,6 +27,8 @@ import AppDev from "./Components/Technical/Components/App";
 import Competitive from "./Components/Technical/Components/Competitive";
 import Web from "./Components/Technical/Components/Web";
 import Technical from "./Components/Technical/Technical";
+import CodeForm from "./Components/CodeCheck/CodeCheck";
+=======
 import CodeA from "./Components/cad/CodeA";
 import CodeB from "./Components/cad/CodeB";
 import CodeC from "./Components/cad/CodeC";
@@ -102,6 +104,15 @@ function App() {
               <Navbar />
               <Nontechnical />
               <ParticleBG />
+            </>
+          }
+        />
+        <Route
+          path="code"
+          element={
+            <>
+            <Navbar/>
+              <CodeForm/>
             </>
           }
         />
