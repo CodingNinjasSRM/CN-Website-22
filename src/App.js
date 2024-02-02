@@ -250,7 +250,7 @@ function App() {
             />
         
         )}
-        {!codeEnabled && (
+        {codeEnabled && (
           <>
            <Route
             path="c10618fd-b31c-4536-8641-7a291dece111"
