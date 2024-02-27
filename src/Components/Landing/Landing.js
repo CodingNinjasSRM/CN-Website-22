@@ -55,6 +55,8 @@ import background from "./assets/1035529526-preview.mp4";
 // import House from "./House/house";
 // import state from "./House/ninjahouse.json";
 import style from "./Landing.module.css";
+import appbanner from "./assets/appbanner.png";
+import webbanner from "./assets/webbanner.png";
 // studio.initialize()
 // studio.extend(extension)
 // const demoSheet = getProject("Demo Project", { state: state }).sheet(
@@ -146,7 +148,7 @@ function Landing() {
       <main className="absolute bg">
         <div></div>
         <div className="mt-13 md:pb-10 pb-20 " style={{ marginTop: "13vh " }}>
-          <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
+          {/* <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -155,12 +157,20 @@ function Landing() {
               className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0"
               alt="Ninja"
             />
+          </div> */}
+          <div className="hidden md:flex">
+            <img src={webbanner} alt="cad" className="w-screen  -z-100 justify-center mx-auto"  />
           </div>
+
+          <div> 
+           < img src={appbanner} alt="cad" className="w-screen  -z-100 justify-center mx-auto flex md:hidden"  />
+          </div>
+
         </div>
       </main>
 
       {/* About */}
-      <div className="bg-zinc-900 bg-opacity-40" id="about" name="about">
+      <div className="bg-zinc-900 bg-opacity-40 sm:mt-28 md:mt-64 lg:mt-80 xl:mt-96" id="about" name="about">
         <div className="grid grid-cols-1 gap-5 py-8 px-3 xl:grid-cols-2 pb-20">
           <div className="">
             <div
@@ -175,14 +185,14 @@ function Landing() {
             </p>
           </div>
           <Link to="/code">
-          <div className="hidden xl:block pl-20 pr-0 cursor-pointer">
-            <img
-              loading="lazy"
-              src={filler}
-              className="md:w-2/3 ml-10 pb-5 pt-20"
-              alt=""
-            />
-          </div>
+            <div className="hidden xl:block pl-20 pr-0 cursor-pointer">
+              <img
+                loading="lazy"
+                src={filler}
+                className="md:w-2/3 ml-10 pb-5 pt-20"
+                alt=""
+              />
+            </div>
           </Link>
         </div>
       </div>
