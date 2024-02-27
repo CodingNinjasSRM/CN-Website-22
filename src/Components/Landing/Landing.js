@@ -158,19 +158,24 @@ function Landing() {
               alt="Ninja"
             />
           </div>
-          <div className="hidden md:flex">
+          <div className="hidden md:block md:flex md:flex-col absolute">
             <img src={webbanner} alt="cad" className="w-screen  -z-100 justify-center mx-auto"  />
+            <a href="https://cad-website-2.vercel.app/" target="new">
+              <button className="py-3 w-1/5 px-6 text-xl text-white bg-pink-800 rounded absolute bottom-[10vh] left-[25vw] ">KNOW MORE</button>
+            </a>
           </div>
 
-          <div> 
+          <div className="block md:hidden absolute"> 
            < img src={appbanner} alt="cad" className="w-screen  -z-100 justify-center mx-auto flex md:hidden"  />
+           <a href="https://cad-website-2.vercel.app/" target="new">
+             <button className="py-3  px-6 text-sm text-white bg-pink-800 rounded absolute left-[30vw]">KNOW MORE</button>
+            </a>
           </div>
-
         </div>
       </main>
 
       {/* About */}
-      <div className="bg-zinc-900 bg-opacity-40 sm:mt-28 md:mt-64 lg:mt-80 xl:mt-96" id="about" name="about">
+      <div className="bg-zinc-900 bg-opacity-40 sm:mt-[55vh] md:mt-[50vh] lg:mt-[65vh] xl:mt-[95vh]" id="about" name="about">
         <div className="grid grid-cols-1 gap-5 py-8 px-3 xl:grid-cols-2 pb-20">
           <div className="">
             <div
