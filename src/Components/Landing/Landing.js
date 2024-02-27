@@ -148,7 +148,7 @@ function Landing() {
       <main className="absolute bg">
         <div></div>
         <div className="mt-13 md:pb-10 pb-20 " style={{ marginTop: "13vh " }}>
-          {/* <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
+          <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
             <motion.img
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
@@ -157,7 +157,7 @@ function Landing() {
               className="inset-0 object-cover mx-auto mt-5 pt-12 md:pt-0"
               alt="Ninja"
             />
-          </div> */}
+          </div>
           <div className="hidden md:flex">
             <img src={webbanner} alt="cad" className="w-screen  -z-100 justify-center mx-auto"  />
           </div>
