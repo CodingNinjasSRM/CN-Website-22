@@ -55,8 +55,7 @@ import background from "./assets/1035529526-preview.mp4";
 // import House from "./House/house";
 // import state from "./House/ninjahouse.json";
 import style from "./Landing.module.css";
-import appbanner from "./assets/appbanner.png";
-import webbanner from "./assets/webbanner.png";
+
 // studio.initialize()
 // studio.extend(extension)
 // const demoSheet = getProject("Demo Project", { state: state }).sheet(
@@ -65,6 +64,7 @@ import webbanner from "./assets/webbanner.png";
 
 import technical from "./assets/technical.png";
 import nontechnical from "./assets/non technical.png";
+import CadBanner from "./CadBanner";
 
 function Landing() {
   const goToTop = () => {
@@ -147,7 +147,7 @@ function Landing() {
       </div>
       <main className="absolute bg">
         <div></div>
-        <div className="mt-13 md:pb-10 pb-20 " style={{ marginTop: "13vh " }}>
+        <div className="md:pb-10 pb-20 " style={{ marginTop: "13vh" }}>
           <div className="mx-auto left-6 max-w-screen-lg overflow-hidden justify-center container pb-20">
             <motion.img
               initial={{ opacity: 0 }}
@@ -158,24 +158,11 @@ function Landing() {
               alt="Ninja"
             />
           </div>
-          <div className="hidden md:block md:flex md:flex-col absolute">
-            <img src={webbanner} alt="cad" className="w-screen  -z-100 justify-center mx-auto"  />
-            <a href="https://cad-website-2.vercel.app/" target="new">
-              <button className="py-3 w-1/5 px-6 text-xl text-white bg-pink-800 rounded absolute bottom-[10vh] left-[25vw] ">KNOW MORE</button>
-            </a>
-          </div>
-
-          <div className="block md:hidden absolute"> 
-           < img src={appbanner} alt="cad" className="w-screen  -z-100 justify-center mx-auto flex md:hidden"  />
-           <a href="https://cad-website-2.vercel.app/" target="new">
-             <button className="py-3  px-6 text-sm text-white bg-pink-800 rounded absolute left-[30vw]">KNOW MORE</button>
-            </a>
-          </div>
         </div>
       </main>
-
+        <CadBanner/>
       {/* About */}
-      <div className="bg-zinc-900 bg-opacity-40 sm:mt-[55vh] md:mt-[50vh] lg:mt-[65vh] xl:mt-[95vh]" id="about" name="about">
+      <div className="bg-zinc-900 bg-opacity-40 sm:mt-20 md:mt-[50vh] lg:mt-[70vh] xl:mt-[90vh]" id="about" name="about">
         <div className="grid grid-cols-1 gap-5 py-8 px-3 xl:grid-cols-2 pb-20">
           <div className="">
             <div
