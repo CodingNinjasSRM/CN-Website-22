@@ -19,8 +19,8 @@ import {
 } from "framer-motion";
 import React, {
   /* Suspense, */ useEffect,
-  useState,
   useRef /* , useState */,
+  useState,
 } from "react";
 import ParticleBGLanding from "../ParticleBG/ParticleBGLanding";
 // import Carousel from "react-multi-carousel";
@@ -37,20 +37,20 @@ import num2 from "./assets/02.svg";
 // import num3 from "./assets/03.svg";
 import arrow from "./assets/arrow.svg";
 // import codekaze from "./assets/CodeKaze 1.svg";
+import Lottie from "lottie-react";
 import filler from "./assets/Frame 8.png";
 import group from "./assets/Group.svg";
 import img1 from "./assets/Img1.svg";
-import img2 from "./assets/non technical.png";
-import Lottie from "lottie-react";
-import Ninja from "./assets/lottie_ninja.json";
 import landlotty from "./assets/landinglotty.json";
+import Ninja from "./assets/lottie_ninja.json";
+import img2 from "./assets/non technical.png";
 // import img3 from "./assets/Img3.svg";
 // import appdev from "./assets/intro to appdev 1.svg";
-import ninja from "./assets/cnani.gif";
+import background from "./assets/1035529526-preview.mp4";
 import ninja2 from "./assets/Ninja img.svg";
 import rect from "./assets/Rectangle 126.svg";
 import rect2 from "./assets/Rectangle 127.svg";
-import background from "./assets/1035529526-preview.mp4";
+import ninja from "./assets/cnani.gif";
 // import shuriken from "./assets/shuriken wars 1.svg";
 // import House from "./House/house";
 // import state from "./House/ninjahouse.json";
@@ -62,9 +62,8 @@ import style from "./Landing.module.css";
 //   "Demo Sheet",
 // );
 
-import technical from "./assets/technical.png";
 import nontechnical from "./assets/non technical.png";
-import CadBanner from "./CadBanner";
+import technical from "./assets/technical.png";
 
 function Landing() {
   const goToTop = () => {
@@ -160,9 +159,8 @@ function Landing() {
           </div>
         </div>
       </main>
-        <CadBanner/>
       {/* About */}
-      <div className="bg-zinc-900 bg-opacity-40 sm:mt-20 md:mt-[50vh] lg:mt-[70vh] xl:mt-[90vh]" id="about" name="about">
+      <div className="bg-zinc-900 bg-opacity-40" id="about" name="about">
         <div className="grid grid-cols-1 gap-5 py-8 px-3 xl:grid-cols-2 pb-20">
           <div className="">
             <div
@@ -172,8 +170,16 @@ function Landing() {
               <DecoderText text="ABOUT CN" start={aboutInView} delay={500} />
             </div>
             <p className="text-white xl:text-left text-center mx-2 md:pl-5 md:ml-7 pl-3 pr-3 md:text-2xl text-1 md:pb-20 mb-10 tracking-wider leading-7">
-              Welcome to Coding Ninjas Club SRM! We are a community of passionate coders and executives who love to explore the world of technology and push our limits to create innovative solutions. Our club is designed to provide a platform for students to learn, share, and grow their technical skills.We organize a variety of events throughout the year, from Hackathons and Workshops to amazing Gaming Events.At Coding Ninjas Club SRM, we believe that technology can be a force for good in the world.That's why we encourage our members to use their skills to solve real-world problems and make a positive impact on the society.
-
+              Welcome to Coding Ninjas Club SRM! We are a community of
+              passionate coders and executives who love to explore the world of
+              technology and push our limits to create innovative solutions. Our
+              club is designed to provide a platform for students to learn,
+              share, and grow their technical skills.We organize a variety of
+              events throughout the year, from Hackathons and Workshops to
+              amazing Gaming Events.At Coding Ninjas Club SRM, we believe that
+              technology can be a force for good in the world.That's why we
+              encourage our members to use their skills to solve real-world
+              problems and make a positive impact on the society.
             </p>
           </div>
           <Link to="/code">
@@ -317,9 +323,7 @@ function Landing() {
       </div>
       <div className="pb-5">
         <div className="text-white text-center md:text-xl pb-10">
-          Stay tuned new
-          Events
-          loading...
+          Stay tuned new Events loading...
         </div>
         <div className="absolute right-0 bg-black">
           <img loading="lazy" src={rect} alt="" />
