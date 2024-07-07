@@ -1,48 +1,45 @@
 // Executive Team
-import cr1 from "./assets/ExecutiveTeam/MageshCR.png";
+// import cr1 from "./assets/ExecutiveTeam/MageshCR.png";
+import cr1 from "./assets/ExecutiveTeam/CR1.png";
+import cr2 from "./assets/ExecutiveTeam/CR2.png";
+import ntl1 from "./assets/ExecutiveTeam/NonTechLead1.png";
+import ntl2 from "./assets/ExecutiveTeam/NonTechLead2.png";
+import oo from "./assets/ExecutiveTeam/OutreachOfficer.png";
 import pres from "./assets/ExecutiveTeam/President.png";
-import cr2 from "./assets/ExecutiveTeam/PriyanshiCR.png";
 import pl from "./assets/ExecutiveTeam/ProjectLead.png";
 import tl from "./assets/ExecutiveTeam/TechLead.png";
-import vp from "./assets/ExecutiveTeam/VicePresident.png";
-import ntl1 from "./assets/ExecutiveTeam/WiniNonTechLead.jpg";
+import vp1 from "./assets/ExecutiveTeam/VicePresident1.jpg";
+import vp2 from "./assets/ExecutiveTeam/VicePresident2.png";
 
 // Heads and Associates
-import aimlAssoc1 from "./assets/Board/AIML/AmriteshAssoc.png";
-import aimlAssoc2 from "./assets/Board/AIML/RatishAssoc.png";
-import appHead1 from "./assets/Board/App/MehulHead.png";
-import appHead2 from "./assets/Board/App/PrathamHead.png";
-import corpHead1 from "./assets/Board/Corporate/AarohiHead.png";
-import corpAssoc1 from "./assets/Board/Corporate/DakshAssoc.png";
-import corpAssoc2 from "./assets/Board/Corporate/KavyaAssoc.png";
-import corpHead2 from "./assets/Board/Corporate/NamanHead.PNG";
-import corpAssoc3 from "./assets/Board/Corporate/PradyumnAssoc.png";
-import corpAssoc4 from "./assets/Board/Corporate/RajAssoc.png";
-import corpAssoc5 from "./assets/Board/Corporate/SanskritiAssoc.png";
-import corpAssoc6 from "./assets/Board/Corporate/ShrinjoyeeAssoc.png";
-import corpAssoc7 from "./assets/Board/Corporate/SuhaniAssoc.png";
-import creativesAssoc1 from "./assets/Board/Creatives/ArchismanAssoc.png";
-import creativesHead1 from "./assets/Board/Creatives/MilindHead.png";
-import creativesAssoc2 from "./assets/Board/Creatives/ParthAssoc.png";
-import creativesHead2 from "./assets/Board/Creatives/RajdeepHead.png";
-import creativesAssoc3 from "./assets/Board/Creatives/VikrantAssoc.png";
-import ediAssoc1 from "./assets/Board/Edi/AmitabhAssoc.png";
-import ediHead1 from "./assets/Board/Edi/DevroopHead.png";
-import ediAssoc2 from "./assets/Board/Edi/ShrinikeshAssoc.png";
-import ediAssoc3 from "./assets/Board/Edi/TanayAssoc.png";
-import ediHead2 from "./assets/Board/Edi/VaishnaviHead.png";
-import sponsiAssoc1 from "./assets/Board/Sponsi/DivyanshiAssoc.png";
-import sponsiAssoc2 from "./assets/Board/Sponsi/LokeshAssoc.png";
-import sponsiAssoc3 from "./assets/Board/Sponsi/SoumyaAssoc.png";
-import sponsiHead1 from "./assets/Board/Sponsi/SukhumjeetHead.png";
-import webHead1 from "./assets/Board/Web/AkshatHead.png";
-import webAssoc2 from "./assets/Board/Web/JatinAssoc.png";
-import webHead2 from "./assets/Board/Web/PaavanHead.png";
-import webAssoc1 from "./assets/Board/Web/ShreeAssoc.png";
+import webAssoc3 from "./assets/Board/AIML/Atharva.png";
+import aimlAssoc from "./assets/Board/AIML/Nabh.jpg";
+import webAssoc1 from "./assets/Board/AIML/Sukh.jpg";
+import webAssoc2 from "./assets/Board/AIML/Tanmay.jpg";
+import corpAssoc1 from "./assets/Board/Corporate/Assoc1.jpeg";
+import corpAssoc2 from "./assets/Board/Corporate/Assoc2.jpg";
+import corpAssoc3 from "./assets/Board/Corporate/Assoc3.jpg";
+import corpAssoc4 from "./assets/Board/Corporate/Assoc5.jpeg";
+import corpAssoc5 from "./assets/Board/Corporate/Assoc6.jpg";
+import corpHead1 from "./assets/Board/Corporate/Head1.png";
+import corpHead2 from "./assets/Board/Corporate/Head2.jpg";
+import creativesAssoc1 from "./assets/Board/Creatives/Assoc1.jpg";
+import creativesAssoc2 from "./assets/Board/Creatives/Assoc2.jpeg";
+import creativesAssoc3 from "./assets/Board/Creatives/Assoc3.jpg";
+import creativesAssoc4 from "./assets/Board/Creatives/Assoc4.jpg";
+import creativesHead from "./assets/Board/Creatives/Head.jpg";
+import ediAssoc1 from "./assets/Board/Edi/Assoc1.jpg";
+import ediAssoc2 from "./assets/Board/Edi/Assoc2.jpg";
+import ediAssoc3 from "./assets/Board/Edi/Assoc3.jpg";
+import sponsiAssoc1 from "./assets/Board/Sponsi/Assoc1.jpg";
+import sponsiAssoc2 from "./assets/Board/Sponsi/Assoc2.jpg";
+import sponsiAssoc3 from "./assets/Board/Sponsi/Assoc3.jpg";
+import sponsiAssoc4 from "./assets/Board/Sponsi/Assoc4.jpg";
+import sponsiHead from "./assets/Board/Sponsi/Head.png";
 
 export const president = [
   {
-    name: "Toshak Kaushik",
+    name: "Pradyumn Srivastava",
     position: "President",
     image: pres,
     style: "h-64 w-64 md:h-80 md:w-80",
@@ -51,142 +48,162 @@ export const president = [
 
 export const vicePresident = [
   {
-    name: "Manas Sharma",
+    name: "Paavan Agrawal",
     position: "Vice President",
-    image: vp,
+    image: vp1,
+    style: "h-64 w-64 md:h-80 md:w-80 ",
+  },
+  {
+    name: "Sukhumjeet Singh",
+    position: "Vice President",
+    image: vp2,
     style: "h-64 w-64 md:h-80 md:w-80 ",
   },
 ];
 
 export const board = [
   {
-    name: "Magesh Chockalingam",
+    name: "Vikrant Kimar Singh",
+    position: "Outreach Officer",
+    image: oo,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Amitabh Garg",
     position: "Club Representative",
     image: cr1,
     style: "h-52 w-52",
   },
-
+  {
+    name: "Lokesh Jain",
+    position: "Club Representative",
+    image: cr2,
+    style: "h-52 w-52",
+  },
 ];
 
 export const leads = [
-
   {
-    name: "Sanskar Gupta",
+    name: "Kavya Jhamb",
+    position: "Non-Tech Lead",
+    image: ntl1,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Suhani Kheterpal",
+    position: "Non-Tech Lead",
+    image: ntl2,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Amritesh Kumar",
     position: "Tech Lead",
     image: tl,
     style: "h-52 w-52",
   },
   {
-    name: "Tanishq Kashyap",
+    name: "Shivansh Chaturvedi",
     position: "Project Lead",
     image: pl,
     style: "h-52 w-52",
   },
 ];
 
-export const appDev = [
-  {
-    name: "Mehul Dadlani",
-    position: "Head",
-    image: appHead1,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Pratham Bansal",
-    position: "Head",
-    image: appHead2,
-    style: "h-52 w-52",
-  },
-];
+export const appDev = [];
 
 export const corporate = [
   {
-    name: "Pradyumn Srivastava",
+    name: "Raj Kadakia",
     position: "Head",
-    image: corpAssoc3,
+    image: corpHead1,
     style: "h-52 w-52",
   },
   {
-    name: "Kavya",
+    name: "Kritika Dhuper",
+    position: "Head",
+    image: corpHead2,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Atharv Garg",
+    position: "Associate",
+    image: corpAssoc1,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Sagnik Chakrabarti",
     position: "Associate",
     image: corpAssoc2,
     style: "h-52 w-52",
   },
-
   {
-    name: "Raj",
+    name: "Anoushka Shrivastava",
+    position: "Associate",
+    image: corpAssoc3,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Rajdeep Singh Panwar",
     position: "Associate",
     image: corpAssoc4,
     style: "h-52 w-52",
   },
   {
-    name: "Sanskriti Garg",
+    name: "Rafae Mohammed Hussain",
     position: "Associate",
     image: corpAssoc5,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Suhani Khetarpal",
-    position: "Associate",
-    image: corpAssoc7,
     style: "h-52 w-52",
   },
 ];
 
 export const creatives = [
   {
-    name: "Milind Sinha",
+    name: "Mayank Garg",
     position: "Head",
-    image: creativesHead1,
+    image: creativesHead,
     style: "h-52 w-52",
   },
   {
-    name: "Rajdeep Chatterjee",
-    position: "Head",
-    image: creativesHead2,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Archisman",
+    name: "Ashmit Bhadoria",
     position: "Associate",
     image: creativesAssoc1,
     style: "h-52 w-52",
   },
   {
-    name: "Vikrant Kumar Singh",
+    name: "Ananya Mahajan",
+    position: "Associate",
+    image: creativesAssoc2,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Samaksh Goel",
     position: "Associate",
     image: creativesAssoc3,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Jiya Gayawer",
+    position: "Associate",
+    image: creativesAssoc4,
     style: "h-52 w-52",
   },
 ];
 
 export const edi = [
   {
-    name: "Devroop Banerjee",
-    position: "Head",
-    image: ediHead1,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Vaishnavi",
-    position: "Head",
-    image: ediHead2,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Amitabh",
+    name: "Avishikta Maity",
     position: "Associate",
     image: ediAssoc1,
     style: "h-52 w-52",
   },
   {
-    name: "Shrinikesh",
+    name: "Saanvi Mahika",
     position: "Associate",
     image: ediAssoc2,
     style: "h-52 w-52",
   },
   {
-    name: "Tanay",
+    name: "Mayank Garg",
     position: "Associate",
     image: ediAssoc3,
     style: "h-52 w-52",
@@ -195,63 +212,62 @@ export const edi = [
 
 export const sponsi = [
   {
-    name: "Sukhumjeet Singh",
+    name: "Saumya Upadhyay",
     position: "Head",
-    image: sponsiHead1,
+    image: sponsiHead,
     style: "h-52 w-52",
   },
   {
-    name: "Divyanshi Oswal",
+    name: "Sanskar Kesari",
     position: "Associate",
     image: sponsiAssoc1,
     style: "h-52 w-52",
   },
   {
-    name: "Lokesh",
+    name: "Vedaant Chaudhari",
     position: "Associate",
     image: sponsiAssoc2,
     style: "h-52 w-52",
   },
   {
-    name: "Soumya Upadhyay",
+    name: "Aditii Sharma",
     position: "Associate",
     image: sponsiAssoc3,
     style: "h-52 w-52",
   },
+  {
+    name: "Ayushman Mishra",
+    position: "Associate",
+    image: sponsiAssoc4,
+    style: "h-52 w-52",
+  },
 ];
 
-export const webDev = [
-  {
-    name: "Akshat Agarwal",
-    position: "Head",
-    image: webHead1,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Paavan Agrawal",
-    position: "Head",
-    image: webHead2,
-    style: "h-52 w-52",
-  },
-  {
-    name: "Shreenidhi Sashisekar",
-    position: "Associate",
-    image: webAssoc1,
-    style: "h-52 w-52",
-  },
-];
+export const webDev = [];
 
 export const aiml = [
   {
-    name: "Amritesh Kumar",
-    position: "Head",
-    image: aimlAssoc1,
+    name: "Nabh Patodi",
+    position: "AI/ML Associate",
+    image: aimlAssoc,
     style: "h-52 w-52",
   },
   {
-    name: "Ratish Oberoi",
-    position: "Head",
-    image: aimlAssoc2,
+    name: "Sukh Singh Oberoi",
+    position: "Web Dev Associate",
+    image: webAssoc1,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Tanmay Bansal",
+    position: "Web Dev Associate",
+    image: webAssoc2,
+    style: "h-52 w-52",
+  },
+  {
+    name: "Atharva Kekare",
+    position: "Web Dev Associate",
+    image: webAssoc3,
     style: "h-52 w-52",
   },
 ];

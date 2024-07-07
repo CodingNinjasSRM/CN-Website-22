@@ -103,7 +103,7 @@ const TeamNew = () => {
         <div
           className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
         >
-          AI/ML
+          Technical
         </div>
         <div className="flex flex-row flex-wrap items-center justify-around w-3/5">
           {aiml.map(({ name, position, image, style }) => (
@@ -116,7 +116,7 @@ const TeamNew = () => {
           ))}
         </div>
 
-        <div
+        {/* <div
           className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
         >
           App Dev
@@ -130,9 +130,9 @@ const TeamNew = () => {
               style={style}
             />
           ))}
-        </div>
+        </div> */}
 
-        <div
+        {/* <div
           className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
         >
           Web Dev
@@ -146,7 +146,7 @@ const TeamNew = () => {
               style={style}
             />
           ))}
-        </div>
+        </div> */}
 
         <div
           className={`pt-16 text-[40px] md:text-[60px] font-[700] teamheading mb-4`}
