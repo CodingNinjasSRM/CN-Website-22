@@ -6,7 +6,7 @@ import ntl1 from "./assets/ExecutiveTeam/NonTechLead1.png";
 import ntl2 from "./assets/ExecutiveTeam/NonTechLead2.png";
 import oo from "./assets/ExecutiveTeam/OutreachOfficer.png";
 import pres from "./assets/ExecutiveTeam/President.png";
-import pl from "./assets/ExecutiveTeam/ProjectLead.png";
+import pl from "./assets/ExecutiveTeam/ProjectLead.jpg";
 import tl from "./assets/ExecutiveTeam/TechLead.png";
 import vp1 from "./assets/ExecutiveTeam/VicePresident1.jpg";
 import vp2 from "./assets/ExecutiveTeam/VicePresident2.png";

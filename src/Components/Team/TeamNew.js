@@ -105,7 +105,7 @@ const TeamNew = () => {
         >
           Technical
         </div>
-        <div className="flex flex-row flex-wrap items-center justify-around w-3/5">
+        <div className="flex flex-row flex-wrap items-center justify-around w-4/5">
           {aiml.map(({ name, position, image, style }) => (
             <CardComponent
               name={name}
