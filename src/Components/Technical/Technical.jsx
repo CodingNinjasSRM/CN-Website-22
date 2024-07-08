@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FooterMin from "../FooterMin/FooterMin";
 import aimlimg from "./Components/assets/aiml_br.png";
-import webdevimg from "./Components/assets/web_dev_br.png";
-import compimg from "./Components/assets/comp_prog_br.png";
-import ninja from "./assets/ninja.svg";
 import appimg from "./Components/assets/app_dev_br.png";
-import shiruken from "./assets/shiruken.png";
+import compimg from "./Components/assets/comp_prog_br.png";
+import webdevimg from "./Components/assets/web_dev_br.png";
 import styles from "./Technical.module.css";
+import ninja from "./assets/ninja.svg";
+import shiruken from "./assets/shiruken.png";
 
 function Technical() {
   return (
@@ -41,7 +41,7 @@ function Technical() {
               alt=""
               className="transition-transform hover:scale-110 h-56 rounded-md"
             />
-             <p className="mt-2">Web Dev</p>
+            <p className="mt-2">Web Dev</p>
           </Link>
         </div>
 
@@ -54,7 +54,7 @@ function Technical() {
               alt=""
               className="transition-transform hover:scale-110 h-56 rounded-md"
             />
-             <p className="mt-2">Web Dev</p>
+            <p className="mt-2">Web Dev</p>
           </Link>
         </div>
 
@@ -67,7 +67,7 @@ function Technical() {
               alt=""
               className="transition-transform hover:scale-110 h-56 rounded-md"
             />
-             <p className="mt-2">AI/ML</p>
+            <p className="mt-2">AI/ML</p>
           </Link>
         </div>
 
