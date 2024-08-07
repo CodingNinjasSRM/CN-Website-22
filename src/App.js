@@ -227,6 +227,7 @@ function App() {
             </>
           }
         />
+        <Route path="/cq-registeration" element={<CQRegistration />} />
       </Routes>
     </div>
   );
@@ -234,9 +235,9 @@ function App() {
 
 export default App;
 
-const Apply = () => {
+const CQRegistration = () => {
   useEffect(() => {
-    window.location.href = "https://codingninjasatsrm.com/domains";
+    window.location.href = "https://qr-form-frontend.vercel.app";
   }, []);
 
   return <></>;
