@@ -227,7 +227,7 @@ function App() {
             </>
           }
         />
-        <Route path="/cq-registeration" element={<CQRegistration />} />
+        <Route path="/cq-registration" element={<CQRegistration />} />
       </Routes>
     </div>
   );
