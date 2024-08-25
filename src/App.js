@@ -228,6 +228,7 @@ function App() {
           }
         />
         <Route path="/cq-registration" element={<CQRegistration />} />
+          <Route path="/apply-now" element={<ApplyNow />} />
       </Routes>
     </div>
   );
@@ -242,3 +243,12 @@ const CQRegistration = () => {
 
   return <></>;
 };
+
+const ApplyNow = () => {
+  useEffect(() => {
+    window.location.href = "https://cn24recruitment.vercel.app";
+  }, []);
+
+  return <></>;
+};
+
