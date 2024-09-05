@@ -238,7 +238,7 @@ export default App;
 
 const CQRegistration = () => {
   useEffect(() => {
-    window.location.href = "https://cq-registration.vercel.app/register";
+    window.location.href = "https://cq-registration.vercel.app/";
   }, []);
 
   return <></>;
